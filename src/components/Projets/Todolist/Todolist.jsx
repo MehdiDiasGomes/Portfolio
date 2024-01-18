@@ -28,7 +28,7 @@ export default function Portfolio() {
                                 <div className="link">
                                     <Link to="/"> <i className="ri-arrow-left-line"></i>RETOUR À ACCUEIL </Link>
                                 </div>
-                                <h2>Jeu de devinette en ligne</h2>
+                                <h2>To do list en ligne</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mollitia aliquid aliquam laboriosam dolorum minus nulla sequi porro quidem consequatur.</p>
                                 <Link to="https://github.com/MehdiDiasGomes/ToDoList" target="_blank" className="link-project">Voir le projet <i className="ri-github-line"></i></Link>
                             </div>

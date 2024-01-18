@@ -92,13 +92,127 @@
     color: white;
 }
 
-@media only screen and (min-width : 1224px) and (max-width: 1700px) {
+.menu-hamburger {
+    display: none;
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1223px) {
-    
+
+    .navbar {
+        flex-direction: column;
+        gap: 4rem;
+        width: 17rem;
+        height: 100%;
+        justify-content: initial;
+        left: -100vw;
+        transition: all ease-in-out .2s;
+    }
+
+    .showNav {
+        left: 0;
+    }
+
+    .nav-links .home ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-hamburger {
+        position: fixed;
+        z-index: 1000;
+        right: 1rem;
+        top: 1rem;
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-hamburger i {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+        color: white;
+        font-size: 2rem;
+    }
 }
 
-@media only screen and (min-width: 414px) and (max-width: 767px) {}
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        gap: 4rem;
+        width: 17rem;
+        height: 100%;
+        justify-content: initial;
+        left: -100vw;
+        transition: all ease-in-out .2s;
+    }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {}
+    .showNav {
+        left: 0;
+    }
+
+    .nav-links .home ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-hamburger {
+        position: fixed;
+        z-index: 1000;
+        right: 1rem;
+        top: 1rem;
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-hamburger i {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+        color: white;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 4rem;
+        width: 17rem;
+        height: 100%;
+        justify-content: initial;
+        left: -100vw;
+        transition: all ease-in-out .2s;
+    }
+
+    .showNav {
+        left: 0;
+    }
+
+    .nav-links .home ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-hamburger {
+        position: fixed;
+        z-index: 1000;
+        right: 1rem;
+        top: 1rem;
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-hamburger i {
+        display: block;
+        position: absolute;
+        right: 0rem;
+        top: 0.5rem;
+        color: white;
+        font-size: 1.8rem;
+    }
+}
