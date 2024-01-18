@@ -1,0 +1,201 @@
+.footer {
+    padding: 4rem;
+    width: 100%;
+    background-color: #181717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    border-top: 1px solid gray;
+}
+
+.footer .container {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+}
+
+.footer .container .text {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer .container .text .social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer .container .text .social a {
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: .3s;
+    border: 1px solid rgb(139, 3, 49);
+}
+
+.footer .container .text .social a:hover {
+    font-size: 2rem;
+    padding: 0.5rem;
+    transform: scale(1.09);
+    background-color: rgb(139, 3, 49);
+}
+
+.footer .container .text .titre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer .container .text .titre h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+.footer .container .text .titre span {
+    color: rgb(139, 3, 49);
+}
+
+.footer .container .text .titre p {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.footer .container .lien {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .container .lien a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem;
+    background-color: #252525;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: .33s;
+}
+
+.footer .container .lien a:hover {
+    background-color: #1e1e1e;
+}
+
+.footer .container .lien a i {
+    font-size: 2.3rem;
+    color: rgb(139, 3, 49);
+}
+
+.footer .container .lien a h6 {
+    font-size: 1rem;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width : 1224px) and (max-width: 1919px) {
+    .footer .container {
+        gap: 7rem;
+    }   
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1223px) {
+    .footer .container {
+        gap: 3rem;
+        flex-direction: column;
+    }   
+
+    .footer .container .text .titre {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .container .text .social {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+    .footer .container {
+        gap: 3rem;
+        flex-direction: column;
+    }   
+
+    .footer .container .text .titre {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .container .text .social {
+        justify-content: center;
+    }
+
+    .footer .container .lien a {
+        padding: 2rem;
+    }
+
+    .footer .container .lien a i{
+        font-size: 2rem;
+    }
+
+    .footer .container .text {
+        width: 100vw;
+        padding: 1rem;
+    }
+
+    .footer .container .text .titre p {
+        font-size: 1rem;
+    }
+
+    .footer .container .text .titre h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .footer .container {
+        gap: 2rem;
+        flex-direction: column;
+    }   
+
+    .footer .container .text .titre {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .container .text .social {
+        justify-content: center;
+    }
+
+    .footer .container .lien a {
+        padding: 2rem;
+    }
+
+    .footer .container .lien a h6{
+        font-size: 0.8rem;
+    }
+
+    .footer .container .text {
+        width: 100vw;
+        padding: 1rem;
+    }
+
+    .footer .container .text .titre p {
+        font-size: 0.8rem;
+    }
+
+    .footer .container .text .titre h2 {
+        font-size: 2rem;
+    }
+
+    .footer .container .text .social a {
+        font-size: 1.5rem;
+    }
+}

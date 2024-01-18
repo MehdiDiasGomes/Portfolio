@@ -1,0 +1,388 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+    overflow-x: hidden;
+    padding: 4rem 0;
+}
+
+.about .titre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.about .titre span {
+    color: rgb(139, 3, 49);
+}
+
+.about .titre h2 {
+    font-size: 4rem;
+    color: white;
+}
+
+.about .container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.about .container .apropos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 45rem;
+    width: 50rem;
+}
+
+.about .container .apropos:hover .logo i {
+    right: 0;
+    opacity: 1;
+    color: rgba(139, 3, 48, 0.637);
+}
+
+.about .container .apropos .logo i {
+    font-size: 10rem;
+    position: absolute;
+    right: -10%;
+    top: -1rem;
+    transition: .3s;
+    z-index: -10;
+    opacity: 0.5;
+    color: white;
+}
+
+.about .container p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.container .aboutMe {
+    margin-top: 2rem;
+    width: 45rem;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.container .aboutMe .text h3 {
+    font-size: 2.5rem;
+    color: rgb(139, 3, 49);
+}
+
+.container .aboutMe .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container .aboutMe img {
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about .container .skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    overflow-x: hidden;
+    height: 45rem;
+    width: 50rem;
+}
+
+.about .container .skills:hover .logo i {
+    right: 0;
+    opacity: 1;
+    color: rgba(139, 3, 48, 0.637);
+}
+
+.about .container .skills .logo i {
+    font-size: 10rem;
+    position: absolute;
+    right: -17%;
+    top: -2.3rem;
+    transition: .3s;
+    z-index: -10;
+    opacity: 0.5;
+    color: white;
+}
+
+.about .container .skills img {
+    padding: 1rem;
+    background-color: #252525;
+    border-radius: 20px;
+    border: 1px solid rgb(92, 92, 92);
+    width: 6rem;
+    transition: .3s;
+}
+
+.about .container .skills img:hover {
+    transform: scale(1.09);
+}
+
+.about .container .skills .my-skills {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about .container .skills .my-skills .colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width : 1224px) and (max-width: 1700px) {
+
+    .about .container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about .container .apropos {
+        width: 70%;
+    }
+
+    .about .container .skills {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1223px) {
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        gap: 2rem;
+        overflow-x: hidden;
+        padding: 4rem 0;
+    }
+
+    .about .container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about .container .apropos {
+        width: 90%;
+    }
+
+    .about .container .skills {
+        width: 90%;
+    }
+
+    .about .container .text h3{
+        font-size: 1.9rem;
+    }
+
+    .about .container .text p{
+        font-size: 1rem;
+    }
+
+    .container .aboutMe img {
+        width: 10rem;
+        height: 17rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .container .aboutMe {
+        width: 100%;
+    }
+
+    .about .titre h2 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        gap: 2rem;
+        overflow-x: hidden;
+        padding: 4rem 0;
+    }
+
+    .about .container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about .container .apropos {
+        width: 90%;
+    }
+
+    .about .container .skills {
+        width: 90%;
+    }
+
+    .about .container .text h3{
+        font-size: 1.2rem;
+    }
+
+    .about .container .text p{
+        font-size: 0.8rem;
+    }
+
+    .container .aboutMe img {
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+
+    .container .aboutMe {
+        width: 100%;
+    }
+
+    .about .titre h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .about .container .apropos .logo i {
+        font-size: 5rem;
+        top: -0.2rem;
+    }
+
+    .about .container .skills .logo i {
+        font-size: 5rem;
+        top: -0.2rem;
+    }
+
+    .container .aboutMe {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about .container .skills .my-skills {
+        gap: 3rem;
+    }
+
+    .about .container .skills img {
+        padding: 1rem;
+        border-radius: 20px;
+        width: 4rem;
+        transition: .3s;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        gap: 2rem;
+        overflow-x: hidden;
+        padding: 4rem 0;
+    }
+
+    .about .container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about .container .apropos {
+        width: 90%;
+    }
+
+    .about .container .skills {
+        width: 90%;
+    }
+
+    .about .container .text h3{
+        font-size: 1.2rem;
+    }
+
+    .about .container .text p{
+        font-size: 0.8rem;
+    }
+
+    .container .aboutMe img {
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+
+    .container .aboutMe {
+        width: 100%;
+    }
+
+    .about .titre h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about .container .apropos .logo i {
+        font-size: 5rem;
+        top: -0.2rem;
+    }
+
+    .about .container .skills .logo i {
+        font-size: 5rem;
+        top: -0.2rem;
+    }
+
+    .container .aboutMe {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about .container .skills .my-skills {
+        gap: 3rem;
+    }
+
+    .about .container .skills img {
+        padding: 1rem;
+        border-radius: 20px;
+        width: 4rem;
+        transition: .3s;
+    }
+}
