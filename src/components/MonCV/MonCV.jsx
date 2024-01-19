@@ -1,6 +1,7 @@
 import "./monCV.css";
 import { Link } from "react-router-dom";
 import picProfile from "../../assets/img/pic-profile.png";
+import docCV from "../../assets/doc/CV_Mehdi_DIAS_GOMES.pdf"
 
 export default function MonCV() {
     return (
@@ -120,7 +121,7 @@ export default function MonCV() {
                 </section>
 
                 <div className="open-cv">
-                    <Link className="ouvrir-cv" href="../doc/CV_DIAS-GOMES_Mehdi.pdf" target="_blank">📃 Ouvrir CV</Link>
+                    <Link className="ouvrir-cv" to={docCV} target="_blank">📃 Ouvrir CV</Link>
                 </div>
 
             </section>
