@@ -323,18 +323,23 @@
         flex-direction: column;
         width: 100%;
         align-items: center;
+        gap: 3rem;
     }
 
     .about .container .apropos {
         width: 90%;
+        padding: 5rem 2rem;
+        height: 100%;
     }
 
     .about .container .skills {
         width: 90%;
+        padding: 5rem 2rem;
+        height: 100%;
     }
 
     .about .container .text h3{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .about .container .text p{
@@ -342,8 +347,8 @@
     }
 
     .container .aboutMe img {
-        width: 8rem;
-        height: 8rem;
+        width: 9rem;
+        height: 10rem;
         object-fit: cover;
         border-radius: 50px;
     }
@@ -353,7 +358,7 @@
     }
 
     .about .titre h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-align: center;
     }
 

@@ -46,7 +46,7 @@ export default function Accueil() {
                             </div>
                             <div className="btn">
                                 <Link to="/about">A propos</Link>
-                                <a href="#"><i className="ri-mail-open-line"></i>Contact</a>
+                                <Link to="/contact"><i className="ri-mail-open-line"></i>Contact</Link>
                             </div>
                         </div>
                         <div className="img">
