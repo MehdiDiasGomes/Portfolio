@@ -7,7 +7,7 @@ import Portfolio from './components/Projets/Portfolio/Portfolio';
 import Devinette from './components/Projets/Devinette/Devinette';
 import Todolist from './components/Projets/Todolist/Todolist';
 
-import Parcours from './components/Parcours/Parcours';
+import CV from './components/MonCV/MonCV';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About'
 
@@ -29,7 +29,7 @@ function App() {
           <Route path="/devinette" element={<Devinette />} />
           <Route path="/todolist" element={<Todolist />} />
 
-          <Route path="/parcours" element={<Parcours />} />
+          <Route path="/cv" element={<CV />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

@@ -1,4 +1,6 @@
 import "./accueil.css";
+
+import bgHeader from "../../assets/img/bg-header.jpg"
 import picProfile from "../../assets/img/pic-profile.png";
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from "react-router-dom";
@@ -16,8 +18,9 @@ export default function Accueil() {
 
     return (
         <>
-            <Fade left >
-                <div className="accueil">
+
+            <div className="accueil">
+                <Fade left >
                     <div className="titre">
                         <div className="header">
                             <div className="title">
@@ -50,13 +53,13 @@ export default function Accueil() {
                             <img src={picProfile} alt="Image de profil" />
                         </div>
                     </div>
+                </Fade >
+            </div>
 
-                </div>
-            </Fade>
 
             {/* Projet */}
 
-            <div className="projet">
+            < div className="projet" >
                 <div className="container">
 
                     <div className="ligne l1">
@@ -104,7 +107,7 @@ export default function Accueil() {
                     </div>
 
                 </div>
-            </div>
+            </div >
 
         </>
     );

@@ -1,4 +1,4 @@
-import "./parcours.css"
+import "./monCV.css"
 
 export default function Parcours() {
   return (

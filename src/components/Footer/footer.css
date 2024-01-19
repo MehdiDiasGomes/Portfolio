@@ -52,6 +52,8 @@
 }
 
 .footer .container .text .titre h2 {
+    display: flex;
+    gap: 1rem;
     color: white;
     font-size: 3rem;
 }

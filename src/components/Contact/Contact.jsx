@@ -1,5 +1,5 @@
 import "./contact.css"
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 export default function Contact() {
 
@@ -8,40 +8,54 @@ export default function Contact() {
     return (
         <>
             <div className="contact">
-                <div className="title">
-                    <h2>Contact</h2>
-                    <h3>{ Texte }</h3>
-                </div>
-                <div className="container">
-                    <div className="info">
-                        <div className="nom">
-                            <h4>Mehdi <span>DIAS GOMES</span></h4>
+                <div className="contact-container">
+
+                    <div className="parag">
+
+                        <div className="titre">
+                            <h2>Me contacter</h2>
+                            <p>{Texte}</p>
                         </div>
-                        <div className="coordonnees">
-                            <Link to="https://maps.app.goo.gl/zv6A3NQ8mVZc9C586" className="lien" target="_blank"><i className="ri-map-pin-line"></i>Uckange (57), France</Link>
-                            <Link to={`mailto:diasgomes.mehdicours@gmail.com`} className="lien" target="_blank"><i className="ri-mail-send-line"></i>diasgomes.mehdicours@gmail.com</Link>
-                            <Link to={`tel:+33789626927`} className="lien" target="_blank"><i className="ri-smartphone-line"></i>+33 7 89 62 69 27</Link>
+
+                        <div className="social">
+                            <Link to={`mailto:diasgomes.mehdicours@gmail.com`}><i className="ri-mail-fill"></i> diasgomes.mehdicours@gmail.com</Link>
+                            <Link to={`tel:+33789626927`}><i className="ri-phone-fill"></i> +33 7 89 62 69 27</Link>
                         </div>
                     </div>
 
-                    <form action="" className="formulaire">
-                        <div className="titre">
-                            <h2>Envoyer un message</h2>
-                        </div>
-                        <div className="input">
-                            <div className="ligne1">
-                                <input type="text" placeholder="Votre nom"/>
-                                <input type="email" placeholder="votre@email.com"/>
+                    <div className="input">
+
+                        <div className="ligne l1">
+                            <div className="sligne">
+                                <label>Prénom</label>
+                                <input type="text" />
                             </div>
-                            <div className="ligne2">
-                                <input type="text" placeholder="Objet du message"/>
-                            </div>
-                            <div className="ligne3">
-                                <textarea name="" id="" placeholder="Votre message"></textarea>
-                                <button>Soumettre</button>
+                            <div className="sligne">
+                                <label>Nom de famille</label>
+                                <input type="text" />
                             </div>
                         </div>
-                    </form>
+
+                        <div className="ligne l2">
+                            <div className="sligne">
+                                <label>E-mail <span>{`(obligatoire)`}</span> </label>
+                                <input type="text" id="mail"/>
+                            </div>
+                        </div>
+
+                        <div className="ligne l3">
+                            <div className="sligne">
+                                <label>Message <span>{`(obligatoire)`}</span> </label>
+                                <textarea id="textArea"></textarea>
+                            </div>
+                        </div>
+
+                        <div className="ligne l4">
+                            <button>Envoyer</button>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </>

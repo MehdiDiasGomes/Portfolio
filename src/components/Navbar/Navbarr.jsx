@@ -39,17 +39,21 @@ export default function Navbar() {
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""
                                 }
+
+                                onClick={handleShowLinks}
                             >
                                 <i className="ri-home-line"></i>Accueil
                             </NavLink>
 
                             <NavLink
-                                to="/parcours"
+                                to="/cv"
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""
                                 }
+
+                                onClick={handleShowLinks}
                             >
-                                <i className="ri-compass-3-line"></i>Parcours
+                                <i className="ri-compass-3-line"></i>Mon CV
                             </NavLink>
 
 
@@ -58,6 +62,8 @@ export default function Navbar() {
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""
                                 }
+
+                                onClick={handleShowLinks}
                             >
                                 <i className="ri-user-line"></i>Qui suis-je ?
                             </NavLink>
@@ -68,6 +74,8 @@ export default function Navbar() {
                                 className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "active" : ""
                                 }
+
+                                onClick={handleShowLinks}
                             >
                                 <i className="ri-phone-line"></i>Contact
                             </NavLink>

@@ -10,7 +10,7 @@ export default function Footer() {
 
                     <div className="text">
                         <div className="titre">
-                            <h2>Mon <span>portfolio</span></h2>
+                            <h2>Mehdi<span>DIAS GOMES</span></h2>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et saepe, cum eius doloremque architecto quisquam.</p>
                         </div>
                         <div className="social">
