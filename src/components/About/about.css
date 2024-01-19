@@ -170,10 +170,14 @@
 
     .about .container .apropos {
         width: 70%;
+        padding: 5rem 2rem;
+        height: 100%;
     }
 
     .about .container .skills {
         width: 70%;
+        padding: 5rem 2rem;
+        height: 100%;
     }
 }
 
@@ -197,10 +201,14 @@
 
     .about .container .apropos {
         width: 90%;
+        padding: 5rem 2rem;
+        height: 100%;
     }
 
     .about .container .skills {
         width: 90%;
+        padding: 5rem 2rem;
+        height: 100%;
     }
 
     .about .container .text h3{
@@ -247,10 +255,14 @@
 
     .about .container .apropos {
         width: 90%;
+        padding: 5rem 2rem;
+        height: 100%;
     }
 
     .about .container .skills {
         width: 90%;
+        padding: 5rem 2rem;
+        height: 100%;
     }
 
     .about .container .text h3{
@@ -263,7 +275,7 @@
 
     .container .aboutMe img {
         width: 8rem;
-        height: 8rem;
+        height: 10rem;
         object-fit: cover;
         border-radius: 50px;
     }

@@ -10,7 +10,7 @@ export default function Navbar() {
     const [showLinks, setShowLinks] = useState(false);
 
     const handleShowLinks = () => {
-        setShowLinks (!showLinks)
+        setShowLinks(!showLinks)
     }
 
     return (
@@ -19,15 +19,15 @@ export default function Navbar() {
             <div className="menu-hamburger" onClick={handleShowLinks}>
                 <i className={showLinks ? "ri-close-line" : "ri-menu-line"}></i>
             </div>
-            
+
             <nav className={`navbar ${showLinks ? "showNav" : "hideNav"}`}>
                 <div className="titre_page">
-                    <Link to="/">
+                    <Link to="/" onClick={handleShowLinks}>
                         <img src={picProfile} alt="Image de profil" />
                         <div className="text">
                             <h2>Mehdi DIAS GOMES</h2>
                             <h3>Dévloppeur fullstack</h3>
-                        </div>
+                        </div>                       
                     </Link>
                 </div>
                 <div className="nav-links">
