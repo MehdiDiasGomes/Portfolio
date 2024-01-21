@@ -13,9 +13,13 @@ import About from './components/About/About'
 
 import Footer from './components/Footer/Footer';
 
+import ScrollToTop from './components/ScrollToTop';
+
 function App() {
   return (
     <div className="app">
+
+      <ScrollToTop />
 
       <div className="Navbar">
         <Navbar />
@@ -34,7 +38,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      
+
 
       <div className="Footer">
         <Footer />
