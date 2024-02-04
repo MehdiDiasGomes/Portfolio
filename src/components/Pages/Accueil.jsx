@@ -1,4 +1,4 @@
-import "./accueil.css";
+import "../Styles/accueil.css";
 
 import bgHeader from "../../assets/img/bg-header.jpg"
 import picProfile from "../../assets/img/pic-profile.png";

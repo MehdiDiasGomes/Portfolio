@@ -1,8 +1,8 @@
-import "../projet.css"
+import "../../Styles/projet.css"
 import { Link } from "react-router-dom";
 
-import portfolioPic2 from "../../../assets/img/mockup/todolist-1.png"
-import portfolioPic1 from "../../../assets/img/mockup/todolist-2.png"
+import portfolioPic1 from "../../../assets/img/mockup/Portfolio-1.png"
+import portfolioPic2 from "../../../assets/img/mockup/Portfolio-2.png"
 
 import HTML from "../../../assets/img/logo/html.png"
 import CSS from "../../../assets/img/logo/css.png"
@@ -28,20 +28,20 @@ export default function Portfolio() {
                                 <div className="link">
                                     <Link to="/"> <i className="ri-arrow-left-line"></i>RETOUR À ACCUEIL </Link>
                                 </div>
-                                <h2>To do list en ligne</h2>
+                                <h2>Mon portfolio</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mollitia aliquid aliquam laboriosam dolorum minus nulla sequi porro quidem consequatur.</p>
-                                <Link to="https://github.com/MehdiDiasGomes/ToDoList" target="_blank" className="link-project">Voir le projet <i className="ri-github-line"></i></Link>
+                                <Link to="https://github.com/MehdiDiasGomes/Mon-portfolio" target="_blank" className="link-project">Voir le projet <i className="ri-github-line"></i></Link>
                             </div>
                         </Fade>
 
                         <div className="image">
 
                             <Fade left>
-                                <img src={portfolioPic2} alt="portfolioPic2" />
+                                <img src={portfolioPic1} alt="portfolioPic1" />
                             </Fade>
 
                             <Fade left>
-                                <img src={portfolioPic1} alt="portfolioPic2" />
+                                <img src={portfolioPic2} alt="portfolioPic2" />
                             </Fade>
 
                         </div>
@@ -97,10 +97,10 @@ export default function Portfolio() {
 
                         <div className="caroussel">
                             <div className="precedent">
-                                <Link to="/devinette"><i className="ri-skip-back-fill"></i> Projet precedent</Link>
+                                <Link><i className="ri-skip-back-fill"></i> Projet precedent</Link>
                             </div>
                             <div className="suivant">
-                                <Link>Projet suivant <i className="ri-skip-forward-fill"></i></Link>
+                                <Link to="/devinette">Projet suivant <i className="ri-skip-forward-fill"></i></Link>
                             </div>
                         </div>
                         

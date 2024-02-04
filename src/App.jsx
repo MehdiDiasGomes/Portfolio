@@ -1,19 +1,19 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbarr';
-import Accueil from './components/Accueil/Accueil';
+import Navbar from './components/layout/Navbarr';
+import Accueil from './components/Pages/Accueil';
 
-import Portfolio from './components/Projets/Portfolio/Portfolio';
-import Devinette from './components/Projets/Devinette/Devinette';
-import Todolist from './components/Projets/Todolist/Todolist';
+import Portfolio from './components/Pages/Projets/Portfolio';
+import Devinette from './components/Pages/Projets/Devinette';
+import Todolist from './components/Pages/Projets/Todolist';
 
-import CV from './components/MonCV/MonCV';
-import Contact from './components/Contact/Contact';
-import About from './components/About/About'
+import CV from './components/Pages/MonCV';
+import Contact from './components/Pages/Contact';
+import About from './components/Pages/About'
 
-import Footer from './components/Footer/Footer';
+import Footer from './components/Layout/Footer';
 
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/Scripts/ScrollToTop';
 
 function App() {
   return (

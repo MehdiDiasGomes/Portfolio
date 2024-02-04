@@ -1,4 +1,4 @@
-import "./monCV.css";
+import "../Styles/monCV.css";
 import { Link } from "react-router-dom";
 import picProfile from "../../assets/img/pic-profile.png";
 import docCV from "../../assets/doc/CV_Mehdi_DIAS_GOMES.pdf"

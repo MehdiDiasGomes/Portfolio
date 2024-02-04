@@ -1,4 +1,4 @@
-import "./securityControl.css"
+import "../../Styles/securityControl.css"
 
 export default function securityControl() {
   return (

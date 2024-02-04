@@ -1,4 +1,4 @@
-import "../projet.css"
+import "../../Styles/projet.css"
 import { Link } from "react-router-dom";
 
 import portfolioPic2 from "../../../assets/img/mockup/Devinette.png"

@@ -1,4 +1,4 @@
-import "./navbar.css";
+import "../Styles/navbar.css";
 import picProfile from "../../assets/img/pic-profile.png"
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";

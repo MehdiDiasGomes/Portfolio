@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.css";
+import "../Styles/about.css";
 import cPlus from '../../assets/img/logo/cplus.png'
 import cs from '../../assets/img/logo/cs.png'
 import css from '../../assets/img/logo/css.png'
