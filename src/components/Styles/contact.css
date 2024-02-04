@@ -86,7 +86,7 @@
 .contact-container .input .ligne input {
     width: 100%;
     height: 3rem;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     border: 1px solid gray;
     background-color: rgb(10, 10, 10);
     padding: 0 0.1rem;
@@ -101,7 +101,7 @@
 .contact-container .input .ligne textarea {
     width: 100%;
     height: 15rem;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     resize: none;
     border: 1px solid gray;
     padding: 0 0.1rem;
