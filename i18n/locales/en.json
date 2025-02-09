@@ -11,5 +11,8 @@
     },
     "lang": {
         "choose": "Language selection"
+    },
+    "button": {
+        "see_work": "See my work"
     }
 }

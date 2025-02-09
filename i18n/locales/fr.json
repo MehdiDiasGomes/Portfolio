@@ -11,5 +11,8 @@
     },
     "lang": {
         "choose": "Choix de la langue"
+    },
+    "button": {
+        "see_work": "Voir mon travail"
     }
 }
