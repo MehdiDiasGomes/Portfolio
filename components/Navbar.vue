@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed z-10 top-10 border border-borderPerso rounded-xl left-1/2 transform -translate-x-1/2 bg-backgroundForeground p-5 px-14">
+    class="fixed z-20 top-10 border border-borderPerso rounded-xl left-1/2 transform -translate-x-1/2 bg-backgroundForeground p-5 px-14">
     <ul class="flex items-center gap-10 justify-center">
       <li class="flex flex-col items-center" v-for="(item, index) in nav" :key="index">
         <NuxtLink :class="removePrefix(route.path) === item.url ? 'text-white font-bold' : 'text-secondaryPerso'" :to="item.url">{{
