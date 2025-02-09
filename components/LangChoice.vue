@@ -1,18 +1,29 @@
 <template>
   <DropdownMenu>
-    <DropdownMenuTrigger as-child>
-      <Button variant="outline">
-        Open
+    <DropdownMenuTrigger  as-child>
+      <Button class="bg-backgound_navPerso border-none hover:bg-hoverForegroundPerso" variant="outline">
+        <template v-if="ShowUnitedKingdom">
+          <England />
+        </template>
+        <template v-else>
+          <France />
+        </template>
       </Button>
     </DropdownMenuTrigger>
-    <DropdownMenuContent class="w-56">
-      <DropdownMenuLabel>Appearance</DropdownMenuLabel>
-      <DropdownMenuSeparator />
-      <DropdownMenuCheckboxItem v-model:checked="showStatusBar">
-        <NuxtLink :to="switchLocalePath('en')">English</NuxtLink>
+    <DropdownMenuContent class="w-56 bg-backgroundForeground border border-borderPerso text-white">
+      <DropdownMenuLabel>{{ t('lang.choose') }}</DropdownMenuLabel>
+      <DropdownMenuSeparator class="bg-borderPerso" />
+      <DropdownMenuCheckboxItem class="focus:bg-hoverForegroundPerso focus:text-white" @click="setUnitedKingdom"
+        v-model:checked="ShowUnitedKingdom">
+        <NuxtLink class="flex w-full items-center gap-2" :to="switchLocalePath('en')">
+          <England class="w-7" />English
+        </NuxtLink>
       </DropdownMenuCheckboxItem>
-      <DropdownMenuCheckboxItem v-model:checked="showActivityBar">
-        <NuxtLink :to="switchLocalePath('fr')">Français</NuxtLink>
+      <DropdownMenuCheckboxItem class="focus:bg-hoverForegroundPerso focus:text-white" @click="setFrench"
+        v-model:checked="showFrench">
+        <NuxtLink class="flex w-full items-center gap-2" :to="switchLocalePath('fr')">
+          <France />Français
+        </NuxtLink>
       </DropdownMenuCheckboxItem>
     </DropdownMenuContent>
   </DropdownMenu>
@@ -30,11 +41,25 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { ref } from 'vue'
+import France from './icons/France.vue'
+import England from './icons/England.vue'
+
+const { t } = useI18n()
 
 type Checked = DropdownMenuCheckboxItemProps['checked']
 
-const showStatusBar = ref<Checked>(true)
-const showActivityBar = ref<Checked>(false)
-const showPanel = ref<Checked>(false)
+const showFrench = ref<Checked>(true)
+const ShowUnitedKingdom = ref<Checked>(false)
+
+const setUnitedKingdom = () => {
+  ShowUnitedKingdom.value = true
+  showFrench.value = false
+}
+
+const setFrench = () => {
+  showFrench.value = true
+  ShowUnitedKingdom.value = false
+}
+
 const switchLocalePath = useSwitchLocalePath()
 </script>
