@@ -5,7 +5,7 @@ module.exports = {
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
-  
+
   theme: {
     container: {
       center: true,
@@ -16,6 +16,11 @@ module.exports = {
     },
     extend: {
       colors: {
+        primaryPerso: '#CBACF9',
+        secondaryPerso: '#CECECE',
+        backgroundForeground: '#04071D',
+        borderPerso: '#303247',
+        hoverForegroundPerso: "#0d1132",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
