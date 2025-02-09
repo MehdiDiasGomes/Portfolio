@@ -1,3 +1,4 @@
 <template>
-<Button>Click me</Button>
+  <Decoration />
+  <Header />
 </template>
