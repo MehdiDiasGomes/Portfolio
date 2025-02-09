@@ -3,5 +3,13 @@
         "title": "Transforming Concepts into Seamless",
         "span_title": "User Experiences",
         "description": "Hi! I’m Mehdi DIAS GOMES, a web Developer based in France"
+    },
+    "navigation": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "lang": {
+        "choose": "Language selection"
     }
 }
