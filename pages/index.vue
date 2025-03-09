@@ -1,6 +1,6 @@
 <template>
-  <Decoration class="opacity-70" />
   <Header />
+  <WorkXp />
 </template>
 
 <script lang="ts" setup>

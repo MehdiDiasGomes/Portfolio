@@ -1,22 +1,28 @@
 <template>
-  <div class="h-screen flex items-center justify-center">
-    <div class="max-w-[800px] flex flex-col items-center gap-7 mx-auto text-center z-10">
-      <h1 class="text-white s font-extrabold leading-tight text-6xl">{{ t('header.title') }}
-        <span class="text-primaryPerso">
-          {{ t('header.span_title') }}
-        </span>
-      </h1>
-      <h2 class="text-secondary text-xl mx-auto max-w-[500px]">
-        {{ t('header.description') }}
-      </h2>
-      <Button
-        class="border border-borderPerso bg-gradient-to-r from-slate-900 to-[#0d1132] rounded-xl py-7 px-8 transition duration-300 hover:scale-105">{{
-          t('button.see_work') }}
-        <Icon :stroke-width="1.75" name="ArrowUpRight" />
-      </Button>
+  <div class="relative">
+    <Decoration class="opacity-50 absolute inset-0 h-full w-full" />
+
+    <div class="flex h-[50rem] items-center justify-center relative z-10">
+      <div class="max-w-[800px] p-10 md:p-0 flex flex-col items-center gap-7 mx-auto text-center">
+        <h1 class="text-white font-extrabold leading-tight text-4xl sm:text-6xl">
+          {{ t('header.title') }}
+          <span class="text-primaryPerso">
+            {{ t('header.span_title') }}
+          </span>
+        </h1>
+        <h2 class="text-secondary sm:text-xl mx-auto max-w-[500px]">
+          {{ t('header.description') }}
+        </h2>
+        <Button
+          class="border border-borderPerso bg-gradient-to-r from-slate-900 to-[#0d1132] rounded-xl py-7 px-8 transition duration-300 hover:scale-105">
+          {{ t('button.see_work') }}
+          <Icon :stroke-width="1.75" name="ArrowUpRight" />
+        </Button>
+      </div>
     </div>
   </div>
 </template>
+
 
 <script lang="ts" setup>
 const { t } = useI18n()

@@ -14,5 +14,23 @@
     },
     "button": {
         "see_work": "See my work"
+    },
+    "workXp": {
+        "cardOne": {
+            "title": "Front End Developer",
+            "description": "Building dynamic and high-performance web applications using Vue.js and Nuxt.js."
+        },
+        "cardTwo": {
+            "title": "Back End Developer",
+            "description": "Designing and implementing RESTful APIs using Laravel and Eloquent"
+        },
+        "cardThree": {
+            "title": "UX/UI Designer",
+            "description": "Creating visually appealing and user-friendly interfaces using Figma."
+        },
+        "cardFour": {
+            "title": "Project Manager",
+            "description": "Leading and managing a team of developers to deliver high-quality products."
+        }
     }
 }
