@@ -16,6 +16,8 @@
         "see_work": "Voir mon travail"
     },
     "workXp": {
+      "title_first": "Mon",
+      "title_second": "expérience professionnelle",
         "cardOne": {
             "title": "Développeur Front End",
             "description": "Création d'applications web dynamiques et performantes avec Vue.js et Nuxt.js."
