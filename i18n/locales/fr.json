@@ -34,5 +34,17 @@
             "title": "Chef de Projet",
             "description": "Direction et gestion d'une équipe de développeurs pour livrer des produits de haute qualité."
         }
+    },
+    "projects": {
+      "title": "Projets",
+      "quizify": {
+        "title": "Quizify",
+        "description": "Projet de bachelor visant à intégrer un quiz interactif permettant d'évaluer les compétences des joueurs tout en leur offrant une expérience de jeu."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web."
+      },
+      "viewSite": "Voir le site"
     }
 }

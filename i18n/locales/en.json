@@ -34,5 +34,17 @@
             "title": "Project Manager",
             "description": "Leading and managing a team of developers to deliver high-quality products."
         }
+    },
+    "projects": {
+      "title": "Projects",
+      "quizify": {
+        "title": "Quizify",
+        "description": "Bachelor project aimed at integrating an interactive quiz that assesses players' skills while offering them a gaming experience."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Personal website showcasing my skills, projects, and professional experiences in web development."
+      },
+      "viewSite": "View site"
     }
 }
