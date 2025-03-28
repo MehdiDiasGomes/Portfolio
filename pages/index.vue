@@ -1,7 +1,7 @@
 <template>
   <Header />
-  <WorkXp />
   <Projects />
+  <WorkXp />
 </template>
 
 <script lang="ts" setup>
