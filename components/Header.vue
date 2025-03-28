@@ -3,7 +3,11 @@
     <Decoration class="opacity-100 absolute inset-0 h-full w-full" />
     <div class="flex h-screen items-center justify-center relative z-10">
       <div class="max-w-[800px] p-10 md:p-0 flex flex-col items-center gap-10 mx-auto text-center">
-        <img class="w-28 h-28 object-cover rounded-full" src="~/assets/img/Avatar.jpg" alt="Photo de profil" />
+        <img
+          class="w-28 h-28 object-cover rounded-full"
+          src="~/assets/img/Avatar.jpg"
+          alt="Photo de profil"
+        />
         <h2 class="text-white font-extrabold leading-tight text-4xl sm:text-6xl">
           {{ t("header.title") }}
           <span class="text-primaryPerso">
@@ -14,7 +18,7 @@
           {{ t("header.description") }}
         </h2>
         <Button
-          class="border cursor-pointer flex items-center justify-center border-borderPerso hover:bg-gray-700 rounded-xl p-4 transition duration-300 hover:scale-105"
+          class="border animate-bounce cursor-pointer flex items-center justify-center border-borderPerso hover:bg-gray-700 rounded-xl p-4 transition hover:scale-105"
           @click="scrollToBot"
         >
           <Icon h="1.75" name="ArrowBigDownDash" />
