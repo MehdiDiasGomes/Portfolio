@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen">
     <Navbar />
-    <slot />
+    <div class="flex-grow">
+      <slot />
+    </div>
+    <Footer />
   </div>
 </template>
 
-
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
