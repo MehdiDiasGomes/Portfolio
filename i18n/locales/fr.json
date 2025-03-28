@@ -45,6 +45,10 @@
         "title": "Mon portfolio",
         "description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web."
       },
+      "fp": {
+        "title": "Fiches pédagogiques",
+        "description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web."
+      },
       "viewSite": "Voir le site"
     }
 }

@@ -45,6 +45,10 @@
         "title": "My portfolio",
         "description": "Personal website showcasing my skills, projects, and professional experiences in web development."
       },
+      "fp": {
+        "title": "Fiches pédagogiques",
+        "description": "Personal website showcasing my skills, projects, and professional experiences in web development."
+      },
       "viewSite": "View site"
     }
 }

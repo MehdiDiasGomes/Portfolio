@@ -26,5 +26,19 @@ export const projects = [
       { name: 'Nuxt' },
       { name: 'TailwindCSS' }
     ]
+  },
+  {
+    titleKey: 'projects.fp.title',
+    img: bgImg,
+    descriptionKey: 'projects.fp.description',
+    link: 'https://fp.example.com',
+    iconTech: [
+      { name: 'Git' },
+      { name: 'TypeScript' },
+      { name: 'Nuxt' },
+      { name: 'TailwindCSS' },
+      { name: 'Laravel' },
+      { name: 'MySql' },
+    ]
   }
 ]
