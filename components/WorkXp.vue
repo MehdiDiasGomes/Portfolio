@@ -10,9 +10,9 @@
         <div
           v-for="(item, index) in workXp"
           :key="index"
-          class="bg-gradient-to-r inset-shadow-sm duration-200 transition-all from-[#04071D] to-[#0C0E23] p-10 flex gap-4 items-center text-white rounded-lg"
+          class="bg-gradient-to-r inset-shadow-sm duration-200 transition-all from-[#04071D] to-[#0C0E23] p-7 flex flex-col md:flex-row items-start gap-4 md:items-center text-white rounded-lg"
         >
-          <img :src="item.icon" :alt="item.alt" class="w-24 h-20" />
+          <img :src="item.icon" :alt="item.alt" class="w-20 h-auto" />
           <div class="flex flex-col gap-2">
             <h3 class="text-xl font-extrabold">{{ item.title }}</h3>
             <p class="text-sm">{{ item.description }}</p>
