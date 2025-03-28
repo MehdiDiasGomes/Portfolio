@@ -31,8 +31,8 @@
               v-if="item.iconTech.length > 4"
               class="group relative w-10 cursor-default bg-[#0C0E23] rounded-full p-3 h-fit hover:scale-110 duration-200 ease-in-out"
             >
-              +
               <div
+              ...
                 class="tooltip bg-[#0C0E23] absolute z-50 whitespace-normal break-words rounded-lg py-1.5 px-3 font-sans text-sm font-normal text-white focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300"
                 style="top: 100%; left: 50%; transform: translateX(-50%); margin-top: 5px"
               >
