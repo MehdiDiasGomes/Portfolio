@@ -2,6 +2,8 @@
   <Header />
   <Projects />
   <WorkXp />
+
+  <ButtonScrollUp />
 </template>
 
 <script lang="ts" setup>
