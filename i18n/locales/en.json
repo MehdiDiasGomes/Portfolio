@@ -1,0 +1,54 @@
+{
+    "header": {
+        "title": "Transforming Concepts into Seamless",
+        "span_title": "User Experiences",
+        "description": "Hi! I’m Mehdi DIAS GOMES, a web Developer based in France"
+    },
+    "navigation": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "lang": {
+        "choose": "Language selection"
+    },
+    "button": {
+        "see_work": "See my work"
+    },
+    "workXp": {
+      "title_first": "My",
+      "title_second": "work experience",
+        "cardOne": {
+            "title": "Front End Developer",
+            "description": "Building dynamic and high-performance web applications using Vue.js and Nuxt.js."
+        },
+        "cardTwo": {
+            "title": "Back End Developer",
+            "description": "Designing and implementing RESTful APIs using Laravel and Eloquent"
+        },
+        "cardThree": {
+            "title": "UX/UI Designer",
+            "description": "Creating visually appealing and user-friendly interfaces using Figma."
+        },
+        "cardFour": {
+            "title": "Project Manager",
+            "description": "Leading and managing a team of developers to deliver high-quality products."
+        }
+    },
+    "projects": {
+      "title": "Projects",
+      "quizify": {
+        "title": "Quizify",
+        "description": "Bachelor project aimed at integrating an interactive quiz that assesses players' skills while offering them a gaming experience."
+      },
+      "portfolio": {
+        "title": "My portfolio",
+        "description": "Personal website showcasing my skills, projects, and professional experiences in web development."
+      },
+      "fp": {
+        "title": "Fiches pédagogiques",
+        "description": "Personal website showcasing my skills, projects, and professional experiences in web development."
+      },
+      "viewSite": "View site"
+    }
+}
