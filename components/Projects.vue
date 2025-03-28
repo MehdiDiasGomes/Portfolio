@@ -5,7 +5,7 @@
     <h2 class="text-primaryPerso text-2xl text-center font-extrabold">
       {{ t("projects.title") }}
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 my-10 justify-center gap-4">
+    <div class="grid grid-cols-1 p-6 md:grid-cols-2 my-10 justify-center gap-4">
       <div
         v-for="(item, index) in projects"
         :key="index"
@@ -18,7 +18,7 @@
           <div class="flex items-center mt-4 gap-1">
             <i
               :class="
-                index >= 4
+                index >= 3
                   ? 'hidden'
                   : 'block w-10 bg-[#0C0E23] rounded-full p-3 h-fit hover:scale-110 duration-200 ease-in-out'
               "
@@ -28,7 +28,7 @@
               <component :is="loadIconComponent(icon.name)" class="w-full h-full" />
             </i>
             <Button
-              v-if="item.iconTech.length > 4"
+              v-if="item.iconTech.length > 3"
               class="group relative w-10 cursor-default bg-[#0C0E23] rounded-full p-3 h-fit hover:scale-110 duration-200 ease-in-out"
             >
               ...
@@ -38,7 +38,7 @@
               >
                 <div class="flex flex-row gap-2">
                   <component
-                    v-for="(icon, i) in item.iconTech.slice(4)"
+                    v-for="(icon, i) in item.iconTech.slice(3)"
                     :key="i"
                     :is="loadIconComponent(icon.name)"
                     class="w-full h-full"

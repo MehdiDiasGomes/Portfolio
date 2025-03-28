@@ -1,7 +1,9 @@
 <template>
   <div class="relative">
     <Decoration class="opacity-100 absolute inset-0 h-full w-full" />
-    <div class="flex h-screen items-center justify-center relative z-10">
+    <div
+      class="flex h-screen items-center animate-fade animate-once animate-duration-1000 animate-ease-in justify-center relative z-10"
+    >
       <div class="max-w-[800px] p-10 md:p-0 flex flex-col items-center gap-10 mx-auto text-center">
         <img
           class="w-28 h-28 object-cover rounded-full"
