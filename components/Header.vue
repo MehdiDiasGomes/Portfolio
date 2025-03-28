@@ -20,7 +20,7 @@
           {{ t("header.description") }}
         </h2>
         <Button
-          class="border animate-bounce cursor-pointer flex items-center justify-center border-borderPerso hover:bg-gray-700 rounded-xl p-4 transition hover:scale-105"
+          class="border animate-bounce animate-infinite animate-duration-[1500ms] animate-ease-in cursor-pointer flex items-center justify-center border-borderPerso hover:bg-gray-700 rounded-xl p-4 transition hover:scale-105"
           @click="scrollToBot"
         >
           <Icon h="1.75" name="ArrowBigDownDash" />
