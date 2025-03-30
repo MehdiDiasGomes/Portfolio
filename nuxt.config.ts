@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+  plugins:[
+          {src: '~/plugins/vue-recaptcha-v3.ts', mode: 'client' },
+  ],
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
