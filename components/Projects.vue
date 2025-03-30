@@ -29,7 +29,7 @@
             </i>
             <Button
               v-if="item.iconTech.length > 3"
-              class="group relative w-10 cursor-default bg-[#0C0E23] rounded-full p-3 h-fit hover:scale-110 duration-200 ease-in-out"
+              class="group relative bgred w-10 cursor-default bg-[#0C0E23] rounded-full p-3 h-fit hover:scale-110 duration-200 hover:bg-[#0C0E23] ease-in-out"
             >
               +{{ item.iconTech.length - 3 }}
               <div

@@ -1,14 +1,14 @@
 <template>
   <div
-    class="absolute z-20 top-10 border border-borderPerso rounded-xl left-1/2 transform -translate-x-1/2 bg-backgroundForeground p-5 sm:px-14"
+    class="absolute z-50 top-10 border border-borderPerso rounded-xl left-1/2 transform -translate-x-1/2 bg-backgroundForeground p-4 sm:px-14"
   >
     <nav class="flex items-center gap-10 whitespace-nowrap justify-center">
       <li class="flex flex-col items-center" v-for="(item, index) in navItems" :key="index">
         <NuxtLink
-        :class="[
-          removePrefix(route.path) === item.url ? 'text-white font-bold' : 'text-secondaryPerso',
-          item.url === '/about' ? 'hidden sm:block' : 'md:block',
-        ]"
+          :class="[
+            removePrefix(route.path) === item.url ? 'text-white font-bold' : 'text-secondaryPerso',
+            item.url === '/about' ? 'hidden sm:block' : 'md:block',
+          ]"
           :to="item.url"
         >
           {{ item.name }}
