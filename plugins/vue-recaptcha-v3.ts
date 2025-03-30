@@ -4,7 +4,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(VueReCaptcha, {
         siteKey: '6LfTZwQrAAAAALwtAffDteP8oVySXcp_AdyXVkc_',
         loaderOptions: {
-            autoHideBadge: false,
+            autoHideBadge: true,
             explicitRenderParameters: {
                 // badge: 'bottomleft',
             }
