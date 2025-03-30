@@ -50,5 +50,22 @@
         "description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web."
       },
       "viewSite": "Voir le site"
-    }
+    },
+    "contact": {
+        "title": "Contactez-moi",
+        "description": "Vous avez un projet en tête ou une question ? N'hésitez pas à me contacter via ce formulaire et je vous répondrai dans les plus brefs délais.",
+        "firstName": "Prénom",
+        "firstNamePlaceholder": "Votre prénom",
+        "lastName": "Nom",
+        "lastNamePlaceholder": "Votre nom",
+        "email": "Email",
+        "emailPlaceholder": "Votre adresse email",
+        "message": "Message",
+        "messagePlaceholder": "Décrivez votre projet ou votre message ici...",
+        "send": "Envoyer",
+        "sending": "Envoi en cours...",
+        "successMessage": "Votre message a été envoyé avec succès. Je vous répondrai dès que possible !",
+        "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
+      }
+
 }
