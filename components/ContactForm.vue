@@ -104,6 +104,26 @@
       >
         {{ formStatus.message }}
       </div>
+
+      <div class="mt-4 text-xs text-gray-400 text-center">
+        Ce site est protégé par reCAPTCHA et les
+        <a
+          href="https://policies.google.com/privacy"
+          class="text-primaryPerso hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+          >règles de confidentialité</a
+        >
+        et
+        <a
+          href="https://policies.google.com/terms"
+          class="text-primaryPerso hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+          >conditions d'utilisation</a
+        >
+        de Google s'appliquent.
+      </div>
     </form>
   </div>
 </template>
@@ -122,15 +142,7 @@ import * as z from "zod";
 
 const { t } = useI18n();
 
-const recaptchaInstance = useReCaptcha();
-
-const recaptcha = async () => {
-  await recaptchaInstance?.recaptchaLoaded();
-
-  const token = await recaptchaInstance?.executeRecaptcha("yourActionHere");
-
-  return token;
-};
+const { executeRecaptcha } = useGoogleRecaptcha();
 
 const form = reactive({
   firstname: "",
@@ -157,8 +169,7 @@ const { handleSubmit } = useForm({
 });
 
 const submitForm = handleSubmit(async (values) => {
-  const token = await recaptcha();
-
+  const { token } = await executeRecaptcha("submit");
   if (token) {
     try {
       isSubmitting.value = true;
