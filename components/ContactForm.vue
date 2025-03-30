@@ -114,12 +114,23 @@ import { Button } from "@/components/ui/button";
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { toast } from "@/components/ui/toast";
 import { vAutoAnimate } from "@formkit/auto-animate/vue";
+import { useReCaptcha } from "vue-recaptcha-v3";
 
 import { toTypedSchema } from "@vee-validate/zod";
 import { useForm } from "vee-validate";
 import * as z from "zod";
 
 const { t } = useI18n();
+
+const recaptchaInstance = useReCaptcha();
+
+const recaptcha = async () => {
+  await recaptchaInstance?.recaptchaLoaded();
+
+  const token = await recaptchaInstance?.executeRecaptcha("yourActionHere");
+
+  return token;
+};
 
 const form = reactive({
   firstname: "",
@@ -146,38 +157,47 @@ const { handleSubmit } = useForm({
 });
 
 const submitForm = handleSubmit(async (values) => {
-  try {
-    isSubmitting.value = true;
-    formStatus.show = false;
+  const token = await recaptcha();
 
-    const templateParams = {
-      from_name: `${form.firstname} ${form.lastname}`,
-      email: form.email,
-      message: form.message,
-    };
+  if (token) {
+    try {
+      isSubmitting.value = true;
+      formStatus.show = false;
 
-    const response = await emailjs.send(
-      "service_7cwu2gi",
-      "template_ko0sytg",
-      templateParams,
-      "4U1La-wWYO81095y-",
-    );
+      const templateParams = {
+        from_name: `${form.firstname} ${form.lastname}`,
+        email: form.email,
+        message: form.message,
+      };
 
-    form.firstname = "";
-    form.lastname = "";
-    form.email = "";
-    form.message = "";
+      const response = await emailjs.send(
+        "service_7cwu2gi",
+        "template_ko0sytg",
+        templateParams,
+        "4U1La-wWYO81095y-",
+      );
 
-    console.log(templateParams);
+      form.firstname = "";
+      form.lastname = "";
+      form.email = "";
+      form.message = "";
+
+      console.log(templateParams);
+      toast({
+        description: "Votre message a été envoyé.",
+      });
+    } catch (error) {
+      toast({
+        title: "Une erreure s'est produite",
+      });
+    } finally {
+      isSubmitting.value = false;
+    }
+  } else {
     toast({
-      description: "Votre message a été envoyé.",
+      title: "Veuillez vérifier que vous n'êtes pas un robot.",
+      variant: "destructive",
     });
-  } catch (error) {
-    toast({
-      title: "Une erreure s'est produite",
-    });
-  } finally {
-    isSubmitting.value = false;
   }
 });
 

@@ -31,6 +31,7 @@
     "tailwindcss-animated": "^2.0.0",
     "vee-validate": "^4.15.0",
     "vue": "latest",
+    "vue-recaptcha-v3": "^2.0.1",
     "vue-router": "latest",
     "zod": "^3.24.2"
   },
