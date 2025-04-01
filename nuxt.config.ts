@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
     "shadcn-nuxt",
+    "@nuxt/content",
     "@nuxtjs/color-mode",
     "@nuxt/fonts",
   ],
@@ -29,11 +30,6 @@ export default defineNuxtConfig({
     ],
     lazy: true,
     defaultLocale: "fr",
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "i18n_redirected",
-      redirectOn: "root",
-    },
   },
   shadcn: {
     /**

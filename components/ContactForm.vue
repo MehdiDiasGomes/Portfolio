@@ -192,8 +192,6 @@ const submitForm = handleSubmit(async (values) => {
       form.lastname = "";
       form.email = "";
       form.message = "";
-
-      console.log(templateParams);
       toast({
         description: "Votre message a été envoyé.",
       });
