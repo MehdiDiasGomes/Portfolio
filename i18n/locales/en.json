@@ -49,6 +49,23 @@
         "title": "Fiches pédagogiques",
         "description": "Personal website showcasing my skills, projects, and professional experiences in web development."
       },
+
       "viewSite": "View site"
-    }
+    },
+    "contact": {
+        "title": "Contact me",
+        "description": "Do you have a project in mind or a question? Feel free to contact me through this form and I will respond to you as soon as possible.",
+        "firstName": "First Name",
+        "firstNamePlaceholder": "Your first name",
+        "lastName": "Last Name",
+        "lastNamePlaceholder": "Your last name",
+        "email": "Email",
+        "emailPlaceholder": "Your mail address",
+        "message": "Message",
+        "messagePlaceholder": "Describe your project or your message here...",
+        "send": "Send",
+        "sending": "Sending...",
+        "successMessage": "Your message has been sent successfully. I will get back to you as soon as possible!",
+        "errorMessage": "An error occurred while sending the message. Please try again later."
+      }
 }
