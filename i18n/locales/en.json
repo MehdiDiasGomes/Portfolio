@@ -53,6 +53,13 @@
       "viewSite": "View site"
     },
     "contact": {
+      "recaptchaNotice": {
+        "text": "This site is protected by reCAPTCHA and the",
+        "privacyPolicy": "Privacy Policy",
+        "and": "and",
+        "termsOfService": "Terms of Service",
+        "suffix": "of Google apply."
+      },
         "title": "Contact me",
         "description": "Do you have a project in mind or a question? Feel free to contact me through this form and I will respond to you as soon as possible.",
         "firstName": "First Name",

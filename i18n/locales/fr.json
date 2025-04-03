@@ -52,6 +52,13 @@
       "viewSite": "Voir le site"
     },
     "contact": {
+      "recaptchaNotice": {
+        "text": "Ce site est protégé par reCAPTCHA et les",
+        "privacyPolicy": "règles de confidentialité",
+        "and": "et",
+        "termsOfService": "conditions d'utilisation",
+        "suffix": "de Google s'appliquent."
+      },
         "title": "Contactez-moi",
         "description": "Vous avez un projet en tête ou une question ? N'hésitez pas à me contacter via ce formulaire et je vous répondrai dans les plus brefs délais.",
         "firstName": "Prénom",
