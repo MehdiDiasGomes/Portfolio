@@ -100,7 +100,7 @@
               </a>
 
               <a
-                href="#"
+                href="http://mdiasgomes.com"
                 class="flex items-center gap-2 px-4 py-2 bg-primaryPerso text-[#04071D] font-bold rounded-lg hover:bg-opacity-80 transition-colors"
               >
                 <span class="text-sm">🚀</span>
