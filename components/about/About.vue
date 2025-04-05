@@ -135,9 +135,9 @@ const personalFacts = [
 ];
 
 const socials = [
-  { name: "GitHub", icon: "📁", link: "https://github.com/votre-username" },
-  { name: "LinkedIn", icon: "💼", link: "https://linkedin.com/in/votre-profil" },
-  { name: "Twitter", icon: "🐦", link: "https://twitter.com/votre-handle" },
-  { name: "Email", icon: "📧", link: "mailto:votre-email@example.com" },
+  { name: "GitHub", icon: "📁", link: "https://github.com/mehdidiasgomes" },
+  { name: "LinkedIn", icon: "💼", link: "https://www.linkedin.com/in/mehdi-dias-gomes-94541a31a/" },
+  { name: "Twitter", icon: "🐦", link: "https://x.com/mehdidgdev?s=21&t=82fBKMcEgjNyA5A8oFTGzA" },
+  { name: "Email", icon: "📧", link: "mailto:diasgomes.dev@gmail.com" },
 ];
 </script>
