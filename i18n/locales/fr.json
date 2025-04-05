@@ -2,7 +2,7 @@
     "header": {
         "title": "Transformer les concepts en",
         "span_title": "Expériences Utilisateurs Fluides",
-        "description": "Salut ! Je suis Mehdi DIAS GOMES, un développeur web basé en France"
+        "description": "Salut ! Je suis Mehdi DIAS GOMES, un jeune développeur full-stack"
     },
     "navigation": {
         "about": "À propos",
@@ -123,5 +123,34 @@
         "sending": "Envoi en cours...",
         "successMessage": "Votre message a été envoyé avec succès. Je vous répondrai dès que possible !",
         "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
-      }
+      },
+      "about": {
+          "title": "À propos de ",
+          "span_title": "moi",
+          "introduction": "Je suis développeur full-stack passionné par la création d'applications web modernes et performantes. Je combine créativité et rigueur technique pour concrétiser des idées innovantes.",
+          "journey": "Mon parcours dans le développement web a débuté il y a 2 ans, et depuis septembre 2024, je poursuis mon apprentissage en alternance en entreprise. Cette immersion professionnelle me permet d'appliquer mes connaissances dans un contexte réel et d'enrichir mes compétences techniques.",
+          "passion": "Je suis constamment à la recherche de nouvelles technologies et meilleures pratiques pour optimiser mes projets et offrir les meilleures expériences utilisateur possibles.",
+          "social": {
+            "title": "Réseaux sociaux"
+          },
+          "personal": {
+            "title": "Informations personnelles",
+            "location": {
+              "label": "Localisation",
+              "value": "Metz, France"
+            },
+            "education": {
+              "label": "Formation",
+              "value": "Metz Numeric School"
+            },
+            "experience": {
+              "label": "Expérience",
+              "value": "2+ années"
+            },
+            "languages": {
+              "label": "Langues",
+              "value": "Français, Anglais, Darija"
+            }
+          }
+        }
 }

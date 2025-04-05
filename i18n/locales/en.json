@@ -2,7 +2,7 @@
     "header": {
         "title": "Transforming Concepts into Seamless",
         "span_title": "User Experiences",
-        "description": "Hi! I’m Mehdi DIAS GOMES, a web Developer based in France"
+        "description": "Hello! I'm Mehdi DIAS GOMES, a young full-stack developer"
     },
     "navigation": {
         "about": "About",
@@ -120,5 +120,34 @@
         "sending": "Sending...",
         "successMessage": "Your message has been sent successfully. I will get back to you as soon as possible!",
         "errorMessage": "An error occurred while sending the message. Please try again later."
-      }
+      },
+      "about": {
+         "title": "About ",
+         "span_title": "me",
+         "introduction": "I'm a full-stack developer passionate about creating modern and high-performance web applications. I combine creativity and technical rigor to bring innovative ideas to life.",
+         "journey": "My journey in web development began 2 years ago, and since September 2024, I've been continuing my learning through a work-study program. This professional immersion allows me to apply my knowledge in a real-world context and enhance my technical skills.",
+         "passion": "I'm constantly exploring new technologies and best practices to optimize my projects and deliver the best possible user experiences.",
+         "social": {
+           "title": "Social Networks"
+         },
+         "personal": {
+           "title": "Personal Information",
+           "location": {
+             "label": "Location",
+             "value": "Paris, France"
+           },
+           "education": {
+             "label": "Education",
+             "value": "Metz Numeric School"
+           },
+           "experience": {
+             "label": "Experience",
+             "value": "2+ years"
+           },
+           "languages": {
+             "label": "Languages",
+             "value": "French, English, Darija"
+           }
+         }
+       }
 }
