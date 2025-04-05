@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex h-screen animate-fade animate-once animate-duration-1000 animate-ease-in relative flex-col gap-3 z-30 items-center justify-center py-16"
+    class="flex animate-fade animate-once animate-duration-1000 animate-ease-in relative flex-col gap-3 z-30 items-center justify-center py-32"
   >
     <img class="absolute top-0 h-screen -z-30 w-full" src="~/assets/img/grid-pattern.png" />
 
@@ -106,23 +106,23 @@
       </div>
 
       <div class="mt-4 text-xs text-gray-400 text-center">
-        Ce site est protégé par reCAPTCHA et les
+        {{ t("contact.recaptchaNotice.text") }}
         <a
           href="https://policies.google.com/privacy"
           class="text-primaryPerso hover:underline"
           target="_blank"
           rel="noopener noreferrer"
-          >règles de confidentialité</a
+          >{{ t("contact.recaptchaNotice.privacyPolicy") }}</a
         >
-        et
+        {{ t("contact.recaptchaNotice.and") }}
         <a
           href="https://policies.google.com/terms"
           class="text-primaryPerso hover:underline"
           target="_blank"
           rel="noopener noreferrer"
-          >conditions d'utilisation</a
+          >{{ t("contact.recaptchaNotice.termsOfService") }}</a
         >
-        de Google s'appliquent.
+        {{ t("contact.recaptchaNotice.suffix") }}
       </div>
     </form>
   </div>
