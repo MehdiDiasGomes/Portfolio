@@ -1,5 +1,5 @@
 <template>
-  <div class="relative py-16 min-h-screen flex items-center">
+  <div class="relative py-32 min-h-screen flex items-center">
     <Decoration class="opacity-100 absolute inset-0 h-full w-full" />
     <div
       class="container mx-auto px-4 relative z-10 animate-fade-up animate-once animate-duration-1000 animate-ease-in"
