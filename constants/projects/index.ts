@@ -1,10 +1,10 @@
-import bgImg from '/assets/img/bgProjectsCard.jpg';
+import bgWip from '/assets/img/wip.png';
 import portfolioImg from '/assets/img/portfolioProject.png';
 
 export const projects = [
   {
     titleKey: 'projects.quizify.title',
-    img: bgImg,
+    img: bgWip,
     alt: 'Bannière quizify',
     descriptionKey: 'projects.quizify.description',
     link: 'https://quizify.example.com',
