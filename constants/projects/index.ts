@@ -33,21 +33,21 @@ export const projects = [
       { name: 'TailwindCSS' }
     ]
   },
-  {
-    titleKey: 'projects.fp.title',
-    img: bgImg,
-    alt: 'Bannière fiches pédagogiques',
-    descriptionKey: 'projects.fp.description',
-    link: 'https://fp.example.com',
-    sheet: 'FpProject',
-    inDevelopment: true,
-    iconTech: [
-      { name: 'Git' },
-      { name: 'TypeScript' },
-      { name: 'Nuxt' },
-      { name: 'TailwindCSS' },
-      { name: 'Laravel' },
-      { name: 'MySQL' },
-    ]
-  }
+  // {
+  //   titleKey: 'projects.fp.title',
+  //   img: bgImg,
+  //   alt: 'Bannière fiches pédagogiques',
+  //   descriptionKey: 'projects.fp.description',
+  //   link: 'https://fp.example.com',
+  //   sheet: 'FpProject',
+  //   inDevelopment: true,
+  //   iconTech: [
+  //     { name: 'Git' },
+  //     { name: 'TypeScript' },
+  //     { name: 'Nuxt' },
+  //     { name: 'TailwindCSS' },
+  //     { name: 'Laravel' },
+  //     { name: 'MySQL' },
+  //   ]
+  // }
 ]
