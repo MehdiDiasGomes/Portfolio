@@ -1,4 +1,5 @@
 import bgImg from '/assets/img/bgProjectsCard.jpg';
+import portfolioImg from '/assets/img/portfolioProject.png';
 
 export const projects = [
   {
@@ -20,7 +21,7 @@ export const projects = [
   },
   {
     titleKey: 'projects.portfolio.title',
-    img: bgImg,
+    img: portfolioImg,
     alt: 'Bannière portfolio',
     descriptionKey: 'projects.portfolio.description',
     link: 'https://portfolio.example.com',
