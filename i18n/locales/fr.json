@@ -2,7 +2,7 @@
     "header": {
         "title": "Transformer les concepts en",
         "span_title": "Expériences Utilisateurs Fluides",
-        "description": "Salut ! Je suis Mehdi DIAS GOMES, un développeur web basé en France"
+        "description": "Salut ! Je suis Mehdi DIAS GOMES, un jeune développeur full-stack"
     },
     "navigation": {
         "about": "À propos",
@@ -35,6 +35,34 @@
             "description": "Direction et gestion d'une équipe de développeurs pour livrer des produits de haute qualité."
         }
     },
+    "skills": {
+        "title": "Mes compétences",
+        "subtitle": "Technologies et outils que j'utilise",
+        "techStack": {
+          "title": "Technologies"
+        },
+        "frontend": {
+          "title": "Frontend"
+        },
+        "backend": {
+          "title": "Backend"
+        },
+        "database": {
+          "title": "Bases de données"
+        },
+        "tools": {
+          "title": "Outils & Autres"
+        },
+        "experience": {
+          "title": "Niveaux d'expérience",
+          "expert": "Expert",
+          "expertDesc": "Plusieurs années d'expérience professionnelle, maîtrise approfondie et capacité à former les autres.",
+          "proficient": "Avancé",
+          "proficientDesc": "Bonne connaissance et expérience pratique dans des projets professionnels.",
+          "familiar": "Familier",
+          "familiarDesc": "Connaissance des concepts fondamentaux et expérience dans des projets personnels."
+        }
+      },
     "projects": {
       "title": "Projets",
       "quizify": {
@@ -43,15 +71,44 @@
       },
       "portfolio": {
         "title": "Mon portfolio",
-        "description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web."
+        "card_description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web.",
+        "description": "Ce portfolio est conçu comme une vitrine de mes compétences en développement web. J'ai développé ce site en utilisant Nuxt.js et TypeScript pour offrir une expérience utilisateur fluide et réactive, avec un design moderne et accessible.",
+        "subtitle": "Un aperçu de mon projet personnel",
+        "technologies": "Technologies utilisées",
+        "personal": "Projet personnel",
+        "year": "2024-2025",
+        "features": "Fonctionnalités",
+        "feature1": "Interface responsive adaptée à tous les appareils",
+        "feature2": "Multilinguisme (français/anglais) avec i18n",
+        "feature3": "Mode sombre/clair pour un confort visuel optimal",
+        "feature4": "Animations et transitions fluides pour une expérience utilisateur améliorée",
+        "source": "Voir le code source",
+        "live": "Visiter le site"
       },
       "fp": {
         "title": "Fiches pédagogiques",
         "description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web."
       },
+      "inDevelopment": {
+         "title": "Projet en développement",
+         "subtitle": "Ce projet est actuellement en cours de réalisation",
+         "message": "Je travaille activement sur ce projet. Les détails et fonctionnalités seront dévoilés prochainement !",
+         "comingSoon": "Bientôt disponible"
+       },
+      "view": "Voir détails",
       "viewSite": "Voir le site"
     },
+    "common": {
+      "close": "Fermer"
+    },
     "contact": {
+      "recaptchaNotice": {
+        "text": "Ce site est protégé par reCAPTCHA et les",
+        "privacyPolicy": "règles de confidentialité",
+        "and": "et",
+        "termsOfService": "conditions d'utilisation",
+        "suffix": "de Google s'appliquent."
+      },
         "title": "Contactez-moi",
         "description": "Vous avez un projet en tête ou une question ? N'hésitez pas à me contacter via ce formulaire et je vous répondrai dans les plus brefs délais.",
         "firstName": "Prénom",
@@ -66,6 +123,34 @@
         "sending": "Envoi en cours...",
         "successMessage": "Votre message a été envoyé avec succès. Je vous répondrai dès que possible !",
         "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
-      }
-
+      },
+      "about": {
+          "title": "À propos de ",
+          "span_title": "moi",
+          "introduction": "Je suis développeur full-stack passionné par la création d'applications web modernes et performantes. Je combine créativité et rigueur technique pour concrétiser des idées innovantes.",
+          "journey": "Mon parcours dans le développement web a débuté il y a 2 ans, et depuis septembre 2024, je poursuis mon apprentissage en alternance en entreprise. Cette immersion professionnelle me permet d'appliquer mes connaissances dans un contexte réel et d'enrichir mes compétences techniques.",
+          "passion": "Je suis constamment à la recherche de nouvelles technologies et meilleures pratiques pour optimiser mes projets et offrir les meilleures expériences utilisateur possibles.",
+          "social": {
+            "title": "Réseaux sociaux"
+          },
+          "personal": {
+            "title": "Informations personnelles",
+            "location": {
+              "label": "Localisation",
+              "value": "Metz, France"
+            },
+            "education": {
+              "label": "Formation",
+              "value": "Metz Numeric School"
+            },
+            "experience": {
+              "label": "Expérience",
+              "value": "2+ années"
+            },
+            "languages": {
+              "label": "Langues",
+              "value": "Français, Anglais, Darija"
+            }
+          }
+        }
 }

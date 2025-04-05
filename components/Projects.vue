@@ -1,5 +1,5 @@
 <template>
-  <div class="flex relative flex-col gap-3 z-30 items-center justify-center">
+  <div class="flex relative my-10 flex-col gap-3 z-30 items-center justify-center">
     <img class="absolute top-0 h-screen -z-10 w-full" src="../assets/img/grid-pattern.png" />
 
     <h2 class="text-primaryPerso text-2xl text-center font-extrabold">
@@ -20,12 +20,12 @@
               :class="
                 index >= 3
                   ? 'hidden'
-                  : 'block w-10 bg-[#0C0E23] rounded-full p-3 h-fit hover:scale-110 duration-200 ease-in-out'
+                  : 'w-10 h-10 bg-[#0C0E23] rounded-full p-3 flex items-center justify-center hover:scale-110 duration-200 ease-in-out'
               "
               v-for="(icon, index) in item.iconTech"
               :key="index"
             >
-              <component :is="loadIconComponent(icon.name)" class="w-full h-full" />
+              <component :is="loadIconComponent(icon.name)" class="w-5 h-5" />
             </i>
             <Button
               v-if="item.iconTech.length > 3"
@@ -47,14 +47,12 @@
               </div>
             </Button>
           </div>
-          <a
-            class="flex items-center gap-1 text-primaryPerso hover:scale-110 duration-200 ease-in-out"
-            :href="item.link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {{ t("projects.viewSite") }} <Icon name="ArrowUpRight" :stroke-width="1.75" />
-          </a>
+          <template v-if="!item.inDevelopment">
+            <component :data="item" :is="loadSheetComponent(item.sheet)" class="w-5 h-5" />
+          </template>
+          <template v-else>
+            <InDevelopment />
+          </template>
         </div>
       </div>
     </div>
@@ -64,11 +62,16 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from "vue";
 import { projects } from "~/constants/projects";
+import InDevelopment from "./projects/inDevelopment.vue";
 const { t } = useI18n();
 
 const loadIconComponent = (name: string) => {
   return defineAsyncComponent(() =>
     import(`~/components/icons/projects/${name}.vue`).catch(() => null),
   );
+};
+
+const loadSheetComponent = (name: string) => {
+  return defineAsyncComponent(() => import(`~/components/projects/${name}.vue`).catch(() => null));
 };
 </script>
