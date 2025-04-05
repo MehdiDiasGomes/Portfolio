@@ -35,6 +35,31 @@
             "description": "Leading and managing a team of developers to deliver high-quality products."
         }
     },
+    "skills": {
+        "title": "My Skills",
+        "subtitle": "Technologies and tools I use to create exceptional web experiences",
+        "frontend": {
+          "title": "Frontend"
+        },
+        "backend": {
+          "title": "Backend"
+        },
+        "database": {
+          "title": "Databases"
+        },
+        "tools": {
+          "title": "Tools & Others"
+        },
+        "experience": {
+          "title": "Experience Levels",
+          "expert": "Expert",
+          "expertDesc": "Several years of professional experience, deep mastery, and ability to train others.",
+          "proficient": "Proficient",
+          "proficientDesc": "Good knowledge and practical experience in professional projects.",
+          "familiar": "Familiar",
+          "familiarDesc": "Understanding of core concepts and experience in personal projects."
+        }
+      },
     "projects": {
       "title": "Projects",
       "quizify": {
@@ -43,14 +68,35 @@
       },
       "portfolio": {
         "title": "My portfolio",
-        "description": "Personal website showcasing my skills, projects, and professional experiences in web development."
+        "card_description": "Personal website showcasing my skills, projects, and professional experiences in web development.",
+        "description": "This portfolio is designed as a showcase of my web development skills. I developed this site using Nuxt.js and TypeScript to provide a smooth and responsive user experience, with a modern and accessible design.",
+        "subtitle": "An overview of my personal project",
+        "technologies": "Technologies used",
+        "personal": "Personal project",
+        "year": "2024-2025",
+        "features": "Features",
+        "feature1": "Responsive interface adapted to all devices",
+        "feature2": "Multilingualism (French/English) with i18n",
+        "feature3": "Dark/light mode for optimal visual comfort",
+        "feature4": "Smooth animations and transitions for an enhanced user experience",
+        "source": "View source code",
+        "live": "Visit the site"
       },
       "fp": {
         "title": "Fiches pédagogiques",
         "description": "Personal website showcasing my skills, projects, and professional experiences in web development."
       },
-
+      "inDevelopment": {
+        "title": "Project in development",
+        "subtitle": "This project is currently a work in progress",
+        "message": "I'm actively working on this project. The details and features will be unveiled soon!",
+        "comingSoon": "Coming soon"
+      },
+      "view": "View details",
       "viewSite": "View site"
+    },
+    "common": {
+      "close": "Close"
     },
     "contact": {
       "recaptchaNotice": {
