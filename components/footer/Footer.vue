@@ -3,8 +3,7 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0">
-          <h3 class="text-xl font-semibold">Mehdi DIAS GOMES</h3>
-          <p class="text-gray-400 mt-2">Développeur Web Full Stack</p>
+          <img class="w-14" src="~/assets/img/logo.svg" alt="" />
         </div>
 
         <div class="flex space-x-6">
