@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0">
-          <img class="w-14" src="~/public/logo.svg" alt="" />
+          <img class="w-14" src="~/assets/img/logo.svg" alt="" />
         </div>
 
         <div class="flex space-x-6">
