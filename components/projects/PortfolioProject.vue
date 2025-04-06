@@ -82,10 +82,6 @@
                     <span class="text-primaryPerso">•</span>
                     {{ t("projects.portfolio.feature3") }}
                   </li>
-                  <li class="flex items-start gap-2">
-                    <span class="text-primaryPerso">•</span>
-                    {{ t("projects.portfolio.feature4") }}
-                  </li>
                 </ul>
               </div>
             </div>
