@@ -80,8 +80,7 @@
         "features": "Fonctionnalités",
         "feature1": "Interface responsive adaptée à tous les appareils",
         "feature2": "Multilinguisme (français/anglais) avec i18n",
-        "feature3": "Mode sombre/clair pour un confort visuel optimal",
-        "feature4": "Animations et transitions fluides pour une expérience utilisateur améliorée",
+        "feature3": "Animations et transitions fluides pour une expérience utilisateur améliorée",
         "source": "Voir le code source",
         "live": "Visiter le site"
       },
