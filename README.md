@@ -1,75 +1,49 @@
-# Nuxt Minimal Starter
+# Portfolio
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to my personal portfolio project! This project showcases my skills, projects, and professional experiences in web development. It is designed to provide a smooth and responsive user experience with a modern and accessible design.
 
-## Setup
+![Portfolio Screenshot](assets/img/portfolioProject.png)
 
-Make sure to install dependencies:
+## Table of Contents
 
-```bash
-# npm
-npm install
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Contact](#contact)
+- [License](#license)
 
-# pnpm
-pnpm install
+## Introduction
 
-# yarn
-yarn install
+Hello! I'm Mehdi DIAS GOMES, a young full-stack developer passionate about creating modern and high-performance web applications. This portfolio is designed as a showcase of my web development skills. I developed this site using Nuxt.js and TypeScript to provide a smooth and responsive user experience, with a modern and accessible design.
 
-# bun
-bun install
-```
+## Features
 
-## Development Server
+- **Responsive Design**: The interface is adapted to all devices, ensuring a seamless experience on desktops, tablets, and mobile phones.
+- **Multilingual Support**: The portfolio supports multiple languages (French/English) using i18n.
+- **Smooth Animations**: Enhanced user experience with smooth animations and transitions.
+- **Interactive Elements**: Includes interactive elements like buttons and scroll animations to engage users.
 
-Start the development server on `http://localhost:3000`:
+## Technologies Used
 
-```bash
-# npm
-npm run dev
+- **Frontend**: Vue.js, Nuxt.js, TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Animate.css
+- **Localization**: Vue I18n
+- **Icons**: Lucide Icons
 
-# pnpm
-pnpm dev
+## Contact
 
-# yarn
-yarn dev
+Do you have a project in mind or a question? Feel free to contact me through the contact form available on the portfolio, and I will respond to you as soon as possible.
 
-# bun
-bun run dev
-```
+- **Location**: Metz, France
+- **Education**: Metz Numeric School
+- **Experience**: 2+ years
+- **Languages**: French, English, Darija
 
-## Production
+## License
 
-Build the application for production:
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for more details.
 
-```bash
-# npm
-npm run build
+---
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Thank you for visiting my portfolio! If you have any feedback or suggestions, feel free to reach out.
