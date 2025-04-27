@@ -14,7 +14,7 @@ export const projects = [
       { name: 'Git' },
       { name: 'TypeScript' },
       { name: 'Laravel' },
-      { name: 'MySQL' },
+      { name: 'MySql' },
       { name: 'Nuxt' },
       { name: 'TailwindCSS' }
     ]
@@ -48,7 +48,7 @@ export const projects = [
   //     { name: 'Nuxt' },
   //     { name: 'TailwindCSS' },
   //     { name: 'Laravel' },
-  //     { name: 'MySQL' },
+  //     { name: 'MySql' },
   //   ]
   // }
 ]
