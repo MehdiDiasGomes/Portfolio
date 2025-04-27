@@ -17,7 +17,7 @@ export const backendSkills = [
 
 export const databaseSkills = [
   { name: "MongoDB", level: "proficient" },
-  { name: "MySQL", level: "proficient" },
+  { name: "MySql", level: "proficient" },
   { name: "PostgreSQL", level: "familiar" },
 ];
 
@@ -47,5 +47,5 @@ export const techStack = [
   "Node",
   "PHP",
   "MongoDB",
-  "MySQL",
+  "MySql",
 ];

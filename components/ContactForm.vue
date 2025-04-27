@@ -2,7 +2,7 @@
   <div
     class="flex animate-fade animate-once animate-duration-1000 animate-ease-in relative flex-col gap-3 z-30 items-center justify-center py-32"
   >
-    <img class="absolute top-0 h-screen -z-30 w-full" src="~/assets/img/grid-pattern.png" />
+    <img class="absolute top-0 h-full -z-30 w-full" src="~/assets/img/grid-pattern.png" />
 
     <h2 class="text-primaryPerso text-2xl text-center font-extrabold">
       {{ t("contact.title") }}
