@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex animate-fade animate-once animate-duration-1000 animate-ease-in relative flex-col gap-3 z-30 items-center justify-center py-32"
+    class="flex animate-fade animate-once animate-duration-1000 animate-ease-in relative flex-col gap-3 z-30 h-screen items-center justify-center py-32"
   >
     <img class="absolute top-0 h-full -z-30 w-full" src="~/assets/img/grid-pattern.png" />
 
-    <h2 class="text-primaryPerso text-2xl text-center font-extrabold">
+    <h2 class="text-primaryPerso text-4xl text-center font-extrabold">
       {{ t("contact.title") }}
     </h2>
     <p class="text-secondary text-center max-w-[600px] mx-auto px-6 mb-4">
