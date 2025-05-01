@@ -13,6 +13,11 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxt/fonts",
   ],
+  fonts: {
+    defaults: {
+      weights: [300, 400, 500, 600, 700],
+    },
+  },
   i18n: {
     locales: [
       {

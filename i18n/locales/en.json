@@ -1,152 +1,127 @@
 {
-    "header": {
-        "title": "Transforming Concepts into Seamless",
-        "span_title": "User Experiences",
-        "description": "Hello! I'm Mehdi DIAS GOMES, a young full-stack developer"
+  "header": {
+    "title": "Transforming Concepts into Seamless",
+    "span_title": "User Experiences",
+    "description": "Hello! I'm Mehdi DIAS GOMES, a young full-stack developer"
+  },
+  "navigation": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "lang": {
+    "choose": "Language selection"
+  },
+  "button": {
+    "see_work": "See my work"
+  },
+  "workXp": {
+    "title_first": "My",
+    "title_second": "work experience",
+    "cardOne": {
+      "title": "Front End Developer",
+      "description": "Building dynamic and high-performance web applications using Vue.js and Nuxt.js."
     },
-    "navigation": {
-        "about": "About",
-        "projects": "Projects",
-        "contact": "Contact"
+    "cardTwo": {
+      "title": "Back End Developer",
+      "description": "Designing and implementing RESTful APIs using Laravel and Eloquent"
     },
-    "lang": {
-        "choose": "Language selection"
+    "cardThree": {
+      "title": "UX/UI Designer",
+      "description": "Creating visually appealing and user-friendly interfaces using Figma."
     },
-    "button": {
-        "see_work": "See my work"
+    "cardFour": {
+      "title": "Project Manager",
+      "description": "Leading and managing a team of developers to deliver high-quality products."
+    }
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "Technologies and tools I use to create exceptional web experiences",
+    "frontend": {
+      "title": "Frontend"
     },
-    "workXp": {
-      "title_first": "My",
-      "title_second": "work experience",
-        "cardOne": {
-            "title": "Front End Developer",
-            "description": "Building dynamic and high-performance web applications using Vue.js and Nuxt.js."
-        },
-        "cardTwo": {
-            "title": "Back End Developer",
-            "description": "Designing and implementing RESTful APIs using Laravel and Eloquent"
-        },
-        "cardThree": {
-            "title": "UX/UI Designer",
-            "description": "Creating visually appealing and user-friendly interfaces using Figma."
-        },
-        "cardFour": {
-            "title": "Project Manager",
-            "description": "Leading and managing a team of developers to deliver high-quality products."
-        }
+    "backend": {
+      "title": "Backend"
     },
-    "skills": {
-        "title": "My Skills",
-        "subtitle": "Technologies and tools I use to create exceptional web experiences",
-        "frontend": {
-          "title": "Frontend"
-        },
-        "backend": {
-          "title": "Backend"
-        },
-        "database": {
-          "title": "Databases"
-        },
-        "tools": {
-          "title": "Tools & Others"
-        },
-        "experience": {
-          "title": "Experience Levels",
-          "expert": "Expert",
-          "expertDesc": "Several years of professional experience, deep mastery, and ability to train others.",
-          "proficient": "Proficient",
-          "proficientDesc": "Good knowledge and practical experience in professional projects.",
-          "familiar": "Familiar",
-          "familiarDesc": "Understanding of core concepts and experience in personal projects."
-        }
-      },
-    "projects": {
-      "title": "Projects",
-      "quizify": {
-        "title": "Quizify",
-        "description": "Bachelor project aimed at integrating an interactive quiz that assesses players' skills while offering them a gaming experience."
-      },
-      "portfolio": {
-        "title": "My portfolio",
-        "card_description": "Personal website showcasing my skills, projects, and professional experiences in web development.",
-        "description": "This portfolio is designed as a showcase of my web development skills. I developed this site using Nuxt.js and TypeScript to provide a smooth and responsive user experience, with a modern and accessible design.",
-        "subtitle": "An overview of my personal project",
-        "technologies": "Technologies used",
-        "personal": "Personal project",
-        "year": "2024-2025",
-        "features": "Features",
-        "feature1": "Responsive interface adapted to all devices",
-        "feature2": "Multilingualism (French/English) with i18n",
-        "feature3": "Smooth animations and transitions for an enhanced user experience",
-        "source": "View source code",
-        "live": "Visit the site"
-      },
-      "fp": {
-        "title": "Fiches pédagogiques",
-        "description": "Personal website showcasing my skills, projects, and professional experiences in web development."
-      },
-      "inDevelopment": {
-        "title": "Project in development",
-        "subtitle": "This project is currently a work in progress",
-        "message": "I'm actively working on this project. The details and features will be unveiled soon!",
-        "comingSoon": "Coming soon"
-      },
-      "view": "View details",
-      "viewSite": "View site"
+    "database": {
+      "title": "Databases"
     },
-    "common": {
-      "close": "Close"
+    "tools": {
+      "title": "Tools & Others"
     },
-    "contact": {
-      "recaptchaNotice": {
-        "text": "This site is protected by reCAPTCHA and the",
-        "privacyPolicy": "Privacy Policy",
-        "and": "and",
-        "termsOfService": "Terms of Service",
-        "suffix": "of Google apply."
-      },
-        "title": "Contact me",
-        "description": "Do you have a project in mind or a question? Feel free to contact me through this form and I will respond to you as soon as possible.",
-        "firstName": "First Name",
-        "firstNamePlaceholder": "Your first name",
-        "lastName": "Last Name",
-        "lastNamePlaceholder": "Your last name",
-        "email": "Email",
-        "emailPlaceholder": "Your mail address",
-        "message": "Message",
-        "messagePlaceholder": "Describe your project or your message here...",
-        "send": "Send",
-        "sending": "Sending...",
-        "successMessage": "Your message has been sent successfully. I will get back to you as soon as possible!",
-        "errorMessage": "An error occurred while sending the message. Please try again later."
-      },
-      "about": {
-         "title": "About ",
-         "span_title": "me",
-         "introduction": "I'm a full-stack developer passionate about creating modern and high-performance web applications. I combine creativity and technical rigor to bring innovative ideas to life.",
-         "journey": "My journey in web development began 2 years ago, and since September 2024, I've been continuing my learning through a work-study program. This professional immersion allows me to apply my knowledge in a real-world context and enhance my technical skills.",
-         "passion": "I'm constantly exploring new technologies and best practices to optimize my projects and deliver the best possible user experiences.",
-         "social": {
-           "title": "Social Networks"
-         },
-         "personal": {
-           "title": "Personal Information",
-           "location": {
-             "label": "Location",
-             "value": "Metz, France"
-           },
-           "education": {
-             "label": "Education",
-             "value": "Metz Numeric School"
-           },
-           "experience": {
-             "label": "Experience",
-             "value": "2+ years"
-           },
-           "languages": {
-             "label": "Languages",
-             "value": "French, English, Arabic"
-           }
-         }
-       }
+    "experience": {
+      "title": "Experience Levels",
+      "expert": "Expert",
+      "expertDesc": "Several years of professional experience, deep mastery, and ability to train others.",
+      "proficient": "Proficient",
+      "proficientDesc": "Good knowledge and practical experience in professional projects.",
+      "familiar": "Familiar",
+      "familiarDesc": "Understanding of core concepts and experience in personal projects."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "quizify": {
+      "title": "Quizify",
+      "description": "Bachelor project aimed at integrating an interactive quiz that assesses players' skills while offering them a gaming experience."
+    },
+    "portfolio": {
+      "title": "My portfolio",
+      "card_description": "Personal website showcasing my skills, projects, and professional experiences in web development.",
+      "description": "This portfolio is designed as a showcase of my web development skills. I developed this site using Nuxt.js and TypeScript to provide a smooth and responsive user experience, with a modern and accessible design.",
+      "subtitle": "An overview of my personal project",
+      "technologies": "Technologies used",
+      "personal": "Personal project",
+      "year": "2024-2025",
+      "features": "Features",
+      "feature1": "Responsive interface adapted to all devices",
+      "feature2": "Multilingualism (French/English) with i18n",
+      "feature3": "Smooth animations and transitions for an enhanced user experience",
+      "source": "View source code",
+      "live": "Visit the site"
+    },
+    "fp": {
+      "title": "Fiches pédagogiques",
+      "description": "Personal website showcasing my skills, projects, and professional experiences in web development."
+    },
+    "inDevelopment": {
+      "title": "Project in development",
+      "subtitle": "This project is currently a work in progress",
+      "message": "I'm actively working on this project. The details and features will be unveiled soon!",
+      "comingSoon": "Coming soon"
+    },
+    "view": "View details",
+    "viewSite": "View site"
+  },
+  "common": {
+    "close": "Close"
+  },
+  "contact": {
+    "recaptchaNotice": {
+      "text": "This site is protected by reCAPTCHA and the",
+      "privacyPolicy": "Privacy Policy",
+      "and": "and",
+      "termsOfService": "Terms of Service",
+      "suffix": "of Google apply."
+    },
+    "title": "Contact me",
+    "description": "Do you have a project in mind or a question? Feel free to contact me through this form and I will respond to you as soon as possible.",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Your first name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Your last name",
+    "email": "Email",
+    "emailPlaceholder": "Your mail address",
+    "message": "Message",
+    "messagePlaceholder": "Describe your project or your message here...",
+    "send": "Send",
+    "sending": "Sending...",
+    "successMessage": "Your message has been sent successfully. I will get back to you as soon as possible!",
+    "errorMessage": "An error occurred while sending the message. Please try again later."
+  },
+  "about": {
+    "firstParagraph": "Mehdi DIAS GOMES, 21 years old, Full Stack Developer Apprentice, Metz",
+    "secondParagraph": "Passionate about web development, I am currently pursuing a Bachelor's degree in Full Stack Web Development at Metz Numeric School. As an apprentice, I am gaining hands-on experience in full stack development and acquiring valuable skills in the field."
+  }
 }
