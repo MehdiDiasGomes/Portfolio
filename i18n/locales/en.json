@@ -121,7 +121,23 @@
     "errorMessage": "An error occurred while sending the message. Please try again later."
   },
   "about": {
+    "subTitle": "Fullstack developer",
     "firstParagraph": "Mehdi DIAS GOMES, 21 years old, Full Stack Developer Apprentice, Metz",
-    "secondParagraph": "Passionate about web development, I am currently pursuing a Bachelor's degree in Full Stack Web Development at Metz Numeric School. As an apprentice, I am gaining hands-on experience in full stack development and acquiring valuable skills in the field."
+    "secondParagraph": "Passionate about web development, I am currently pursuing a Bachelor's degree in Full Stack Web Development at Metz Numeric School. As an apprentice, I am gaining hands-on experience in full stack development and acquiring valuable skills in the field.",
+    "experience": {
+      "title": "Professional Experience",
+      "flippad": {
+        "title": "Flippad Digital Solutions",
+        "time": "09/2024 - Present",
+        "firstInList": {
+          "parag": "Complete redesign of the \"Fiches pédagogiques\" website (front-end). Developed the responsive user interface and back-office from scratch, with backend API integration.",
+          "usedTechnos": "Technologies used: "
+        },
+        "secondInList": {
+          "parag": "Added features to a PIM (Product Information Management) – improved the product form (filters, new fields for watches). Developed dynamic filters and custom fields for data entry on the front-end.",
+          "usedTechnos": "Technologies used: "
+        }
+      }
+    }
   }
 }

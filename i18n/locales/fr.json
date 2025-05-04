@@ -124,7 +124,23 @@
     "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
   },
   "about": {
-    "firstParagraph": "Mehdi DIAS GOMES , 21 ans , Apprenti Développeur Full Stack, Metz",
-    "secondParagraph": "Passionné par le développement web, je poursuis actuellement une licence en Développement Web Full Stack à Metz Numeric School. En tant qu'apprenti, je développe des compétences pratiques en développement full stack et acquiers une expérience précieuse dans le domaine."
+    "subTitle": "Développeur Full Stack",
+    "firstParagraph": "Mehdi DIAS GOMES, 21 ans, Apprenti Développeur Full Stack, Metz",
+    "secondParagraph": "Passionné par le développement web, je poursuis actuellement une licence en Développement Web Full Stack à Metz Numeric School. En tant qu'apprenti, je développe des compétences pratiques en développement full stack et acquiers une expérience précieuse dans le domaine.",
+    "experience": {
+      "title": "Expérience professionnelle",
+      "flippad": {
+        "title": "Flippad Digital Solutions",
+        "time": "09/2024 - Maintenant",
+        "firstInList": {
+          "parag": "Refonte complète du site \"Fiches pédagogiques\" (front-end) \n Développement from scratch de l’interface utilisateur responsive et du back-office, avec intégration API back-end.",
+          "usedTechnos": "Technologies utilisées : "
+        },
+        "secondInList": {
+          "parag": "Ajout de fonctionnalités sur un PIM (Product Information Management) – amélioration du formulaire produit (filtres, nouveaux champs pour montres). Développement front-end de filtres dynamiques et de champs personnalisés pour la saisie des données.",
+          "usedTechnos": "Technologies utilisées : "
+        }
+      }
+    }
   }
 }
