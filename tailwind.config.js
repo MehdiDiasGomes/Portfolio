@@ -17,6 +17,11 @@ module.exports = {
     extend: {
       colors: {
         mauve: "hsl(var(--mauve))",
+        foreground: "hsl(var(--foreground))",
+        darkblue: "hsl(var(--darkblue))",
+        midnightBlue: "hsl(var(--midnightBlue))",
+        softSlate: "hsl(var(--softSlate))",
+        midnightOverlay: "hsl(var(--midnightOverlay))",
         primaryPerso: '#CBACF9',
         secondaryPerso: '#CECECE',
         backgroundForeground: '#04071D',
@@ -92,9 +97,10 @@ module.exports = {
     addUtilities({
       '.mp-home': {
         padding: '0 3%',
-        '@screen sm': { padding: '0 25%' },
-        '@screen xl': { padding: '0 25%' },
-        '@screen 2xl': { padding: '0 30%' },
+        '@screen sm': { padding: '0 5%' },
+        '@screen md': { padding: '0 8%' },
+        '@screen xl': { padding: '0 15%' },
+        '@screen 2xl': { padding: '0 25%' },
       },
       '.text-xl': {
         '@screen sm': { fontSize: '2rem', lineHeight: '2rem' },
