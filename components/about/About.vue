@@ -1,5 +1,5 @@
 <template>
-  <div class="relative mp-home mt-52 flex items-center">
+  <div class="relative mp-home mt-40 flex justify-center items-center">
     <div class="flex flex-col">
       <AboutHeader />
     </div>
