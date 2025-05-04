@@ -131,6 +131,7 @@
       "title": "Expérience professionnelle",
       "flippad": {
         "title": "Flippad Digital Solutions",
+        "subTitle": "Développeur Full Stack",
         "time": "09/2024 - Maintenant",
         "firstInList": {
           "parag": "Refonte complète du site \"Fiches pédagogiques\" (front-end) \n Développement from scratch de l’interface utilisateur responsive et du back-office, avec intégration API back-end.",

@@ -128,6 +128,7 @@
       "title": "Professional Experience",
       "flippad": {
         "title": "Flippad Digital Solutions",
+        "subTitle": "Fullstack developer",
         "time": "09/2024 - Present",
         "firstInList": {
           "parag": "Complete redesign of the \"Fiches pédagogiques\" website (front-end). Developed the responsive user interface and back-office from scratch, with backend API integration.",
