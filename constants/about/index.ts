@@ -1,3 +1,4 @@
+import type { Experience } from "~/types/constants/about/Experience";
 import type { Info } from "~/types/constants/about/Info";
 
 export const personalFacts = [
@@ -58,3 +59,28 @@ export const info: Info[] = [
     link: "https://github.com/MehdiDiasGomes",
   },
 ];
+
+export const aboutExperience: Experience[] = [
+  {
+    title: "about.experience",
+    icon: "WorkExperience",
+    organization: {
+      title: "about.experience.flippad.title",
+      subTitle: "about.experience.flippad.subTitle",
+      time: "about.experience.flippad.time",
+      list: [
+        {
+          parag: "about.experience.flippad.firstInList.parag",
+          usedTechnos: "about.experience.flippad.firstInList.usedTechnos",
+          technos: 'Nuxt.js 3, TypeScript, Tailwind CSS, Laravel (Eloquent), MySQL, Docker',
+        },
+        {
+          parag: "about.experience.flippad.secondInList.parag",
+          usedTechnos: "about.experience.flippad.secondInList.usedTechnos",
+          technos: "Nuxt.js, Bootstrap, JavaScript, Laravel"
+        },
+      ],
+    },
+  },
+];
+
