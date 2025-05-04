@@ -1,3 +1,5 @@
+import type { Info } from "~/types/constants/about/Info";
+
 export const personalFacts = [
   {
     icon: "📍",
@@ -36,17 +38,23 @@ export const socials = [
   { name: "Email", icon: "📧", link: "mailto:diasgomes.dev@gmail.com" },
 ];
 
-export const info = [
+export const info: Info[] = [
+  {
+    icon: "Mail",
+    label: "Contact",
+    cta: true,
+    link: "mailto:diasgomes.mehdicours@gmail.com",
+  },
   {
     icon: "Linkedin",
     label: "Linkedin",
+    cta: false,
+    link: "https://linkedin.com/in/mehdi-dias-gomes-94541a31a",
   },
   {
-    icon: "Email",
-    label: "Email",
-  },
-  {
-    icon: "Portfolio",
-    label: "Portfolio",
+    icon: "Github",
+    label: "GitHub",
+    cta: false,
+    link: "https://github.com/MehdiDiasGomes",
   },
 ];
