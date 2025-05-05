@@ -139,6 +139,10 @@
           "usedTechnos": "Technologies used: "
         }
       }
+    },
+    "skill": {
+      "title": "Technical Skills",
+      "legend": "Tools & technologies I currently use"
     }
   }
 }

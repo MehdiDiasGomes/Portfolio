@@ -142,6 +142,10 @@
           "usedTechnos": "Technologies utilisées : "
         }
       }
+    },
+    "skill": {
+      "title": "Compétences techniques",
+      "legend": "Outils & technologies que j’utilise à l’heure actuelle"
     }
   }
 }
