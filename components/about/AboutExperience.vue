@@ -7,7 +7,7 @@
     <div class="w-full my-[15px] h-[1px] bg-gray-400"></div>
     <ul class="mt-10">
       <li v-for="(experience, index) in aboutExperience" :key="index" class="flex flex-col gap-14">
-        <div class="flex justify-between max-sm:flex-col max-md:gap-2 max-sm:items-start w-full items-center">
+        <div class="flex justify-between max-md:gap-2 max-sm:items-start w-full items-center">
           <div class="flex items-center gap-[15px]">
             <div class="shrink-0">
               <div class="bg-gradient-to-b from-[#9b9b9b] to-[#000] rounded-[25px] p-[1px] w-fit">
@@ -23,12 +23,14 @@
               <h4 class="text-m bg-gradient-to-r from-mauve to-foreground bg-clip-text text-transparent">
                 {{ t(experience.organization.subTitle) }}
               </h4>
+              <span class="md:hidden text-m text-white">{{ t(experience.organization.time) }}</span>
             </div>
           </div>
-          <span class="text-m text-white">{{ t(experience.organization.time) }}</span>
+          <span class="max-md:hidden text-m text-white">{{ t(experience.organization.time) }}</span>
         </div>
         <ul class="flex flex-col pl-4 gap-14">
-          <li v-for="(subExperience, subIdx) in experience.organization.list" class="flex items-start gap-[15px]">
+          <li v-for="(subExperience, subIdx) in experience.organization.list" :key="subIdx"
+            class="flex items-start gap-[15px]">
             <div class="w-8 h-8 shrink-0 rounded-full bg-gradient-to-b from-mauve to-foreground"></div>
             <div class="flex flex-col gap-4">
               <p class="text-white">{{ t(subExperience.parag) }}</p>
