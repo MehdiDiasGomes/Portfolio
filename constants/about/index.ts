@@ -1,5 +1,6 @@
 import type { Experience } from "~/types/constants/about/Experience";
 import type { Info } from "~/types/constants/about/Info";
+import type { Skill } from "~/types/constants/about/Skill";
 
 export const personalFacts = [
   {
@@ -72,15 +73,34 @@ export const aboutExperience: Experience[] = [
         {
           parag: "about.experience.flippad.firstInList.parag",
           usedTechnos: "about.experience.flippad.firstInList.usedTechnos",
-          technos: 'Nuxt.js 3, TypeScript, Tailwind CSS, Laravel (Eloquent), MySQL, Docker',
+          technos:
+            "Nuxt.js 3, TypeScript, Tailwind CSS, Laravel (Eloquent), MySQL, Docker",
         },
         {
           parag: "about.experience.flippad.secondInList.parag",
           usedTechnos: "about.experience.flippad.secondInList.usedTechnos",
-          technos: "Nuxt.js, Bootstrap, JavaScript, Laravel"
+          technos: "Nuxt.js, Bootstrap, JavaScript, Laravel",
         },
       ],
     },
   },
 ];
 
+export const skills: Skill[] = [
+  { title: "TypeScript", subTitle: "Front end", icon: "TypeScript" },
+  { title: "JavaScript", subTitle: "Front end", icon: "JavaScript" },
+  { title: "Nuxt.js", subTitle: "Front end", icon: "Nuxt" },
+  { title: "React.js", subTitle: "Front end", icon: "React" },
+  { title: "PHP", subTitle: "Back end", icon: "PHP" },
+  { title: "Tailwind CSS", subTitle: "Front end", icon: "TailwindCSS" },
+  { title: "Docker", subTitle: "Container", icon: "Docker" },
+  { title: "MySQL", subTitle: "Base de données", icon: "MySQL" },
+  { title: "AWS", subTitle: "Cloud", icon: "AWS" },
+  { title: "Laravel", subTitle: "Back end", icon: "Laravel" },
+  { title: "Node.js", subTitle: "Back end", icon: "Node" },
+  { title: "MongoDB", subTitle: "Base de données", icon: "MongoDB" },
+  { title: "Figma", subTitle: "Design", icon: "Figma" },
+  { title: "Git", subTitle: "Versioning", icon: "Git" },
+  { title: "Vue.js", subTitle: "Front end", icon: "Vue" },
+  { title: "Astro", subTitle: "Front end", icon: "Astro" },
+];
