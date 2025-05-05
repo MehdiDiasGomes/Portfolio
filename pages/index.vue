@@ -1,6 +1,5 @@
 <template>
   <Header />
-  <Skills />
   <Projects />
   <WorkXp />
 
