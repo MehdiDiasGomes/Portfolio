@@ -23,7 +23,7 @@ module.exports = {
         softSlate: "hsl(var(--softSlate))",
         midnightOverlay: "hsl(var(--midnightOverlay))",
         primaryPerso: '#CBACF9',
-        secondaryPerso: '#CECECE',
+        secondaryPerso: '#7E7E7E',
         backgroundForeground: '#04071D',
         borderPerso: '#303247',
         hoverForegroundPerso: "#0d1132",
