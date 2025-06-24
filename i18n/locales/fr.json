@@ -1,155 +1,165 @@
 {
-    "header": {
-        "title": "Transformer les concepts en",
-        "span_title": "Expériences Utilisateurs Fluides",
-        "description": "Salut ! Je suis Mehdi DIAS GOMES, un jeune développeur full-stack"
+  "header": {
+    "title": "Transformer les concepts en",
+    "span_title": "Expériences Utilisateurs Fluides",
+    "description": "Salut ! Je suis Mehdi DIAS GOMES, un jeune développeur full-stack"
+  },
+  "navigation": {
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "lang": {
+    "choose": "Choix de la langue"
+  },
+  "button": {
+    "see_work": "Voir mon travail"
+  },
+  "workXp": {
+    "title_first": "Mon",
+    "title_second": "expérience professionnelle",
+    "cardOne": {
+      "title": "Développeur Front End",
+      "description": "Création d'applications web dynamiques et performantes avec Vue.js et Nuxt.js."
     },
-    "navigation": {
-        "about": "À propos",
-        "projects": "Projets",
-        "contact": "Contact"
+    "cardTwo": {
+      "title": "Développeur Back End",
+      "description": "Conception et implémentation d'API RESTful avec Laravel et Eloquent."
     },
-    "lang": {
-        "choose": "Choix de la langue"
+    "cardThree": {
+      "title": "Designer UX/UI",
+      "description": "Création d'interfaces attrayantes et intuitives avec Figma."
     },
-    "button": {
-        "see_work": "Voir mon travail"
+    "cardFour": {
+      "title": "Chef de Projet",
+      "description": "Direction et gestion d'une équipe de développeurs pour livrer des produits de haute qualité."
+    }
+  },
+  "skills": {
+    "title": "Mes compétences",
+    "subtitle": "Technologies et outils que j'utilise",
+    "techStack": {
+      "title": "Technologies"
     },
-    "workXp": {
-      "title_first": "Mon",
-      "title_second": "expérience professionnelle",
-        "cardOne": {
-            "title": "Développeur Front End",
-            "description": "Création d'applications web dynamiques et performantes avec Vue.js et Nuxt.js."
+    "frontend": {
+      "title": "Frontend"
+    },
+    "backend": {
+      "title": "Backend"
+    },
+    "database": {
+      "title": "Bases de données"
+    },
+    "tools": {
+      "title": "Outils & Autres"
+    },
+    "experience": {
+      "title": "Niveaux d'expérience",
+      "expert": "Expert",
+      "expertDesc": "Plusieurs années d'expérience professionnelle, maîtrise approfondie et capacité à former les autres.",
+      "proficient": "Avancé",
+      "proficientDesc": "Bonne connaissance et expérience pratique dans des projets professionnels.",
+      "familiar": "Familier",
+      "familiarDesc": "Connaissance des concepts fondamentaux et expérience dans des projets personnels."
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "quizify": {
+      "title": "Quizify",
+      "description": "Projet de bachelor visant à intégrer un quiz interactif permettant d'évaluer les compétences des joueurs tout en leur offrant une expérience de jeu."
+    },
+    "portfolio": {
+      "title": "Mon portfolio",
+      "card_description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web.",
+      "description": "Ce portfolio est conçu comme une vitrine de mes compétences en développement web. J'ai développé ce site en utilisant Nuxt.js et TypeScript pour offrir une expérience utilisateur fluide et réactive, avec un design moderne et accessible.",
+      "subtitle": "Un aperçu de mon projet personnel",
+      "technologies": "Technologies utilisées",
+      "personal": "Projet personnel",
+      "year": "2024-2025",
+      "features": "Fonctionnalités",
+      "feature1": "Interface responsive adaptée à tous les appareils",
+      "feature2": "Multilinguisme (français/anglais) avec i18n",
+      "feature3": "Animations et transitions fluides pour une expérience utilisateur améliorée",
+      "source": "Voir le code source",
+      "live": "Visiter le site"
+    },
+    "fp": {
+      "title": "Fiches pédagogiques",
+      "description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web."
+    },
+    "inDevelopment": {
+      "title": "Projet en développement",
+      "subtitle": "Ce projet est actuellement en cours de réalisation",
+      "message": "Je travaille activement sur ce projet. Les détails et fonctionnalités seront dévoilés prochainement !",
+      "comingSoon": "Bientôt disponible"
+    },
+    "view": "Voir détails",
+    "viewSite": "Voir le site"
+  },
+  "common": {
+    "close": "Fermer"
+  },
+  "contact": {
+    "recaptchaNotice": {
+      "text": "Ce site est protégé par reCAPTCHA et les",
+      "privacyPolicy": "règles de confidentialité",
+      "and": "et",
+      "termsOfService": "conditions d'utilisation",
+      "suffix": "de Google s'appliquent."
+    },
+    "title": "Contactez-moi",
+    "description": "Vous avez un projet en tête ou une question ? N'hésitez pas à me contacter via ce formulaire et je vous répondrai dans les plus brefs délais.",
+    "firstName": "Prénom",
+    "firstNamePlaceholder": "Votre prénom",
+    "lastName": "Nom",
+    "lastNamePlaceholder": "Votre nom",
+    "email": "Email",
+    "emailPlaceholder": "Votre adresse email",
+    "message": "Message",
+    "messagePlaceholder": "Décrivez votre projet ou votre message ici...",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "successMessage": "Votre message a été envoyé avec succès. Je vous répondrai dès que possible !",
+    "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
+  },
+  "about": {
+    "subTitle": "Développeur Full Stack",
+    "firstParagraph": "Mehdi DIAS GOMES, 21 ans, Développeur Full Stack, Metz",
+    "secondParagraph": "Passionné par le développement web, je poursuis actuellement une licence en Développement Web Full Stack à Metz Numeric School. En tant qu'apprenti, je développe des compétences pratiques en développement full stack et acquiers une expérience précieuse dans le domaine.",
+    "experience": {
+      "title": "Expérience professionnelle",
+      "flippad": {
+        "title": "Flippad Digital Solutions",
+        "subTitle": "Développeur Full Stack",
+        "time": "09/2024 - Maintenant",
+        "firstInList": {
+          "parag": "Refonte complète du site \"Fiches pédagogiques\" (front-end) \n Développement from scratch de l’interface utilisateur responsive et du back-office, avec intégration API back-end.",
+          "usedTechnos": "Technologies utilisées : "
         },
-        "cardTwo": {
-            "title": "Développeur Back End",
-            "description": "Conception et implémentation d'API RESTful avec Laravel et Eloquent."
-        },
-        "cardThree": {
-            "title": "Designer UX/UI",
-            "description": "Création d'interfaces attrayantes et intuitives avec Figma."
-        },
-        "cardFour": {
-            "title": "Chef de Projet",
-            "description": "Direction et gestion d'une équipe de développeurs pour livrer des produits de haute qualité."
+        "secondInList": {
+          "parag": "Ajout de fonctionnalités sur un PIM (Product Information Management) – amélioration du formulaire produit (filtres, nouveaux champs pour montres). Développement front-end de filtres dynamiques et de champs personnalisés pour la saisie des données.",
+          "usedTechnos": "Technologies utilisées : "
         }
+      }
     },
-    "skills": {
-        "title": "Mes compétences",
-        "subtitle": "Technologies et outils que j'utilise",
-        "techStack": {
-          "title": "Technologies"
-        },
-        "frontend": {
-          "title": "Frontend"
-        },
-        "backend": {
-          "title": "Backend"
-        },
-        "database": {
-          "title": "Bases de données"
-        },
-        "tools": {
-          "title": "Outils & Autres"
-        },
-        "experience": {
-          "title": "Niveaux d'expérience",
-          "expert": "Expert",
-          "expertDesc": "Plusieurs années d'expérience professionnelle, maîtrise approfondie et capacité à former les autres.",
-          "proficient": "Avancé",
-          "proficientDesc": "Bonne connaissance et expérience pratique dans des projets professionnels.",
-          "familiar": "Familier",
-          "familiarDesc": "Connaissance des concepts fondamentaux et expérience dans des projets personnels."
-        }
-      },
-    "projects": {
-      "title": "Projets",
-      "quizify": {
-        "title": "Quizify",
-        "description": "Projet de bachelor visant à intégrer un quiz interactif permettant d'évaluer les compétences des joueurs tout en leur offrant une expérience de jeu."
-      },
-      "portfolio": {
-        "title": "Mon portfolio",
-        "card_description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web.",
-        "description": "Ce portfolio est conçu comme une vitrine de mes compétences en développement web. J'ai développé ce site en utilisant Nuxt.js et TypeScript pour offrir une expérience utilisateur fluide et réactive, avec un design moderne et accessible.",
-        "subtitle": "Un aperçu de mon projet personnel",
-        "technologies": "Technologies utilisées",
-        "personal": "Projet personnel",
-        "year": "2024-2025",
-        "features": "Fonctionnalités",
-        "feature1": "Interface responsive adaptée à tous les appareils",
-        "feature2": "Multilinguisme (français/anglais) avec i18n",
-        "feature3": "Animations et transitions fluides pour une expérience utilisateur améliorée",
-        "source": "Voir le code source",
-        "live": "Visiter le site"
-      },
-      "fp": {
-        "title": "Fiches pédagogiques",
-        "description": "Site personnel présentant mes compétences, projets et expériences professionnelles dans le développement web."
-      },
-      "inDevelopment": {
-         "title": "Projet en développement",
-         "subtitle": "Ce projet est actuellement en cours de réalisation",
-         "message": "Je travaille activement sur ce projet. Les détails et fonctionnalités seront dévoilés prochainement !",
-         "comingSoon": "Bientôt disponible"
-       },
-      "view": "Voir détails",
-      "viewSite": "Voir le site"
+    "skill": {
+      "title": "Compétences techniques",
+      "legend": "Outils & technologies que j’utilise à l’heure actuelle"
     },
-    "common": {
-      "close": "Fermer"
-    },
-    "contact": {
-      "recaptchaNotice": {
-        "text": "Ce site est protégé par reCAPTCHA et les",
-        "privacyPolicy": "règles de confidentialité",
-        "and": "et",
-        "termsOfService": "conditions d'utilisation",
-        "suffix": "de Google s'appliquent."
+    "education": {
+      "mns": {
+        "title": "Metz Numeric School",
+        "subTitle": "Licence développeur full stack",
+        "time": "10/2024 - 10/2025",
+        "parag": "Formation spécialisée en développement web et applications, combinant compétences en front-end, back-end et gestion de bases de données. Acquis une expertise technique dans des technologies telles que TypeScript, PHP, et MySQL, et développé des compétences pratiques à travers des projets concrets, me préparant ainsi à une carrière de développeur full-stack."
       },
-        "title": "Contactez-moi",
-        "description": "Vous avez un projet en tête ou une question ? N'hésitez pas à me contacter via ce formulaire et je vous répondrai dans les plus brefs délais.",
-        "firstName": "Prénom",
-        "firstNamePlaceholder": "Votre prénom",
-        "lastName": "Nom",
-        "lastNamePlaceholder": "Votre nom",
-        "email": "Email",
-        "emailPlaceholder": "Votre adresse email",
-        "message": "Message",
-        "messagePlaceholder": "Décrivez votre projet ou votre message ici...",
-        "send": "Envoyer",
-        "sending": "Envoi en cours...",
-        "successMessage": "Votre message a été envoyé avec succès. Je vous répondrai dès que possible !",
-        "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
-      },
-      "about": {
-          "title": "À propos de ",
-          "span_title": "moi",
-          "introduction": "Je suis développeur full-stack passionné par la création d'applications web modernes et performantes. Je combine créativité et rigueur technique pour concrétiser des idées innovantes.",
-          "journey": "Mon parcours dans le développement web a débuté il y a 2 ans, et depuis septembre 2024, je poursuis mon apprentissage en alternance en entreprise. Cette immersion professionnelle me permet d'appliquer mes connaissances dans un contexte réel et d'enrichir mes compétences techniques.",
-          "passion": "Je suis constamment à la recherche de nouvelles technologies et meilleures pratiques pour optimiser mes projets et offrir les meilleures expériences utilisateur possibles.",
-          "social": {
-            "title": "Réseaux sociaux"
-          },
-          "personal": {
-            "title": "Informations personnelles",
-            "location": {
-              "label": "Localisation",
-              "value": "Metz, France"
-            },
-            "education": {
-              "label": "Formation",
-              "value": "Metz Numeric School"
-            },
-            "experience": {
-              "label": "Expérience",
-              "value": "2+ années"
-            },
-            "languages": {
-              "label": "Langues",
-              "value": "Français, Anglais, Arabe"
-            }
-          }
-        }
+      "labriquerie": {
+        "title": "LPO La Briquerie",
+        "subTitle": "BTS Systèmes Numériques (SNIR)",
+        "time": "09/2021 - 07/2023",
+        "parag": "Formation axée sur les systèmes embarqués, les réseaux et le développement logiciel. Apprentissage des bases de l’électronique, de la programmation (C/C++, Python) et de l’administration réseau. Développement d’une compréhension globale des architectures matérielles et logicielles, avec une approche technique et rigoureuse des systèmes numériques."
+      }
+    }
+  }
 }
