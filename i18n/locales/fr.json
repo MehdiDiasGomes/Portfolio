@@ -146,6 +146,20 @@
     "skill": {
       "title": "Compétences techniques",
       "legend": "Outils & technologies que j’utilise à l’heure actuelle"
+    },
+    "education": {
+      "mns": {
+        "title": "Metz Numeric School",
+        "subTitle": "Licence développeur full stack",
+        "time": "10/2024 - 10/2025",
+        "parag": "Formation spécialisée en développement web et applications, combinant compétences en front-end, back-end et gestion de bases de données. Acquis une expertise technique dans des technologies telles que TypeScript, PHP, et MySQL, et développé des compétences pratiques à travers des projets concrets, me préparant ainsi à une carrière de développeur full-stack."
+      },
+      "labriquerie": {
+        "title": "LPO La Briquerie",
+        "subTitle": "BTS Systèmes Numériques (SNIR)",
+        "time": "09/2021 - 07/2023",
+        "parag": "Formation axée sur les systèmes embarqués, les réseaux et le développement logiciel. Apprentissage des bases de l’électronique, de la programmation (C/C++, Python) et de l’administration réseau. Développement d’une compréhension globale des architectures matérielles et logicielles, avec une approche technique et rigoureuse des systèmes numériques."
+      }
     }
   }
 }

@@ -4,6 +4,7 @@
       <AboutHeader />
       <AboutExperiences />
       <AboutSkills />
+      <AboutEducation />
     </div>
   </div>
 </template>

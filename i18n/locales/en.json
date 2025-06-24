@@ -143,6 +143,20 @@
     "skill": {
       "title": "Technical Skills",
       "legend": "Tools & technologies I currently use"
+    },
+    "education": {
+      "mns": {
+        "title": "Metz Numeric School",
+        "subTitle": "Bachelor's in Full Stack Development",
+        "time": "10/2024 - 10/2025",
+        "parag": "Specialized training in web and application development, combining skills in front-end, back-end, and database management. Gained technical expertise in technologies such as TypeScript, PHP, and MySQL, and developed practical skills through hands-on projects, preparing me for a career as a full-stack developer."
+      },
+      "labriquerie": {
+        "title": "LPO La Briquerie",
+        "subTitle": "BTS Digital Systems (SNIR)",
+        "time": "09/2021 - 07/2023",
+        "parag": "Training focused on embedded systems, networks, and software development. Learned the fundamentals of electronics, programming (C/C++, Python), and network administration. Developed a comprehensive understanding of hardware and software architectures, with a technical and rigorous approach to digital systems."
+      }
     }
   }
 }

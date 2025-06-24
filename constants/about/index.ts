@@ -1,3 +1,4 @@
+import type { Education } from "~/types/constants/about/Education";
 import type { Experience } from "~/types/constants/about/Experience";
 import type { Info } from "~/types/constants/about/Info";
 import type { Skill } from "~/types/constants/about/Skill";
@@ -118,4 +119,21 @@ export const skills: Skill[] = [
   { title: "Git", subTitle: "Versioning", icon: "Git", flame: true },
   { title: "Vue.js", subTitle: "Front end", icon: "Vue", flame: true },
   { title: "Astro", subTitle: "Front end", icon: "Astro" },
+];
+
+export const education: Education[] = [
+  {
+    title: "about.education.mns.title",
+    subTitle: "about.education.mns.subTitle",
+    time: "about.education.mns.time",
+    icon: "Mns",
+    parag: "about.education.mns.parag",
+  },
+  {
+    title: "about.education.labriquerie.title",
+    subTitle: "about.education.labriquerie.subTitle",
+    time: "about.education.labriquerie.time",
+    icon: "Labriquerie",
+    parag: "about.education.labriquerie.parag",
+  },
 ];
