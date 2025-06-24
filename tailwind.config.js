@@ -16,8 +16,14 @@ module.exports = {
     },
     extend: {
       colors: {
+        mauve: "hsl(var(--mauve))",
+        foreground: "hsl(var(--foreground))",
+        darkblue: "hsl(var(--darkblue))",
+        midnightBlue: "hsl(var(--midnightBlue))",
+        softSlate: "hsl(var(--softSlate))",
+        midnightOverlay: "hsl(var(--midnightOverlay))",
         primaryPerso: '#CBACF9',
-        secondaryPerso: '#CECECE',
+        secondaryPerso: '#7E7E7E',
         backgroundForeground: '#04071D',
         borderPerso: '#303247',
         hoverForegroundPerso: "#0d1132",
@@ -87,5 +93,68 @@ module.exports = {
       },
     },
   },
-  plugins: [animate, require('tailwindcss-animated'), require('@tailwindcss/typography')],
+  plugins: [animate,  function ({ addUtilities }) {
+    addUtilities({
+      '.mp-home': {
+        padding: '0 3%',
+        '@screen sm': { padding: '0 5%' },
+        '@screen md': { padding: '0 8%' },
+        '@screen xl': { padding: '0 15%' },
+        '@screen 2xl': { padding: '0 25%' },
+      },
+      '.text-xl': {
+        '@screen sm': { fontSize: '2rem', lineHeight: '2rem' },
+        '@screen xl': { fontSize: '2.5rem', lineHeight: '2.5rem' },
+        '@screen 2xl': { fontSize: '3.125rem', lineHeight: '3.125rem' },
+      },
+      '.text-xxl': {
+        '@screen sm': { fontSize: '2.25rem', lineHeight: '2.75rem' },
+        '@screen md': { fontSize: '2.75rem', lineHeight: '3.25rem' },
+        '@screen xl': { fontSize: '3rem', lineHeight: '3.75rem' },
+        '@screen 2xl': { fontSize: '3.75rem', lineHeight: '4.875rem' },
+      },
+      '.text-l': {
+        '@screen sm': { fontSize: '1.5rem', lineHeight: '2rem' },
+        '@screen md': { fontSize: '2rem', lineHeight: '2.5rem' },
+        '@screen xl': { fontSize: '2.25rem', lineHeight: '2.75rem' },
+        '@screen 2xl': { fontSize: '2.5rem', lineHeight: '3.25rem' },
+      },
+      '.text-m': {
+        '@screen sm': { fontSize: '1.125rem', lineHeight: '1.5rem' },
+        '@screen md': { fontSize: '1.375rem', lineHeight: '1.75rem' },
+        '@screen xl': { fontSize: '1.5rem', lineHeight: '2rem' },
+        '@screen 2xl': { fontSize: '1.875rem', lineHeight: '2.4375rem' },
+      },
+      '.text-s': {
+        '@screen sm': { fontSize: '0.875rem', lineHeight: '1.25rem' },
+        '@screen md': { fontSize: '1rem', lineHeight: '1.375rem' },
+        '@screen xl': { fontSize: '1.125rem', lineHeight: '1.5rem' },
+        '@screen 2xl': { fontSize: '1.25rem', lineHeight: '1.625rem' },
+      },
+      '.text-intro': {
+        '@screen sm': { fontSize: '1rem', lineHeight: '1.5rem' },
+        '@screen md': { fontSize: '1.125rem', lineHeight: '1.75rem' },
+        '@screen xl': { fontSize: '1.25rem', lineHeight: '2rem' },
+        '@screen 2xl': { fontSize: '1.375rem', lineHeight: '2.0625rem' },
+      },
+      '.text-main': {
+        '@screen sm': { fontSize: '0.875rem', lineHeight: '1.25rem' },
+        '@screen md': { fontSize: '1rem', lineHeight: '1.5rem' },
+        '@screen xl': { fontSize: '1.125rem', lineHeight: '1.75rem' },
+        '@screen 2xl': { fontSize: '1rem', lineHeight: '1.5rem' },
+      },
+      '.text-legend': {
+        '@screen sm': { fontSize: '0.75rem', lineHeight: '1rem' },
+        '@screen md': { fontSize: '0.875rem', lineHeight: '1.25rem' },
+        '@screen xl': { fontSize: '1rem', lineHeight: '1.5rem' },
+        '@screen 2xl': { fontSize: '0.875rem', lineHeight: '1.3125rem' },
+      },
+      '.text-cta': {
+        '@screen sm': { fontSize: '0.75rem', lineHeight: '1rem' },
+        '@screen md': { fontSize: '0.875rem', lineHeight: '1.125rem' },
+        '@screen xl': { fontSize: '1rem', lineHeight: '1.25rem' },
+        '@screen 2xl': { fontSize: '0.875rem', lineHeight: '1.1375rem' },
+      },
+    })
+  }, require('tailwindcss-animated'), require('@tailwindcss/typography')],
 }
