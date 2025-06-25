@@ -142,7 +142,8 @@
     },
     "skill": {
       "title": "Technical Skills",
-      "legend": "Tools & technologies I currently use"
+      "legend": "Tools & technologies I currently use",
+      "footer": "Tools & technologies I currently use"
     },
     "education": {
       "mns": {

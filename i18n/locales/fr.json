@@ -145,7 +145,8 @@
     },
     "skill": {
       "title": "Compétences techniques",
-      "legend": "Outils & technologies que j’utilise à l’heure actuelle"
+      "legend": "Outils & technologies que j’utilise à l’heure actuelle",
+      "footer": "Outils & technologies que j’utilise à l’heure actuelle"
     },
     "education": {
       "mns": {

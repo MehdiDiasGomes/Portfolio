@@ -2,9 +2,12 @@
   <div class="flex relative my-10 flex-col gap-3 z-30 items-center justify-center">
     <img class="absolute top-0 h-screen -z-10 w-full" src="../assets/img/grid-pattern.png" />
 
-    <h2 class="text-primaryPerso text-2xl text-center font-extrabold">
+    <div class="w-full flex flex-col items-center mb-4">
+      <h2 class="text-primaryPerso text-4xl text-center font-extrabold">
       {{ t("projects.title") }}
-    </h2>
+      </h2>
+      <div class="h-1 w-16 bg-primaryPerso rounded mt-2"></div>
+    </div>
     <div class="grid grid-cols-1 p-6 md:grid-cols-2 my-10 justify-center gap-4">
       <div
         v-for="(item, index) in projects"
