@@ -1,18 +1,14 @@
 <template>
   <Sheet>
     <SheetTrigger as-child>
-      <Button
-        variant="outline"
-        class="border bg-[#000319] text-white border-borderPerso hover:bg-primaryPerso rounded-xl transition hover:scale-105"
-      >
+      <Button variant="outline"
+        class="border bg-transparent text-white border-borderPerso hover:bg-primaryPerso rounded-xl transition hover:scale-105">
         {{ t("projects.view") }}
       </Button>
     </SheetTrigger>
     <SheetContent class="bg-[#000319] border-l border-borderPerso">
       <SheetHeader>
-        <SheetTitle class="text-white text-2xl font-bold"
-          >🚧 {{ t("projects.inDevelopment.title") }} 🚧</SheetTitle
-        >
+        <SheetTitle class="text-white text-2xl font-bold">🚧 {{ t("projects.inDevelopment.title") }} 🚧</SheetTitle>
         <SheetDescription class="text-secondary">
           {{ t("projects.inDevelopment.subtitle") }}
         </SheetDescription>
@@ -28,9 +24,7 @@
       </div>
       <SheetFooter>
         <SheetClose as-child>
-          <Button
-            class="border border-borderPerso hover:bg-gray-700 rounded-xl transition hover:scale-105"
-          >
+          <Button class="border border-borderPerso bg-transparent hover:bg-[#12152D] rounded-xl transition">
             {{ t("common.close") }}
           </Button>
         </SheetClose>
