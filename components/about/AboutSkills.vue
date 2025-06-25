@@ -10,7 +10,10 @@
         <Skills :title="skill.title" :sub-title="skill.subTitle" :icon="skill.icon" :flame="skill.flame" />
       </li>
     </ul>
-    <div class="flex items-center gap-2 mt-10"><Icon name="Flame" :stroke-width="2" :size="24" class="text-mauve" /><p class="text-secondaryPerso font-bold">Outils & technologies que j’utilise à l’heure actuelle</p></div>
+    <div class="flex items-center gap-2 mt-10">
+      <Icon name="Flame" :stroke-width="2" :size="24" class="text-mauve" />
+      <p class="text-secondaryPerso font-bold">{{ t('about.skill.footer') }}</p>
+    </div>
   </div>
 </template>
 
