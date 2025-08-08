@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex items-center gap-[15px]">
-      <component :is="loadIconComponent('WorkExperience')" />
+      <component class="w-12" :is="loadIconComponent('WorkExperience')" />
       <h2 class="text-white text-l font-bold">{{ t('about.experience.title') }}</h2>
     </div>
     <div class="w-full my-[15px] h-[1px] bg-gray-400"></div>
@@ -31,7 +31,7 @@
         <ul class="flex flex-col pl-4 gap-14">
           <li v-for="(subExperience, subIdx) in experience.organization.list" :key="subIdx"
             class="flex items-start gap-[15px]">
-            <div class="w-8 h-8 shrink-0 rounded-full bg-gradient-to-b from-mauve to-foreground"></div>
+            <div class="w-5 h-5 shrink-0 rounded-full bg-gradient-to-b from-mauve to-foreground"></div>
             <div class="flex flex-col gap-4">
               <p class="text-white">{{ t(subExperience.parag) }}</p>
               <p class="text-white flex items-center max-xl:flex-col max-xl:items-start gap-1">{{
