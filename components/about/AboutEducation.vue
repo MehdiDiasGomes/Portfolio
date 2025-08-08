@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex items-center gap-[15px]">
-      <component :is="loadIconComponent('Education')" />
+      <component class="w-10" :is="loadIconComponent('Education')" />
       <h2 class="text-white text-l font-bold">{{ t('about.skill.title') }}</h2>
     </div>
     <div class="w-full my-[15px] h-[1px] bg-gray-400"></div>
