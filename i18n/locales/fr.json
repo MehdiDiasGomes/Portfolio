@@ -149,6 +149,7 @@
       "footer": "Outils & technologies que j’utilise à l’heure actuelle"
     },
     "education": {
+      "title": "Éducation",
       "mns": {
         "title": "Metz Numeric School",
         "subTitle": "Licence développeur full stack",

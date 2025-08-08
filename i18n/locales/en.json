@@ -146,6 +146,7 @@
       "footer": "Tools & technologies I currently use"
     },
     "education": {
+      "title": "Education",
       "mns": {
         "title": "Metz Numeric School",
         "subTitle": "Bachelor's in Full Stack Development",
