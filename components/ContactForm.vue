@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex animate-fade animate-once animate-duration-1000 animate-ease-in relative flex-col gap-3 z-30 items-center justify-center py-32"
+    class="flex animate-fade animate-once animate-duration-1000 animate-ease-in relative flex-col gap-3 z-30 items-center justify-center mt-32"
   >
     <img class="absolute top-0 h-full -z-30 w-full" src="~/assets/img/grid-pattern.png" />
 

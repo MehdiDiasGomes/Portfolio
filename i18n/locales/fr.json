@@ -124,9 +124,18 @@
     "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
   },
   "about": {
+    "status": "Disponible",
     "subTitle": "Développeur Full Stack",
     "firstParagraph": "Mehdi DIAS GOMES, 21 ans, Développeur Full Stack, Metz",
     "secondParagraph": "Passionné par le développement web, je poursuis actuellement une licence en Développement Web Full Stack à Metz Numeric School. En tant qu'apprenti, je développe des compétences pratiques en développement full stack et acquiers une expérience précieuse dans le domaine.",
+    "aboutMe": "À propos de moi",
+    "yearsExperience": "Années",
+    "projectsCount": "Projets",
+    "technologiesCount": "Technologies",
+    "readyToCollaborate": "Prêt à collaborer ?",
+    "collaborateDescription": "Je suis toujours ouvert aux nouvelles opportunités et aux projets passionnants. N'hésitez pas à me contacter !",
+    "contactMe": "Me contacter",
+    "viewProjects": "Voir mes projets",
     "experience": {
       "title": "Expérience professionnelle",
       "flippad": {
@@ -134,7 +143,7 @@
         "subTitle": "Développeur Full Stack",
         "time": "09/2024 - Maintenant",
         "firstInList": {
-          "parag": "Refonte complète du site \"Fiches pédagogiques\" (front-end) \n Développement from scratch de l’interface utilisateur responsive et du back-office, avec intégration API back-end.",
+          "parag": "Refonte complète du site \"Fiches pédagogiques\" (front-end) \n Développement from scratch de l'interface utilisateur responsive et du back-office, avec intégration API back-end.",
           "usedTechnos": "Technologies utilisées : "
         },
         "secondInList": {
@@ -145,11 +154,23 @@
     },
     "skill": {
       "title": "Compétences techniques",
-      "legend": "Outils & technologies que j’utilise à l’heure actuelle",
-      "footer": "Outils & technologies que j’utilise à l’heure actuelle"
+      "legend": "Outils & technologies que j'utilise à l'heure actuelle",
+      "footer": "Outils & technologies que j'utilise à l'heure actuelle",
+      "level": "Niveau",
+      "expert": "Expert",
+      "intermediate": "Intermédiaire",
+      "expertSkills": "Expertes",
+      "totalSkills": "Total",
+      "expertiseLevel": "Expertise"
     },
     "education": {
       "title": "Éducation",
+      "graduated": "Diplômé",
+      "keySkills": "Compétences clés",
+      "webDevelopment": "Développement Web",
+      "algorithms": "Algorithmique",
+      "databases": "Bases de données",
+      "academicPath": "Parcours académique",
       "mns": {
         "title": "Metz Numeric School",
         "subTitle": "Licence développeur full stack",
@@ -160,7 +181,7 @@
         "title": "LPO La Briquerie",
         "subTitle": "BTS Systèmes Numériques (SNIR)",
         "time": "09/2021 - 07/2023",
-        "parag": "Formation axée sur les systèmes embarqués, les réseaux et le développement logiciel. Apprentissage des bases de l’électronique, de la programmation (C/C++, Python) et de l’administration réseau. Développement d’une compréhension globale des architectures matérielles et logicielles, avec une approche technique et rigoureuse des systèmes numériques."
+        "parag": "Formation axée sur les systèmes embarqués, les réseaux et le développement logiciel. Apprentissage des bases de l'électronique, de la programmation (C/C++, Python) et de l'administration réseau. Développement d'une compréhension globale des architectures matérielles et logicielles, avec une approche technique et rigoureuse des systèmes numériques."
       }
     }
   }

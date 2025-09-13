@@ -1,46 +1,100 @@
 <template>
-  <div>
-    <div class="flex items-center gap-[15px]">
-      <component class="w-12" :is="loadIconComponent('WorkExperience')" />
-      <h2 class="text-white text-l font-bold">{{ t('about.experience.title') }}</h2>
+  <div class="animate-fade-up animate-duration-700 animate-delay-300">
+    <div class="flex items-center gap-3 lg:gap-4 mb-6 lg:mb-8">
+      <div class="relative">
+        <component class="w-8 h-8 lg:w-12 lg:h-12 text-mauve drop-shadow-lg"
+          :is="loadIconComponent('WorkExperience')" />
+        <div class="absolute -inset-1 lg:-inset-2 bg-mauve/20 rounded-full blur-lg"></div>
+      </div>
+      <div class="flex-1">
+        <h2 class="text-white text-xl lg:text-2xl font-bold tracking-tight">{{ t('about.experience.title') }}</h2>
+        <div class="w-16 lg:w-20 h-1 bg-gradient-to-r from-mauve to-foreground rounded-full mt-2"></div>
+      </div>
     </div>
-    <div class="w-full my-[15px] h-[1px] bg-gray-400"></div>
-    <ul class="mt-10">
-      <li v-for="(experience, index) in aboutExperience" :key="index" class="flex flex-col gap-14">
-        <div class="flex justify-between max-md:gap-2 max-sm:items-start w-full items-center">
-          <div class="flex items-center gap-[15px]">
-            <div class="shrink-0">
-              <div class="bg-gradient-to-b from-[#9b9b9b] to-[#000] rounded-[25px] p-[1px] w-fit">
-                <div class="bg-gradient-to-b from-[#413075] to-[#181818] rounded-[25px] p-2 w-fit">
-                  <img class="w-[47px] h-[47px] object-cover rounded-[15px]" src="/assets/img/flippad.jpg"
-                    alt="Logo Flippad Digital Solutions">
+
+    <div class="relative">
+      <div
+        class="absolute left-3 lg:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-mauve via-foreground to-mauve opacity-50">
+      </div>
+
+      <div class="space-y-8 lg:space-y-12">
+        <div v-for="(experience, index) in aboutExperience" :key="index"
+          class="relative animate-fade-up animate-duration-500" :style="{ animationDelay: `${400 + index * 200}ms` }">
+
+          <div
+            class="absolute left-2 lg:left-4 w-3 h-3 lg:w-4 lg:h-4 bg-gradient-to-br from-mauve to-foreground rounded-full border-2 lg:border-4 border-background shadow-lg">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-mauve to-foreground rounded-full animate-ping opacity-20">
+            </div>
+          </div>
+
+          <div class="ml-8 lg:ml-16">
+            <div
+              class="bg-gradient-to-br from-darkblue/40 to-midnightBlue/40 backdrop-blur-sm rounded-xl lg:rounded-2xl p-4 lg:p-6 border border-mauve/20 shadow-xl hover:shadow-mauve/10 transition-all duration-300 hover:scale-[1.01] lg:hover:scale-[1.02]">
+
+              <div class="flex flex-col gap-3 lg:gap-4 mb-4 lg:mb-6">
+                <div class="flex items-start gap-3 lg:gap-4">
+                  <div class="relative group flex-shrink-0">
+                    <div
+                      class="absolute -inset-0.5 lg:-inset-1 bg-gradient-to-r from-mauve to-foreground rounded-xl lg:rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity">
+                    </div>
+                    <div
+                      class="relative bg-gradient-to-b from-[#413075] to-[#181818] rounded-xl lg:rounded-2xl p-2 lg:p-3 border border-mauve/30">
+                      <img class="w-8 h-8 lg:w-12 lg:h-12 object-cover rounded-lg lg:rounded-xl"
+                        src="/assets/img/flippad.jpg" alt="Logo Flippad Digital Solutions">
+                    </div>
+                  </div>
+
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-white text-lg lg:text-xl font-bold">{{ t(experience.organization.title) }}</h3>
+                    <h4
+                      class="text-base lg:text-lg bg-gradient-to-r from-mauve to-foreground bg-clip-text text-transparent font-medium">
+                      {{ t(experience.organization.subTitle) }}
+                    </h4>
+                  </div>
+                </div>
+
+                <div class="self-start">
+                  <div
+                    class="bg-mauve/20 text-mauve px-3 py-1.5 lg:px-4 lg:py-2 rounded-full text-sm font-semibold border border-mauve/30">
+                    {{ t(experience.organization.time) }}
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-4 lg:space-y-6">
+                <div v-for="(subExperience, subIdx) in experience.organization.list" :key="subIdx"
+                  class="flex gap-3 lg:gap-4 group">
+
+                  <div class="relative flex-shrink-0 mt-1">
+                    <div
+                      class="w-2 h-2 lg:w-3 lg:h-3 bg-gradient-to-br from-mauve to-foreground rounded-full group-hover:scale-125 transition-transform duration-200">
+                    </div>
+                    <div
+                      class="absolute inset-0 bg-gradient-to-br from-mauve to-foreground rounded-full animate-pulse opacity-20">
+                    </div>
+                  </div>
+
+                  <div class="flex-1 space-y-2 lg:space-y-3">
+                    <p class="text-gray-300 leading-relaxed text-sm lg:text-base">{{ t(subExperience.parag) }}</p>
+
+                    <div class="space-y-2">
+                      <span class="text-gray-400 text-xs lg:text-sm">{{ t(subExperience.usedTechnos) }}</span>
+                      <div class="flex flex-wrap gap-1.5 lg:gap-2">
+                        <span v-for="techno in t(subExperience.technos).split(',')" :key="techno.trim()"
+                          class="px-2 py-1 text-xs bg-mauve/20 text-mauve rounded-md border border-mauve/30">
+                          {{ techno.trim() }}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="flex flex-col">
-              <h3 class="text-white text-m font-bold">{{ t(experience.organization.title) }}</h3>
-              <h4 class="text-m bg-gradient-to-r from-mauve to-foreground bg-clip-text text-transparent">
-                {{ t(experience.organization.subTitle) }}
-              </h4>
-              <span class="md:hidden text-m text-white">{{ t(experience.organization.time) }}</span>
-            </div>
           </div>
-          <span class="max-md:hidden text-m text-white">{{ t(experience.organization.time) }}</span>
         </div>
-        <ul class="flex flex-col pl-4 gap-14">
-          <li v-for="(subExperience, subIdx) in experience.organization.list" :key="subIdx"
-            class="flex items-start gap-[15px]">
-            <div class="w-5 h-5 shrink-0 rounded-full bg-gradient-to-b from-mauve to-foreground"></div>
-            <div class="flex flex-col gap-4">
-              <p class="text-white">{{ t(subExperience.parag) }}</p>
-              <p class="text-white flex items-center max-xl:flex-col max-xl:items-start gap-1">{{
-                t(subExperience.usedTechnos) }} <span class="font-bold">{{ t(subExperience.technos) }}</span></p>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </template>
 
