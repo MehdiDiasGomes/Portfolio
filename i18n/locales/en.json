@@ -121,9 +121,18 @@
     "errorMessage": "An error occurred while sending the message. Please try again later."
   },
   "about": {
-    "subTitle": "Fullstack developer",
+    "status": "Available",
+    "subTitle": "Full Stack Developer",
     "firstParagraph": "Mehdi DIAS GOMES, 21 years old, Full Stack Developer, Metz",
-    "secondParagraph": "Passionate about web development, I am currently pursuing a Bachelor's degree in Full Stack Web Development at Metz Numeric School. As an apprentice, I am gaining hands-on experience in full stack development and acquiring valuable skills in the field.",
+    "secondParagraph": "Passionate about web development, I am currently pursuing a Full Stack Web Development degree at Metz Numeric School. As an apprentice, I develop practical skills in full stack development and gain valuable experience in the field.",
+    "aboutMe": "About me",
+    "yearsExperience": "Years",
+    "projectsCount": "Projects",
+    "technologiesCount": "Technologies",
+    "readyToCollaborate": "Ready to collaborate?",
+    "collaborateDescription": "I'm always open to new opportunities and exciting projects. Feel free to reach out!",
+    "contactMe": "Contact me",
+    "viewProjects": "View my projects",
     "experience": {
       "title": "Professional Experience",
       "flippad": {
@@ -143,10 +152,22 @@
     "skill": {
       "title": "Technical Skills",
       "legend": "Tools & technologies I currently use",
-      "footer": "Tools & technologies I currently use"
+      "footer": "Tools & technologies I currently use",
+      "level": "Level",
+      "expert": "Expert",
+      "intermediate": "Intermediate",
+      "expertSkills": "Expert",
+      "totalSkills": "Total",
+      "expertiseLevel": "Expertise"
     },
     "education": {
       "title": "Education",
+      "graduated": "Graduated",
+      "keySkills": "Key Skills",
+      "webDevelopment": "Web Development",
+      "algorithms": "Algorithms",
+      "databases": "Databases",
+      "academicPath": "Academic path",
       "mns": {
         "title": "Metz Numeric School",
         "subTitle": "Bachelor's in Full Stack Development",

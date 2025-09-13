@@ -110,7 +110,7 @@ export const skills: Skill[] = [
     flame: true,
   },
   { title: "Docker", subTitle: "Container", icon: "Docker", flame: true },
-  { title: "MySQL", subTitle: "Base de données", icon: "MySQL", flame: true },
+  { title: "MySQL", subTitle: "Base de données", icon: "MySql", flame: true },
   { title: "AWS", subTitle: "Cloud", icon: "AWS", flame: true },
   { title: "Laravel", subTitle: "Back end", icon: "Laravel", flame: true },
   { title: "Node.js", subTitle: "Back end", icon: "Node" },

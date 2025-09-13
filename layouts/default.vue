@@ -1,11 +1,13 @@
 <template>
   <div class="flex flex-col">
     <Navbar />
-    <div class="flex-grow">
+    <div>
       <slot />
     </div>
     <Footer />
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const route = useRoute()
+</script>
