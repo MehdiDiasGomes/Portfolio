@@ -56,10 +56,10 @@
                   class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-mauve to-foreground text-white font-semibold rounded-xl hover:scale-105 transition-transform duration-200 shadow-lg hover:shadow-mauve/25">
                   {{ t('about.contactMe') }}
                 </NuxtLink>
-                <NuxtLink to="/projects"
+                <!-- <NuxtLink to="/projects"
                   class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border-2 border-mauve text-mauve font-semibold rounded-xl hover:bg-mauve/10 transition-colors duration-200">
                   {{ t('about.viewProjects') }}
-                </NuxtLink>
+                </NuxtLink> -->
               </div>
             </div>
           </section>

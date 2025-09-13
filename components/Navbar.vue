@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute z-50 top-10 border border-borderPerso rounded-xl left-1/2 transform -translate-x-1/2 bg-backgroundForeground p-4 w-[85%] sm:w-auto sm:px-14"
+    class="fixed z-50 top-10 border border-borderPerso rounded-xl left-1/2 transform -translate-x-1/2 bg-backgroundForeground p-4 w-[85%] sm:w-auto sm:px-14"
   >
     <div class="flex items-center justify-center">
       <button @click="isMenuOpen = !isMenuOpen" class="md:hidden flex items-center z-50">
