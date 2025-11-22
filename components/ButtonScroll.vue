@@ -1,15 +1,17 @@
 <template>
   <div :class="['w-full flex my-10', props.side === 'top' ? 'justify-end pr-8' : 'justify-center pr-0']">
     <Button
-      class="border cursor-pointer flex bg-transparent items-center justify-center border-borderPerso hover:bg-[#12152D] rounded-xl p-4 transition"
-      @click="props.side === 'top' ? scrollTop() : scrollBot()">
-      <Icon h="1.75" :name="props.side === 'top' ? 'ArrowBigUpDash' : 'ArrowBigDownDash'" />
-    </Button>
+      :icon="props.side === 'top' ? 'ArrowBigUpDash' : 'ArrowBigDownDash'"
+      variant="secondary"
+      class="border border-borderPerso hover:bg-[#12152D] cursor-pointer"
+      @click="props.side === 'top' ? scrollTop() : scrollBot()"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
+import Button from "@/components/common/Button.vue";
 
 const showButton = ref(false);
 

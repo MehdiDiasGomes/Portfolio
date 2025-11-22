@@ -30,7 +30,7 @@
 
           <div class="ml-8 lg:ml-16">
             <div
-              class="bg-gradient-to-br from-darkblue/40 to-midnightBlue/40 backdrop-blur-sm rounded-xl lg:rounded-2xl p-4 lg:p-6 border border-mauve/20 shadow-xl hover:shadow-mauve/10 transition-all duration-300 hover:scale-[1.01] lg:hover:scale-[1.02]">
+              class="bg-gradient-to-br from-darkblue/40 to-midnightBlue/40 backdrop-blur-sm rounded-xl lg:rounded-2xl p-4 lg:p-6 border border-mauve/20 shadow-xl hover:shadow-mauve/10 transition-all duration-300">
 
               <div class="flex flex-col gap-3 lg:gap-4 mb-4 lg:mb-6">
                 <div class="flex items-start gap-3 lg:gap-4">

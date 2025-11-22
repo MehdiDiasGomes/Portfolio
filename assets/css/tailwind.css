@@ -12,6 +12,12 @@
     --softSlate: 231 23% 52% 0.4;
     --midnightOverlay: 231, 21%, 19%, 0.5;
 
+    --accent-purple: 270 100% 80%;
+    --accent-blue: 220 90% 70%;
+    --accent-pink: 320 85% 75%;
+    --glow-purple: 270 100% 80% / 0.3;
+    --glow-blue: 220 90% 70% / 0.3;
+
     --background: 0 0% 100%;
 
     --muted: 0 0% 96.1%;
@@ -109,4 +115,49 @@
 body {
   background: #000319;
   font-family: Regular, sans-serif;
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-effect-dark {
+    @apply bg-black/20 backdrop-blur-xl border border-white/5;
+  }
+
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-[#CBACF9] via-purple-400 to-blue-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-secondary {
+    @apply bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent;
+  }
+
+  .smooth-transition {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+  }
 }

@@ -1,11 +1,11 @@
 <template>
-  <div class="p-[2px] rounded-[15px] bg-gradient-to-r from-softSlate to-midnightOverlay w-fit">
-    <div class="bg-gradient-to-br from-[#6971A2] to-[#272A3C] rounded-[15px] p-[1px]">
+  <div class="rounded-lg bg-gradient-to-r from-softSlate to-midnightOverlay w-fit">
+    <div class="bg-gradient-to-br from-[#6971A2] to-[#272A3C] rounded-lg">
       <a
         target="_blank"
         :href="link"
         :class="[
-          'group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-[15px] px-5 font-medium text-white w-full transition hover:scale-110',
+          'group relative inline-flex transition-all duration-300 hover:scale-[1.02] items-center justify-center overflow-hidden rounded-lg p-3 font-medium text-white w-full',
           cn({
             'bg-gradient-to-r from-mauve to-purple-700': cta,
             'bg-gradient-to-r from-[#161A31] to-[#06091F]': !cta,
