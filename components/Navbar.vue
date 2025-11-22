@@ -1,90 +1,80 @@
 <template>
-  <div
-    class="fixed z-50 top-6 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-auto fade-in"
-  >
-    <div
-      class="glass-effect rounded-2xl px-6 py-4 shadow-2xl border border-white/10 backdrop-blur-2xl"
-    >
-      <div class="flex items-center justify-center">
+  <div class="fixed z-50 top-6 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-auto">
+    <div class="bg-black/40 backdrop-blur-xl rounded-[8px] px-6 py-3 border border-white/10">
+      <div class="flex items-center justify-between md:justify-center gap-6">
         <button
           @click="isMenuOpen = !isMenuOpen"
-          class="md:hidden flex items-center z-50 p-2 smooth-transition"
+          class="md:hidden text-white hover:text-purple-400 transition-colors"
         >
-          <div class="space-y-1.5">
+          <div class="w-6 h-6 flex flex-col justify-center gap-1.5">
             <span
-              class="block w-6 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full smooth-transition"
-              :class="{ 'rotate-45 translate-y-2': isMenuOpen }"
+              class="block w-full h-0.5 bg-current transition-all duration-300"
+              :class="isMenuOpen ? 'rotate-45 translate-y-2' : ''"
             ></span>
             <span
-              class="block w-6 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full smooth-transition"
-              :class="{ 'opacity-0': isMenuOpen }"
+              class="block w-full h-0.5 bg-current transition-all duration-300"
+              :class="isMenuOpen ? 'opacity-0' : ''"
             ></span>
             <span
-              class="block w-6 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full smooth-transition"
-              :class="{ '-rotate-45 -translate-y-2': isMenuOpen }"
+              class="block w-full h-0.5 bg-current transition-all duration-300"
+              :class="isMenuOpen ? '-rotate-45 -translate-y-2' : ''"
             ></span>
           </div>
         </button>
 
-        <nav class="hidden md:flex items-center gap-8 whitespace-nowrap justify-center">
-          <li
-            class="flex flex-col items-center relative group"
+        <nav class="hidden md:flex items-center gap-1">
+          <NuxtLink
             v-for="(item, index) in navItems"
             :key="index"
+            :to="item.url"
+            :class="[
+              'px-4 py-2 text-sm transition-all duration-300 relative',
+              removePrefix(route.path) === item.url
+                ? 'text-white'
+                : 'text-gray-400 hover:text-white',
+              item.url === '/about' ? 'hidden sm:block' : '',
+            ]"
           >
-            <NuxtLink
-              :class="[
-                'py-2 px-4 rounded-lg smooth-transition relative overflow-hidden',
-                removePrefix(route.path) === item.url
-                  ? 'text-white font-semibold'
-                  : 'text-gray-400 hover:text-white',
-                item.url === '/about' ? 'hidden sm:block' : '',
-              ]"
-              :to="item.url"
-            >
-              <span class="relative z-10">{{ item.name }}</span>
-              <div
-                v-if="removePrefix(route.path) === item.url"
-                class="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-lg"
-              ></div>
-              <div
-                class="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-blue-600/10 rounded-lg opacity-0 group-hover:opacity-100 smooth-transition"
-              ></div>
-            </NuxtLink>
-          </li>
-          <div class="w-px h-6 bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
-          <LangChoice class="hidden md:block" />
+            {{ item.name }}
+            <span
+              v-if="removePrefix(route.path) === item.url"
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-purple-600 rounded-full"
+            ></span>
+          </NuxtLink>
         </nav>
+
+        <div class="hidden md:block w-px h-4 bg-white/10"></div>
+        <LangChoice class="hidden md:block" />
       </div>
 
       <Transition
-        enter-active-class="transition-all duration-300 ease-out"
+        enter-active-class="transition-all duration-200 ease-out"
         enter-from-class="opacity-0 -translate-y-2"
         enter-to-class="opacity-100 translate-y-0"
-        leave-active-class="transition-all duration-200 ease-in"
+        leave-active-class="transition-all duration-150 ease-in"
         leave-from-class="opacity-100 translate-y-0"
         leave-to-class="opacity-0 -translate-y-2"
       >
         <div
           v-if="isMenuOpen"
-          class="md:hidden absolute top-full left-0 right-0 mt-3 bg-[#0a0a0f]/95 backdrop-blur-2xl rounded-2xl p-4 shadow-2xl border border-white/20"
+          class="md:hidden absolute top-full left-0 right-0 mt-2 bg-black/95 backdrop-blur-xl rounded-[8px] border border-white/10 overflow-hidden"
         >
-          <ul ref="mobileMenu" class="space-y-2">
-            <li v-for="(item, index) in navItems" :key="index" class="flex flex-col items-center">
+          <ul ref="mobileMenu" class="py-2">
+            <li v-for="(item, index) in navItems" :key="index">
               <NuxtLink
                 @click="isMenuOpen = false"
+                :to="item.url"
                 :class="[
-                  'py-3 px-6 rounded-xl w-full text-center smooth-transition',
+                  'block px-4 py-3 text-sm transition-colors',
                   removePrefix(route.path) === item.url
-                    ? 'text-white font-semibold bg-gradient-to-r from-purple-600/30 to-blue-600/30'
+                    ? 'text-white bg-purple-600/20'
                     : 'text-gray-400 hover:text-white hover:bg-white/5'
                 ]"
-                :to="item.url"
               >
                 {{ item.name }}
               </NuxtLink>
             </li>
-            <li class="w-full flex justify-center pt-2 border-t border-white/10">
+            <li class="border-t border-white/10 mt-2 pt-2 px-4">
               <LangChoice />
             </li>
           </ul>
