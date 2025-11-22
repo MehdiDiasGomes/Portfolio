@@ -1,5 +1,5 @@
 <template>
-  <div class="flex relative flex-col mt-14 z-30 items-center justify-center">
+  <div class="flex relative flex-col mx-24 max-md:mx-4 mt-14 z-30 ">
     <img class="absolute top-0 h-full -z-10 w-full" src="../assets/img/grid-pattern.png" />
     <div class="w-full flex flex-col items-center mb-4">
       <h2 class="text-white text-4xl text-center font-extrabold">
@@ -8,8 +8,8 @@
       </h2>
       <div class="h-1 w-16 bg-primaryPerso rounded mt-2"></div>
     </div>
-    <div class="max-w-[1000px] my-10">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 rounded-xl">
+    <div class="my-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 rounded-xl">
         <div
           v-for="(item, index) in workXp"
           :key="index"
@@ -31,6 +31,8 @@ import frontXp from "~/assets/img/frontXp.png";
 import backXp from "~/assets/img/backXp.png";
 import mobile from "~/assets/img/mobile.png";
 import amp from "~/assets/img/amp.png";
+
+
 
 const { t } = useI18n();
 
