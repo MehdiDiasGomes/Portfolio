@@ -62,7 +62,8 @@
     }
   },
   "projects": {
-    "title": "Projects",
+    "title": "My",
+    "title_highlight": "projects",
     "quizify": {
       "title": "Quizify",
       "description": "Bachelor project aimed at integrating an interactive quiz that assesses players' skills while offering them a gaming experience."

@@ -65,7 +65,8 @@
     }
   },
   "projects": {
-    "title": "Projets",
+    "title": "Mes",
+    "title_highlight": "projets",
     "quizify": {
       "title": "Quizify",
       "description": "Projet de bachelor visant à intégrer un quiz interactif permettant d'évaluer les compétences des joueurs tout en leur offrant une expérience de jeu."

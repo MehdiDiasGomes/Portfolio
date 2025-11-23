@@ -6,18 +6,11 @@
     </div>
 
     <div class="relative mx-auto max-w-7xl">
-      <div class="text-center mb-16 lg:mb-20 fade-in">
-        <div class="flex items-center justify-center gap-4 mb-6">
-          <div class="h-px w-12 lg:w-20 bg-gradient-to-r from-transparent via-purple-500 to-purple-500 rounded-full hidden sm:block"></div>
-          <h2 class="text-white tracking-tight">
-            {{ t("projects.title") }}
-          </h2>
-          <div class="h-px w-12 lg:w-20 bg-gradient-to-l from-transparent via-blue-500 to-blue-500 rounded-full hidden sm:block"></div>
-        </div>
-
-        <p class="text-gray-300 max-w-2xl mx-auto">
-          Découvrez mes créations et projets développés avec passion
-        </p>
+      <div class="w-full flex flex-col items-center mb-16 lg:mb-20 fade-in">
+        <h2 class="text-white text-center">
+          {{ t("projects.title") }} <span class="text-primaryPerso">{{ t("projects.title_highlight") }}</span>
+        </h2>
+        <div class="h-1 w-16 bg-primaryPerso rounded mt-2"></div>
       </div>
 
       <div ref="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 justify-center gap-8 lg:gap-10">
