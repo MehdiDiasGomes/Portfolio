@@ -88,37 +88,48 @@ export const aboutExperience: Experience[] = [
 ];
 
 export const skills: Skill[] = [
+  // Front-end
   {
     title: "TypeScript",
     subTitle: "Front end",
     icon: "TypeScript",
     flame: true,
   },
-  {
-    title: "JavaScript",
-    subTitle: "Front end",
-    icon: "JavaScript",
-    flame: true,
-  },
   { title: "Nuxt.js", subTitle: "Front end", icon: "Nuxt", flame: true },
-  { title: "React.js", subTitle: "Front end", icon: "React" },
+
+  // Back-end
   { title: "PHP", subTitle: "Back end", icon: "PHP", flame: true },
-  {
-    title: "Tailwind CSS",
-    subTitle: "Front end",
-    icon: "TailwindCSS",
-    flame: true,
-  },
-  { title: "Docker", subTitle: "Container", icon: "Docker", flame: true },
-  { title: "MySQL", subTitle: "Base de données", icon: "MySql", flame: true },
-  { title: "AWS", subTitle: "Cloud", icon: "AWS", flame: true },
   { title: "Laravel", subTitle: "Back end", icon: "Laravel", flame: true },
-  { title: "Node.js", subTitle: "Back end", icon: "Node" },
-  { title: "MongoDB", subTitle: "Base de données", icon: "MongoDB" },
-  { title: "Figma", subTitle: "Design", icon: "Figma", flame: true },
+  { title: "Node.js", subTitle: "Back end", icon: "Node", flame: true },
+
+  // Base de données
+  { title: "MySQL", subTitle: "Base de données", icon: "MySql", flame: true },
+
+  // DevOps & Cloud
+  { title: "Docker", subTitle: "DevOps", icon: "Docker", flame: true },
+  { title: "AWS", subTitle: "Cloud", icon: "AWS", flame: true },
+
+  // Outils
   { title: "Git", subTitle: "Versioning", icon: "Git", flame: true },
-  { title: "Vue.js", subTitle: "Front end", icon: "Vue", flame: true },
-  { title: "Astro", subTitle: "Front end", icon: "Astro" },
+
+  // --- Compétences masquées ---
+  // {
+  //   title: "JavaScript",
+  //   subTitle: "Front end",
+  //   icon: "JavaScript",
+  //   flame: true,
+  // },
+  // { title: "React.js", subTitle: "Front end", icon: "React" },
+  // {
+  //   title: "Tailwind CSS",
+  //   subTitle: "Front end",
+  //   icon: "TailwindCSS",
+  //   flame: true,
+  // },
+  // { title: "Vue.js", subTitle: "Front end", icon: "Vue", flame: true },
+  // { title: "Astro", subTitle: "Front end", icon: "Astro" },
+  // { title: "MongoDB", subTitle: "Base de données", icon: "MongoDB" },
+  // { title: "Figma", subTitle: "Design", icon: "Figma", flame: true },
 ];
 
 export const education: Education[] = [
