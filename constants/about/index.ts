@@ -67,6 +67,22 @@ export const aboutExperience: Experience[] = [
     title: "about.experience",
     icon: "WorkExperience",
     organization: {
+      title: "about.experience.maanos.title",
+      subTitle: "about.experience.maanos.subTitle",
+      time: "about.experience.maanos.time",
+      list: [
+        {
+          parag: "about.experience.maanos.firstInList.parag",
+          usedTechnos: "about.experience.maanos.firstInList.usedTechnos",
+          technos: "about.experience.maanos.firstInList.technos",
+        },
+      ],
+    },
+  },
+  {
+    title: "about.experience",
+    icon: "WorkExperience",
+    organization: {
       title: "about.experience.flippad.title",
       subTitle: "about.experience.flippad.subTitle",
       time: "about.experience.flippad.time",
@@ -74,13 +90,12 @@ export const aboutExperience: Experience[] = [
         {
           parag: "about.experience.flippad.firstInList.parag",
           usedTechnos: "about.experience.flippad.firstInList.usedTechnos",
-          technos:
-            "Nuxt.js 3, TypeScript, Tailwind CSS, Laravel (Eloquent), MySQL, Docker",
+          technos: "about.experience.flippad.firstInList.technos",
         },
         {
           parag: "about.experience.flippad.secondInList.parag",
           usedTechnos: "about.experience.flippad.secondInList.usedTechnos",
-          technos: "Nuxt.js, Bootstrap, JavaScript, Laravel",
+          technos: "about.experience.flippad.secondInList.technos",
         },
       ],
     },

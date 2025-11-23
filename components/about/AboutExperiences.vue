@@ -41,7 +41,8 @@
                     <div
                       class="relative bg-gradient-to-b from-[#413075] to-[#181818] rounded-xl lg:rounded-2xl p-2 lg:p-3 border border-mauve/30">
                       <img class="w-8 h-8 lg:w-12 lg:h-12 object-cover rounded-lg lg:rounded-xl"
-                        src="/assets/img/flippad.jpg" alt="Logo Flippad Digital Solutions">
+                        :src="getCompanyLogo(experience.organization.title)"
+                        :alt="`Logo ${t(experience.organization.title)}`">
                     </div>
                   </div>
 
@@ -106,5 +107,13 @@ const loadIconComponent = (name: string) => {
   return defineAsyncComponent(() =>
     import(`~/components/icons/about/${name}.vue`).catch(() => null),
   );
+};
+
+const getCompanyLogo = (titleKey: string): string => {
+  const logoMap: Record<string, string> = {
+    'about.experience.maanos.title': '/assets/img/maanos.jpg',
+    'about.experience.flippad.title': '/assets/img/jewely.jpg',
+  };
+  return logoMap[titleKey] || '/assets/img/default.jpg';
 };
 </script>

@@ -123,8 +123,8 @@
   "about": {
     "status": "Available",
     "subTitle": "Full Stack Developer",
-    "firstParagraph": "Mehdi DIAS GOMES, 21 years old, Full Stack Developer, Metz",
-    "secondParagraph": "Passionate about web development, I am currently pursuing a Full Stack Web Development degree at Metz Numeric School. As an apprentice, I develop practical skills in full stack development and gain valuable experience in the field.",
+    "firstParagraph": "Mehdi DIAS GOMES, Full Stack Developer, Metz",
+    "secondParagraph": "Graduated with a Bachelor's degree in Full Stack Web Development from Metz Numeric School, I am passionate about web development. I have developed practical expertise in full stack development and gained significant experience through various professional projects.",
     "aboutMe": "About me",
     "yearsExperience": "Years",
     "projectsCount": "Projects",
@@ -135,17 +135,29 @@
     "viewProjects": "View my projects",
     "experience": {
       "title": "Professional Experience",
-      "flippad": {
-        "title": "Flippad Digital Solutions",
+      "maanos": {
+        "title": "Maanos",
         "subTitle": "Fullstack developer",
-        "time": "09/2024 - Present",
+        "time": "11/2025 - Present",
+        "firstInList": {
+          "parag": "Internal website development and maintenance. Managing technical infrastructure and continuous platform improvement.",
+          "usedTechnos": "Technologies used: ",
+          "technos": "Nuxt.js, TypeScript, Tailwind CSS"
+        }
+      },
+      "flippad": {
+        "title": "Jewely HBJO",
+        "subTitle": "Fullstack developer",
+        "time": "09/2024 - 10/2025",
         "firstInList": {
           "parag": "Complete redesign of the \"Fiches pédagogiques\" website (front-end). Developed the responsive user interface and back-office from scratch, with backend API integration.",
-          "usedTechnos": "Technologies used: "
+          "usedTechnos": "Technologies used: ",
+          "technos": "Nuxt.js 3, TypeScript, Tailwind CSS, Laravel (Eloquent), MySQL, Docker"
         },
         "secondInList": {
           "parag": "Added features to a PIM (Product Information Management) – improved the product form (filters, new fields for watches). Developed dynamic filters and custom fields for data entry on the front-end.",
-          "usedTechnos": "Technologies used: "
+          "usedTechnos": "Technologies used: ",
+          "technos": "Nuxt.js, Bootstrap, JavaScript, Laravel"
         }
       }
     },
