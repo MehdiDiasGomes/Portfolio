@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="flex flex-col flex-1">
-      <p class="text-white text-base font-bold">{{ title }}</p>
+      <p class="text-white font-bold">{{ title }}</p>
       <span class="text-gray-400 text-sm">{{ subTitle }}</span>
     </div>
   </div>

@@ -6,7 +6,7 @@
         <div class="absolute -inset-1 lg:-inset-2 bg-mauve/20 rounded-full blur-lg"></div>
       </div>
       <div class="flex-1">
-        <h2 class="text-white text-xl lg:text-2xl font-bold tracking-tight">{{ t('about.education.title') }}</h2>
+        <h2 class="text-white tracking-tight">{{ t('about.education.title') }}</h2>
         <div class="w-16 lg:w-20 h-1 bg-gradient-to-r from-mauve to-foreground rounded-full mt-2"></div>
       </div>
     </div>
@@ -30,8 +30,8 @@
               </div>
 
               <div class="flex-1 min-w-0">
-                <h3 class="text-white text-base lg:text-lg font-bold leading-tight mb-1 lg:mb-2">{{ t(content.title) }}</h3>
-                <p class="text-mauve font-medium text-sm lg:text-sm mb-2">{{ t(content.subTitle) }}</p>
+                <h3 class="text-white leading-tight mb-1 lg:mb-2">{{ t(content.title) }}</h3>
+                <p class="text-mauve font-medium mb-2">{{ t(content.subTitle) }}</p>
 
                 <div class="inline-flex items-center px-2 py-1 bg-green-500/20 text-green-400 text-xs rounded-full border border-green-500/30">
                   <div class="w-1.5 h-1.5 bg-green-400 rounded-full mr-1.5 animate-pulse"></div>
@@ -41,7 +41,7 @@
             </div>
 
             <div class="flex-1 mb-4">
-              <p class="text-gray-300 leading-relaxed text-sm lg:text-base">{{ t(content.parag) }}</p>
+              <p class="text-gray-300">{{ t(content.parag) }}</p>
             </div>
 
             <div class="pt-3 lg:pt-4 border-t border-mauve/20">

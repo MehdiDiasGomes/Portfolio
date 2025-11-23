@@ -1,21 +1,21 @@
 <template>
-  <div class="relative py-16 px-6 sm:px-12 lg:px-24 lg:py-24">
+  <div class="relative py-16 mp-home lg:py-24">
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute top-1/4 left-1/4 w-64 h-64 lg:w-96 lg:h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-64 h-64 lg:w-96 lg:h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
     </div>
 
     <div class="relative mx-auto max-w-7xl">
       <div class="text-center mb-16 lg:mb-20 fade-in">
         <div class="flex items-center justify-center gap-4 mb-6">
-          <div class="h-px w-12 lg:w-20 bg-gradient-to-r from-transparent via-purple-500 to-purple-500 rounded-full"></div>
-          <h2 class="text-white text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
+          <div class="h-px w-12 lg:w-20 bg-gradient-to-r from-transparent via-purple-500 to-purple-500 rounded-full hidden sm:block"></div>
+          <h2 class="text-white tracking-tight">
             {{ t("projects.title") }}
           </h2>
-          <div class="h-px w-12 lg:w-20 bg-gradient-to-l from-transparent via-blue-500 to-blue-500 rounded-full"></div>
+          <div class="h-px w-12 lg:w-20 bg-gradient-to-l from-transparent via-blue-500 to-blue-500 rounded-full hidden sm:block"></div>
         </div>
 
-        <p class="text-gray-300 text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed">
+        <p class="text-gray-300 max-w-2xl mx-auto">
           Découvrez mes créations et projets développés avec passion
         </p>
       </div>
@@ -44,10 +44,10 @@
             <div class="p-6 lg:p-8 flex-1 flex flex-col">
               <div class="mb-6 flex-1">
                 <h3
-                  class="text-white text-xl lg:text-2xl font-bold mb-3 group-hover:text-gradient-primary smooth-transition">
+                  class="text-white mb-3 group-hover:text-gradient-primary smooth-transition">
                   {{ t(item.titleKey) }}
                 </h3>
-                <p class="text-gray-300 leading-relaxed text-sm lg:text-base">
+                <p class="text-gray-300">
                   {{ t(item.descriptionKey) }}
                 </p>
               </div>
