@@ -120,7 +120,17 @@
     "send": "Send",
     "sending": "Sending...",
     "successMessage": "Your message has been sent successfully. I will get back to you as soon as possible!",
-    "errorMessage": "An error occurred while sending the message. Please try again later."
+    "errorMessage": "An error occurred while sending the message. Please try again later.",
+    "errors": {
+      "firstNameRequired": "First name is required",
+      "firstNameTooShort": "First name must be at least 2 characters",
+      "lastNameRequired": "Last name is required",
+      "lastNameTooShort": "Last name must be at least 2 characters",
+      "emailRequired": "Email address is required",
+      "emailInvalid": "Please enter a valid email address",
+      "messageRequired": "Message is required",
+      "messageTooShort": "Message must be at least 10 characters"
+    }
   },
   "about": {
     "status": "Available",

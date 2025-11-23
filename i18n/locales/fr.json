@@ -123,7 +123,17 @@
     "send": "Envoyer",
     "sending": "Envoi en cours...",
     "successMessage": "Votre message a été envoyé avec succès. Je vous répondrai dès que possible !",
-    "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
+    "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard.",
+    "errors": {
+      "firstNameRequired": "Le prénom est requis",
+      "firstNameTooShort": "Le prénom doit contenir au moins 2 caractères",
+      "lastNameRequired": "Le nom est requis",
+      "lastNameTooShort": "Le nom doit contenir au moins 2 caractères",
+      "emailRequired": "L'adresse email est requise",
+      "emailInvalid": "Veuillez saisir une adresse email valide",
+      "messageRequired": "Le message est requis",
+      "messageTooShort": "Le message doit contenir au moins 10 caractères"
+    }
   },
   "about": {
     "status": "Disponible",
