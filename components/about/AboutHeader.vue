@@ -48,42 +48,24 @@
     </div>
 
     <div class="mt-10 lg:mt-14 fade-in">
-      <div class="glass-effect-dark rounded-3xl p-6 lg:p-10 border border-purple-500/20 shadow-2xl">
-        <div class="flex flex-col gap-6 lg:gap-8 text-white">
-          <div class="flex items-center gap-4">
-            <div class="h-px flex-1 bg-gradient-to-r from-transparent via-purple-500 to-purple-500 rounded-full hidden sm:flex"></div>
-            <h3 class="text-gradient-primary">{{ t('about.aboutMe') }}</h3>
-            <div class="h-px flex-1 bg-gradient-to-l from-transparent via-blue-500 to-blue-500 rounded-full hidden sm:flex"></div>
-          </div>
-
-          <div class="space-y-6 lg:grid lg:grid-cols-2 lg:gap-8 lg:space-y-0">
-            <div class="glass-effect p-5 rounded-2xl border border-purple-500/20">
-              <p class="text-gray-300">
-                {{ t("about.firstParagraph").replaceAll(",", " | ") }}
-              </p>
-            </div>
-            <div class="glass-effect p-5 rounded-2xl border border-blue-500/20">
-              <p class="text-gray-300">
-                {{ t("about.secondParagraph") }}
-              </p>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-2 gap-6 mt-6 pt-6 border-t border-white/10">
-            <div class="text-center glass-effect p-4 rounded-2xl border border-purple-500/20">
-              <div class="text-2xl lg:text-3xl font-bold text-gradient-primary mb-2">
-                2+
-              </div>
-              <div class="text-xs lg:text-sm text-gray-400">{{ t('about.yearsExperience') }}</div>
-            </div>
-            <div class="text-center glass-effect p-4 rounded-2xl border border-blue-500/20">
-              <div class="text-2xl lg:text-3xl font-bold text-gradient-primary mb-2">
-                2+
-              </div>
-              <div class="text-xs lg:text-sm text-gray-400">{{ t('about.projectsCount') }}</div>
-            </div>
-          </div>
+      <div class="flex items-center gap-3 lg:gap-4 mb-6 lg:mb-8">
+        <div class="relative">
+          <Icon name="User" :stroke-width="2" :size="32" class="w-8 h-8 lg:w-12 lg:h-12 text-mauve drop-shadow-lg" />
+          <div class="absolute -inset-1 lg:-inset-2 bg-mauve/20 rounded-full blur-lg"></div>
         </div>
+        <div class="flex-1">
+          <h3 class="text-white tracking-tight">{{ t('about.aboutMe') }}</h3>
+          <div class="w-16 lg:w-20 h-1 bg-gradient-to-r from-mauve to-foreground rounded-full mt-2"></div>
+        </div>
+      </div>
+
+      <div class="space-y-4 lg:space-y-6">
+        <p class="text-gray-300">
+          {{ t("about.firstParagraph").replaceAll(",", " | ") }}
+        </p>
+        <p class="text-gray-300">
+          {{ t("about.secondParagraph") }}
+        </p>
       </div>
     </div>
   </div>
