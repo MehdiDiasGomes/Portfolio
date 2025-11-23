@@ -14,8 +14,8 @@
 
       <div class="flex flex-col items-center lg:items-start gap-6 flex-1 text-center lg:text-left">
         <div class="fade-in space-y-4">
-          <h1 class="font-bold text-white text-2xl sm:text-3xl lg:text-4xl tracking-tight">Mehdi DIAS GOMES</h1>
-          <h2 class="text-gradient-primary text-lg sm:text-xl lg:text-2xl font-semibold">
+          <h1 class="text-white tracking-tight">Mehdi DIAS GOMES</h1>
+          <h2 class="text-gradient-primary">
             {{ t('about.subTitle') }}
           </h2>
 
@@ -51,19 +51,19 @@
       <div class="glass-effect-dark rounded-3xl p-6 lg:p-10 border border-purple-500/20 shadow-2xl">
         <div class="flex flex-col gap-6 lg:gap-8 text-white">
           <div class="flex items-center gap-4">
-            <div class="h-px flex-1 bg-gradient-to-r from-transparent via-purple-500 to-purple-500 rounded-full"></div>
-            <h3 class="text-lg lg:text-xl font-bold text-gradient-primary">{{ t('about.aboutMe') }}</h3>
-            <div class="h-px flex-1 bg-gradient-to-l from-transparent via-blue-500 to-blue-500 rounded-full"></div>
+            <div class="h-px flex-1 bg-gradient-to-r from-transparent via-purple-500 to-purple-500 rounded-full hidden sm:flex"></div>
+            <h3 class="text-gradient-primary">{{ t('about.aboutMe') }}</h3>
+            <div class="h-px flex-1 bg-gradient-to-l from-transparent via-blue-500 to-blue-500 rounded-full hidden sm:flex"></div>
           </div>
 
           <div class="space-y-6 lg:grid lg:grid-cols-2 lg:gap-8 lg:space-y-0">
             <div class="glass-effect p-5 rounded-2xl border border-purple-500/20">
-              <p class="text-gray-300 leading-relaxed text-sm lg:text-base">
+              <p class="text-gray-300">
                 {{ t("about.firstParagraph").replaceAll(",", " | ") }}
               </p>
             </div>
             <div class="glass-effect p-5 rounded-2xl border border-blue-500/20">
-              <p class="text-gray-300 leading-relaxed text-sm lg:text-base">
+              <p class="text-gray-300">
                 {{ t("about.secondParagraph") }}
               </p>
             </div>

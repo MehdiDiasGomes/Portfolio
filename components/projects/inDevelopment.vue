@@ -58,7 +58,7 @@
           </div>
 
           <div class="bg-gradient-to-br from-darkblue/40 to-midnightBlue/40 backdrop-blur-sm rounded-2xl p-6 border border-mauve/20">
-            <h4 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+            <h4 class="text-white mb-4 flex items-center gap-2">
               <div class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
               En cours de développement
             </h4>

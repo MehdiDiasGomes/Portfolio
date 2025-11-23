@@ -7,7 +7,7 @@
         <div class="absolute -inset-1 lg:-inset-2 bg-mauve/20 rounded-full blur-lg"></div>
       </div>
       <div class="flex-1">
-        <h2 class="text-white text-xl lg:text-2xl font-bold tracking-tight">{{ t('about.experience.title') }}</h2>
+        <h2 class="text-white tracking-tight">{{ t('about.experience.title') }}</h2>
         <div class="w-16 lg:w-20 h-1 bg-gradient-to-r from-mauve to-foreground rounded-full mt-2"></div>
       </div>
     </div>
@@ -46,9 +46,9 @@
                   </div>
 
                   <div class="flex-1 min-w-0">
-                    <h3 class="text-white text-lg lg:text-xl font-bold">{{ t(experience.organization.title) }}</h3>
+                    <h3 class="text-white">{{ t(experience.organization.title) }}</h3>
                     <h4
-                      class="text-base lg:text-lg bg-gradient-to-r from-mauve to-foreground bg-clip-text text-transparent font-medium">
+                      class="bg-gradient-to-r from-mauve to-foreground bg-clip-text text-transparent">
                       {{ t(experience.organization.subTitle) }}
                     </h4>
                   </div>
@@ -76,7 +76,7 @@
                   </div>
 
                   <div class="flex-1 space-y-2 lg:space-y-3">
-                    <p class="text-gray-300 leading-relaxed text-sm lg:text-base">{{ t(subExperience.parag) }}</p>
+                    <p class="text-gray-300">{{ t(subExperience.parag) }}</p>
 
                     <div class="space-y-2">
                       <span class="text-gray-400 text-xs lg:text-sm">{{ t(subExperience.usedTechnos) }}</span>

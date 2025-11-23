@@ -62,7 +62,7 @@
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div class="space-y-6">
               <div>
-                <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                <h3 class="text-white mb-4 flex items-center gap-2">
                   <div class="w-2 h-2 bg-mauve rounded-full"></div>
                   À propos du projet
                 </h3>
@@ -72,7 +72,7 @@
               </div>
 
               <div>
-                <h4 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                <h4 class="text-white mb-4 flex items-center gap-2">
                   <div class="w-2 h-2 bg-foreground rounded-full"></div>
                   {{ t("projects.portfolio.features") }}
                 </h4>
@@ -98,7 +98,7 @@
 
             <div class="space-y-6">
               <div>
-                <h4 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                <h4 class="text-white mb-4 flex items-center gap-2">
                   <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
                   {{ t("projects.portfolio.technologies") }}
                 </h4>
@@ -118,7 +118,7 @@
 
               <div
                 class="bg-gradient-to-br from-darkblue/40 to-midnightBlue/40 backdrop-blur-sm rounded-xl p-6 border border-mauve/20">
-                <h4 class="text-lg font-semibold text-white mb-4 flex items-center gap-2">
+                <h4 class="text-white mb-4 flex items-center gap-2">
                   <div class="w-2 h-2 bg-green-400 rounded-full"></div>
                   Actions
                 </h4>
