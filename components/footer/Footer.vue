@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-background/5 bottom-0 w-full text-white py-8 mt-8">
-    <div class="container mx-auto px-4">
+    <div class="mp-home">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0">
           <img class="w-14" src="~/public/defaultIcon.png" alt="" />
