@@ -1,7 +1,8 @@
 {
   "header": {
     "title": "Je construis",
-    "span_title": "Des Expériences Web Modernes",
+    "span_title": "Des Expériences",
+    "span_title_italic": "Web Modernes",
     "description": "Développeur full-stack passionné, je crée des applications web modernes et performantes"
   },
   "navigation": {
@@ -64,7 +65,8 @@
     }
   },
   "projects": {
-    "title": "Projets",
+    "title": "Mes",
+    "title_highlight": "projets",
     "quizify": {
       "title": "Quizify",
       "description": "Projet de bachelor visant à intégrer un quiz interactif permettant d'évaluer les compétences des joueurs tout en leur offrant une expérience de jeu."
@@ -121,13 +123,23 @@
     "send": "Envoyer",
     "sending": "Envoi en cours...",
     "successMessage": "Votre message a été envoyé avec succès. Je vous répondrai dès que possible !",
-    "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
+    "errorMessage": "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard.",
+    "errors": {
+      "firstNameRequired": "Le prénom est requis",
+      "firstNameTooShort": "Le prénom doit contenir au moins 2 caractères",
+      "lastNameRequired": "Le nom est requis",
+      "lastNameTooShort": "Le nom doit contenir au moins 2 caractères",
+      "emailRequired": "L'adresse email est requise",
+      "emailInvalid": "Veuillez saisir une adresse email valide",
+      "messageRequired": "Le message est requis",
+      "messageTooShort": "Le message doit contenir au moins 10 caractères"
+    }
   },
   "about": {
     "status": "Disponible",
     "subTitle": "Développeur Full Stack",
-    "firstParagraph": "Mehdi DIAS GOMES, 21 ans, Développeur Full Stack, Metz",
-    "secondParagraph": "Passionné par le développement web, je poursuis actuellement une licence en Développement Web Full Stack à Metz Numeric School. En tant qu'apprenti, je développe des compétences pratiques en développement full stack et acquiers une expérience précieuse dans le domaine.",
+    "firstParagraph": "Mehdi DIAS GOMES, Développeur Full Stack, Metz",
+    "secondParagraph": "Diplômé d'une licence en Développement Web Full Stack à Metz Numeric School, je suis passionné par le développement web. J'ai développé une expertise pratique en développement full stack et acquis une expérience significative à travers divers projets professionnels.",
     "aboutMe": "À propos de moi",
     "yearsExperience": "Années",
     "projectsCount": "Projets",
@@ -138,17 +150,29 @@
     "viewProjects": "Voir mes projets",
     "experience": {
       "title": "Expérience professionnelle",
-      "flippad": {
-        "title": "Flippad Digital Solutions",
+      "maanos": {
+        "title": "Maanos The art of Massage",
         "subTitle": "Développeur Full Stack",
-        "time": "09/2024 - Maintenant",
+        "time": "11/2025 - Maintenant",
+        "firstInList": {
+          "parag": "Développement et maintenance du site web en interne. Prise en charge de l'infrastructure technique et amélioration continue de la plateforme.",
+          "usedTechnos": "Technologies utilisées : ",
+          "technos": "Nuxt.js, TypeScript, Tailwind CSS"
+        }
+      },
+      "flippad": {
+        "title": "Jewely HBJO",
+        "subTitle": "Développeur Full Stack",
+        "time": "09/2024 - 10/2025",
         "firstInList": {
           "parag": "Refonte complète du site \"Fiches pédagogiques\" (front-end) \n Développement from scratch de l'interface utilisateur responsive et du back-office, avec intégration API back-end.",
-          "usedTechnos": "Technologies utilisées : "
+          "usedTechnos": "Technologies utilisées : ",
+          "technos": "Nuxt.js 3, TypeScript, Tailwind CSS, Laravel (Eloquent), MySQL, Docker"
         },
         "secondInList": {
           "parag": "Ajout de fonctionnalités sur un PIM (Product Information Management) – amélioration du formulaire produit (filtres, nouveaux champs pour montres). Développement front-end de filtres dynamiques et de champs personnalisés pour la saisie des données.",
-          "usedTechnos": "Technologies utilisées : "
+          "usedTechnos": "Technologies utilisées : ",
+          "technos": "Nuxt.js, Bootstrap, JavaScript, Laravel"
         }
       }
     },

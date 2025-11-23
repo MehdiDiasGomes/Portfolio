@@ -20,38 +20,48 @@
       </p>
     </div>
 
-    <form @submit.prevent="submitForm" class="w-full max-w-2xl fade-in">
-      <div class="glass-effect-dark rounded-3xl p-8 lg:p-10 border border-purple-500/20 shadow-2xl">
+    <form @submit.prevent="submitForm" class="w-full fade-in">
+      <div class="rounded-3xl p-8 lg:p-10 border border-purple-500/20 relative">
         <div ref="formFields">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div class="flex flex-col gap-3">
-              <label for="firstName" class="text-white text-sm font-semibold">
-                {{ t("contact.firstName") }}
-              </label>
-              <input
-                type="text"
-                id="firstname"
-                name="firstname"
-                v-model="form.firstname"
-                :placeholder="t('contact.firstNamePlaceholder')"
-                class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500"
-                required
-              />
-            </div>
-            <div class="flex flex-col gap-3">
-              <label for="lastName" class="text-white text-sm font-semibold">
-                {{ t("contact.lastName") }}
-              </label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastname"
-                v-model="form.lastname"
-                :placeholder="t('contact.lastNamePlaceholder')"
-                class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500"
-                required
-              />
-            </div>
+            <FormField v-slot="{ componentField }" name="firstname">
+              <FormItem class="flex flex-col gap-3 space-y-0" v-auto-animate>
+                <FormLabel for="firstname" class="text-white text-sm font-semibold">
+                  {{ t("contact.firstName") }}
+                </FormLabel>
+                <FormControl>
+                  <input
+                    type="text"
+                    v-bind="componentField"
+                    id="firstname"
+                    name="firstname"
+                    v-model="form.firstname"
+                    :placeholder="t('contact.firstNamePlaceholder')"
+                    class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            </FormField>
+            <FormField v-slot="{ componentField }" name="lastname">
+              <FormItem class="flex flex-col gap-3 space-y-0" v-auto-animate>
+                <FormLabel for="lastname" class="text-white text-sm font-semibold">
+                  {{ t("contact.lastName") }}
+                </FormLabel>
+                <FormControl>
+                  <input
+                    type="text"
+                    v-bind="componentField"
+                    id="lastname"
+                    name="lastname"
+                    v-model="form.lastname"
+                    :placeholder="t('contact.lastNamePlaceholder')"
+                    class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            </FormField>
           </div>
 
           <FormField v-slot="{ componentField }" name="email">
@@ -68,31 +78,35 @@
                   v-model="form.email"
                   :placeholder="t('contact.emailPlaceholder')"
                   class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500"
-                  required
                 />
               </FormControl>
               <FormMessage />
             </FormItem>
           </FormField>
 
-          <div class="flex flex-col gap-3 mb-8">
-            <label for="message" class="text-white text-sm font-semibold">
-              {{ t("contact.message") }}
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              v-model="form.message"
-              :placeholder="t('contact.messagePlaceholder')"
-              class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition min-h-[180px] resize-y placeholder:text-gray-500"
-              required
-            ></textarea>
-          </div>
+          <FormField v-slot="{ componentField }" name="message">
+            <FormItem class="flex flex-col gap-3 space-y-0 mb-8" v-auto-animate>
+              <FormLabel for="message" class="text-white text-sm font-semibold">
+                {{ t("contact.message") }}
+              </FormLabel>
+              <FormControl>
+                <textarea
+                  v-bind="componentField"
+                  id="message"
+                  name="message"
+                  v-model="form.message"
+                  :placeholder="t('contact.messagePlaceholder')"
+                  class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition min-h-[180px] resize-y placeholder:text-gray-500"
+                ></textarea>
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          </FormField>
 
-          <div class="flex justify-center">
+          <div class="w-full flex justify-end">
             <Button
               type="submit"
-              class="w-full text-lg"
+              class="w-fit"
               :content="isSubmitting ? t('contact.sending') : t('contact.send')"
               :icon="isSubmitting ? 'Loader2' : 'Send'"
               variant="primary"
@@ -150,7 +164,6 @@ import Button from "@/components/common/Button.vue";
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { toast } from "@/components/ui/toast";
 import { vAutoAnimate } from "@formkit/auto-animate/vue";
-import { useReCaptcha } from "vue-recaptcha-v3";
 
 import { toTypedSchema } from "@vee-validate/zod";
 import { useForm } from "vee-validate";
@@ -175,10 +188,27 @@ const formStatus = reactive({
   message: "",
 });
 
-const formSchema = toTypedSchema(
-  z.object({
-    email: z.string().email({ message: "Email invalide" }),
-  }),
+const formSchema = computed(() =>
+  toTypedSchema(
+    z.object({
+      firstname: z
+        .string({ required_error: t("contact.errors.firstNameRequired") })
+        .min(1, { message: t("contact.errors.firstNameRequired") })
+        .min(2, { message: t("contact.errors.firstNameTooShort") }),
+      lastname: z
+        .string({ required_error: t("contact.errors.lastNameRequired") })
+        .min(1, { message: t("contact.errors.lastNameRequired") })
+        .min(2, { message: t("contact.errors.lastNameTooShort") }),
+      email: z
+        .string({ required_error: t("contact.errors.emailRequired") })
+        .min(1, { message: t("contact.errors.emailRequired") })
+        .email({ message: t("contact.errors.emailInvalid") }),
+      message: z
+        .string({ required_error: t("contact.errors.messageRequired") })
+        .min(1, { message: t("contact.errors.messageRequired") })
+        .min(10, { message: t("contact.errors.messageTooShort") }),
+    }),
+  )
 );
 
 const { handleSubmit } = useForm({

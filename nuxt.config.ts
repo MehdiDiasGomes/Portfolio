@@ -14,6 +14,9 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
   ],
   fonts: {
+    families: [
+      { name: 'Trirong', provider: 'google' }
+    ],
     defaults: {
       weights: [300, 400, 500, 600, 700],
     },

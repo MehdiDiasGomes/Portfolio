@@ -1,6 +1,6 @@
 <template>
-  <div class="animate-fade-up animate-duration-700 animate-delay-300">
-    <div class="flex items-center gap-3 lg:gap-4 mb-6 lg:mb-8">
+  <div ref="experiencesContainer">
+    <div class="flex items-center gap-3 lg:gap-4 mb-6 lg:mb-8 scroll-animate">
       <div class="relative">
         <component class="w-8 h-8 lg:w-12 lg:h-12 text-mauve drop-shadow-lg"
           :is="loadIconComponent('WorkExperience')" />
@@ -19,7 +19,7 @@
 
       <div class="space-y-8 lg:space-y-12">
         <div v-for="(experience, index) in aboutExperience" :key="index"
-          class="relative animate-fade-up animate-duration-500" :style="{ animationDelay: `${400 + index * 200}ms` }">
+          class="relative scroll-animate-left">
 
           <div
             class="absolute left-2 lg:left-4 w-3 h-3 lg:w-4 lg:h-4 bg-gradient-to-br from-mauve to-foreground rounded-full border-2 lg:border-4 border-background shadow-lg">
@@ -41,7 +41,8 @@
                     <div
                       class="relative bg-gradient-to-b from-[#413075] to-[#181818] rounded-xl lg:rounded-2xl p-2 lg:p-3 border border-mauve/30">
                       <img class="w-8 h-8 lg:w-12 lg:h-12 object-cover rounded-lg lg:rounded-xl"
-                        src="/assets/img/flippad.jpg" alt="Logo Flippad Digital Solutions">
+                        :src="getCompanyLogo(experience.organization.title)"
+                        :alt="`Logo ${t(experience.organization.title)}`">
                     </div>
                   </div>
 
@@ -102,9 +103,25 @@
 import { aboutExperience } from '~/constants/about';
 
 const { t } = useI18n()
+const experiencesContainer = ref<HTMLElement | null>(null);
+
+// Initialize scroll animations for all animation types
+useScrollAnimationMultiple(experiencesContainer, '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale', {
+  threshold: 0.15,
+  rootMargin: '0px 0px -100px 0px'
+});
+
 const loadIconComponent = (name: string) => {
   return defineAsyncComponent(() =>
     import(`~/components/icons/about/${name}.vue`).catch(() => null),
   );
+};
+
+const getCompanyLogo = (titleKey: string): string => {
+  const logoMap: Record<string, string> = {
+    'about.experience.maanos.title': '/assets/img/maanos.jpg',
+    'about.experience.flippad.title': '/assets/img/jewely.jpg',
+  };
+  return logoMap[titleKey] || '/assets/img/default.jpg';
 };
 </script>

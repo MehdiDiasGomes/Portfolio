@@ -15,6 +15,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        trirong: ['Trirong', 'serif'],
+      },
       colors: {
         mauve: "hsl(var(--mauve))",
         foreground: "hsl(var(--foreground))",
@@ -99,7 +102,7 @@ module.exports = {
         padding: '0 3%',
         '@screen sm': { padding: '0 5%' },
         '@screen md': { padding: '0 8%' },
-        '@screen xl': { padding: '0 15%' },
+        '@screen lg': { padding: '0 10%' },
         '@screen 2xl': { padding: '0 25%' },
       },
       '.text-xl': {
