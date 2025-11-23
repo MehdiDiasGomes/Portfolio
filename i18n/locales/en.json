@@ -1,7 +1,8 @@
 {
   "header": {
     "title": "I Build",
-    "span_title": "Modern Web Experiences",
+    "span_title": "Modern",
+    "span_title_italic": "Web Experiences",
     "description": "Passionate full-stack developer, I create modern and performant web applications"
   },
   "navigation": {
@@ -136,7 +137,7 @@
     "experience": {
       "title": "Professional Experience",
       "maanos": {
-        "title": "Maanos",
+        "title": "Maanos - The art of Massage",
         "subTitle": "Fullstack developer",
         "time": "11/2025 - Present",
         "firstInList": {

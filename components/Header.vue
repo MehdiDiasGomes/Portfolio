@@ -8,12 +8,12 @@
     </div>
 
     <div class="flex min-h-screen items-center justify-center relative z-10 pt-20">
-      <div class="max-w-[900px] p-10 md:p-0 flex flex-col items-center justify-center gap-8 mx-auto text-center">
+      <div class="max-w-[1100px] p-10 md:p-0 flex flex-col items-center justify-center gap-8 mx-auto text-center">
         <div class="fade-in space-y-6">
-          <h1 class="text-white leading-tight">
+          <h1 class="text-white leading-tight font-trirong">
             {{ t("header.title") }}
             <span class="text-gradient-primary block mt-2">
-              {{ t("header.span_title") }}
+              {{ t("header.span_title") }} <em class="italic">{{ t("header.span_title_italic") }}</em>
             </span>
           </h1>
 

@@ -15,6 +15,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        trirong: ['Trirong', 'serif'],
+      },
       colors: {
         mauve: "hsl(var(--mauve))",
         foreground: "hsl(var(--foreground))",
