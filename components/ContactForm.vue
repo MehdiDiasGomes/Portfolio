@@ -1,21 +1,21 @@
 <template>
-  <div class="relative flex flex-col gap-8 items-center justify-center mt-32 px-6">
+  <div class="relative flex flex-col gap-8 items-center justify-center mt-32 mp-home">
     <div class="absolute inset-0 overflow-hidden pointer-events-none -z-10">
-      <div class="absolute top-1/4 left-1/4 w-64 h-64 lg:w-96 lg:h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-64 h-64 lg:w-96 lg:h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 bg-purple-600/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
       <img class="absolute top-0 h-full w-full opacity-30" src="~/assets/img/grid-pattern.png" />
     </div>
 
     <div class="text-center fade-in space-y-4 max-w-2xl">
       <div class="flex items-center justify-center gap-4 mb-4">
-        <div class="h-px w-12 lg:w-16 bg-gradient-to-r from-transparent via-purple-500 to-purple-500"></div>
-        <h2 class="text-white text-4xl lg:text-5xl text-center font-bold">
+        <div class="h-px w-12 lg:w-16 bg-gradient-to-r from-transparent via-purple-500 to-purple-500 hidden sm:block"></div>
+        <h2 class="text-white text-center">
           {{ t("contact.title") }}
         </h2>
-        <div class="h-px w-12 lg:w-16 bg-gradient-to-l from-transparent via-blue-500 to-blue-500"></div>
+        <div class="h-px w-12 lg:w-16 bg-gradient-to-l from-transparent via-blue-500 to-blue-500 hidden sm:block"></div>
       </div>
 
-      <p class="text-gray-300 text-center text-base lg:text-lg leading-relaxed">
+      <p class="text-gray-300 text-center">
         {{ t("contact.description") }}
       </p>
     </div>
