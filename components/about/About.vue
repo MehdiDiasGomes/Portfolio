@@ -14,27 +14,27 @@
     >
       <div class="max-w-7xl mx-auto">
         <div ref="aboutSections" class="space-y-16 lg:space-y-24">
-          <section class="fade-in">
+          <section class="scroll-animate">
             <AboutHeader />
           </section>
 
           <div class="space-y-16 lg:space-y-24">
-            <section class="relative fade-in">
+            <section class="relative scroll-animate">
               <AboutExperiences />
             </section>
 
             <div class="space-y-16 lg:space-y-0 lg:grid lg:gap-16 xl:gap-24">
-              <section class="relative fade-in">
+              <section class="relative scroll-animate">
                 <AboutSkills />
               </section>
 
-              <section class="relative fade-in">
+              <section class="relative scroll-animate">
                 <AboutEducation />
               </section>
             </div>
           </div>
 
-          <section class="text-center fade-in">
+          <section class="text-center scroll-animate">
             <div class="rounded-3xl p-8 lg:p-12 max-w-3xl mx-auto">
               <div class="mb-6 flex justify-center">
                 <div
@@ -76,5 +76,11 @@
 import AboutExperiences from "./AboutExperiences.vue";
 
 const { t } = useI18n();
-const [aboutSections] = useAutoAnimate();
+const aboutSections = ref<HTMLElement | null>(null);
+
+// Initialize scroll animations
+useScrollAnimationMultiple(aboutSections, '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale', {
+  threshold: 0.1,
+  rootMargin: '0px 0px -100px 0px'
+});
 </script>
