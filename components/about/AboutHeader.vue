@@ -20,7 +20,7 @@
           </h2>
 
           <div class="flex flex-wrap gap-2 justify-center lg:justify-start">
-            <span class="glass-effect px-3 py-1.5 text-xs font-semibold text-purple-400 rounded-full border border-purple-500/30">Full-Stack</span>
+            <span class="glass-effect px-3 py-1.5 text-xs font-semibold text-purple-400 rounded-full border border-purple-500/30">Laravel</span>
             <span class="glass-effect px-3 py-1.5 text-xs font-semibold text-blue-400 rounded-full border border-blue-500/30">Vue.js</span>
             <span class="glass-effect px-3 py-1.5 text-xs font-semibold text-pink-400 rounded-full border border-pink-500/30">TypeScript</span>
           </div>

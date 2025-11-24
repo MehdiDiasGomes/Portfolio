@@ -22,18 +22,6 @@
           <p class="text-gray-300 mx-auto max-w-[600px]">
             {{ t("header.description") }}
           </p>
-
-          <div class="flex flex-wrap gap-2 justify-center items-center pt-4">
-            <div class="glass-effect px-3 py-2 rounded-lg border border-purple-500/20 smooth-transition hover:border-purple-500/40">
-              <span class="text-purple-400 font-semibold text-sm">Vue.js</span>
-            </div>
-            <div class="glass-effect px-3 py-2 rounded-lg border border-blue-500/20 smooth-transition hover:border-blue-500/40">
-              <span class="text-blue-400 font-semibold text-sm">TypeScript</span>
-            </div>
-            <div class="glass-effect px-3 py-2 rounded-lg border border-pink-500/20 smooth-transition hover:border-pink-500/40">
-              <span class="text-pink-400 font-semibold text-sm">Nuxt.js</span>
-            </div>
-          </div>
         </div>
 
         <div class="fade-in" style="animation-delay: 0.2s">

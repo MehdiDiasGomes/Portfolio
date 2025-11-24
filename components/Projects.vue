@@ -5,7 +5,7 @@
       <div class="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
     </div>
 
-    <div class="relative mx-auto max-w-7xl">
+    <div ref="projectsContainer" class="relative mx-auto max-w-7xl">
       <div class="w-full flex flex-col items-center mb-16 lg:mb-20 scroll-animate">
         <h2 class="text-white text-center">
           {{ t("projects.title") }} <span class="text-primaryPerso">{{ t("projects.title_highlight") }}</span>
@@ -13,7 +13,7 @@
         <div class="h-1 w-16 bg-primaryPerso rounded mt-2"></div>
       </div>
 
-      <div ref="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 justify-center gap-8 lg:gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-center gap-8 lg:gap-10">
         <div v-for="(item, index) in projects" :key="index"
           class="group relative h-full flex flex-col scroll-animate scroll-animate-scale">
           <div
@@ -105,10 +105,10 @@ import { projects } from "~/constants/projects";
 import InDevelopment from "./projects/inDevelopment.vue";
 
 const { t } = useI18n();
-const projectsGrid = ref<HTMLElement | null>(null);
+const projectsContainer = ref<HTMLElement | null>(null);
 
 // Initialize scroll animations
-useScrollAnimationMultiple(projectsGrid, '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale', {
+useScrollAnimationMultiple(projectsContainer, '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale', {
   threshold: 0.15,
   rootMargin: '0px 0px -80px 0px'
 });
