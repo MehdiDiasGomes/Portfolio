@@ -42,12 +42,12 @@ export const socials = [
 ];
 
 export const info: Info[] = [
-  {
-    icon: "Mail",
-    label: "Contact",
-    cta: true,
-    link: "mailto:diasgomes.mehdicours@gmail.com",
-  },
+  // {
+  //   icon: "Mail",
+  //   label: "Contact",
+  //   cta: true,
+  //   link: "mailto:diasgomes.mehdicours@gmail.com",
+  // },
   {
     icon: "Linkedin",
     label: "Linkedin",
