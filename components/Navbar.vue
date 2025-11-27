@@ -100,7 +100,8 @@ const removePrefix = (url: string) => {
 
 const navItems = computed(() => [
   { name: t("navigation.about"), url: "/about" },
-  { name: t("navigation.projects"), url: "/" },
+  { name: t("navigation.home"), url: "/" },
+  { name: t("navigation.portfolio"), url: "/portfolio" },
   { name: t("navigation.contact"), url: "/contact" },
 ]);
 </script>

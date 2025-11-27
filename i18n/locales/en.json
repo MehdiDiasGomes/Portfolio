@@ -6,9 +6,19 @@
     "description": "Passionate full-stack developer, I create modern and performant web applications"
   },
   "navigation": {
+    "home": "Home",
     "about": "About",
-    "projects": "Projects",
+    "portfolio": "Portfolio",
     "contact": "Contact"
+  },
+  "landing": {
+    "brand": "DevauraWeb",
+    "tagline": "Crafting tailored web experiences",
+    "description": "We transform your ideas into modern and high-performance web solutions. Expertise in full-stack development, UX/UI design, and creating web applications that leave a lasting impression.",
+    "cta": {
+      "portfolio": "View my projects",
+      "contact": "Contact me"
+    }
   },
   "lang": {
     "choose": "Language selection"

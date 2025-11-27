@@ -6,9 +6,19 @@
     "description": "Développeur full-stack passionné, je crée des applications web modernes et performantes"
   },
   "navigation": {
+    "home": "Accueil",
     "about": "À propos",
-    "projects": "Projets",
+    "portfolio": "Portfolio",
     "contact": "Contact"
+  },
+  "landing": {
+    "brand": "DevauraWeb",
+    "tagline": "Créateur d'expériences web sur mesure",
+    "description": "Nous transformons vos idées en solutions web modernes et performantes. Expertise en développement full-stack, design UX/UI et création d'applications web qui marquent les esprits.",
+    "cta": {
+      "portfolio": "Voir mes projets",
+      "contact": "Me contacter"
+    }
   },
   "lang": {
     "choose": "Choix de la langue"
