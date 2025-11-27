@@ -6,16 +6,16 @@
     </div>
 
     <div class="relative mx-auto max-w-7xl">
-      <div class="w-full flex flex-col items-center mb-16 lg:mb-20 scroll-animate">
+      <div class="w-full flex flex-col items-center mb-16 lg:mb-20">
         <h2 class="text-white text-center">
           {{ t("projects.title") }} <span class="text-primaryPerso">{{ t("projects.title_highlight") }}</span>
         </h2>
         <div class="h-1 w-16 bg-primaryPerso rounded mt-2"></div>
       </div>
 
-      <div ref="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 justify-center gap-8 lg:gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-center gap-8 lg:gap-10">
         <div v-for="(item, index) in projects" :key="index"
-          class="group relative h-full flex flex-col scroll-animate scroll-animate-scale">
+          class="group relative h-full flex flex-col">
           <div
             class="relative glass-effect-dark rounded-3xl glass-effect-dark rounded-3xl p-8 lg:p-12 border border-purple-500/20 shadow-2xl max-w-3xl mx-auto border-white/10 shadow-2xl overflow-hidden h-full flex flex-col smooth-transition hover:border-purple-500/30 hover-glow">
             <div class="relative overflow-hidden rounded-t-2xl lg:rounded-t-3xl">
@@ -100,18 +100,11 @@
 </template>
 
 <script setup lang="ts">
-import { defineAsyncComponent, ref } from "vue";
+import { defineAsyncComponent } from "vue";
 import { projects } from "~/constants/projects";
 import InDevelopment from "./projects/inDevelopment.vue";
 
 const { t } = useI18n();
-const projectsGrid = ref<HTMLElement | null>(null);
-
-// Initialize scroll animations
-useScrollAnimationMultiple(projectsGrid, '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale', {
-  threshold: 0.15,
-  rootMargin: '0px 0px -80px 0px'
-});
 
 const loadIconComponent = (name: string) => {
   return defineAsyncComponent(() =>

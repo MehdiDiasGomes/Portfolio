@@ -1,6 +1,6 @@
 <template>
-  <div ref="experiencesContainer">
-    <div class="flex items-center gap-3 lg:gap-4 mb-6 lg:mb-8 scroll-animate">
+  <div>
+    <div class="flex items-center gap-3 lg:gap-4 mb-6 lg:mb-8">
       <div class="relative">
         <component class="w-8 h-8 lg:w-12 lg:h-12 text-mauve drop-shadow-lg"
           :is="loadIconComponent('WorkExperience')" />
@@ -19,7 +19,7 @@
 
       <div class="space-y-8 lg:space-y-12">
         <div v-for="(experience, index) in aboutExperience" :key="index"
-          class="relative scroll-animate-left">
+          class="relative">
 
           <div
             class="absolute left-2 lg:left-4 w-3 h-3 lg:w-4 lg:h-4 bg-gradient-to-br from-mauve to-foreground rounded-full border-2 lg:border-4 border-background shadow-lg">
@@ -103,13 +103,6 @@
 import { aboutExperience } from '~/constants/about';
 
 const { t } = useI18n()
-const experiencesContainer = ref<HTMLElement | null>(null);
-
-// Initialize scroll animations for all animation types
-useScrollAnimationMultiple(experiencesContainer, '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale', {
-  threshold: 0.15,
-  rootMargin: '0px 0px -100px 0px'
-});
 
 const loadIconComponent = (name: string) => {
   return defineAsyncComponent(() =>

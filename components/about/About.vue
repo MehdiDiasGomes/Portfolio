@@ -13,28 +13,28 @@
       class="relative mp-home mt-8 sm:mt-12 lg:mt-20 xl:mt-32 pb-12 lg:pb-20"
     >
       <div class="max-w-7xl mx-auto">
-        <div ref="aboutSections" class="space-y-16 lg:space-y-24">
-          <section class="scroll-animate">
+        <div class="space-y-16 lg:space-y-24">
+          <section>
             <AboutHeader />
           </section>
 
           <div class="space-y-16 lg:space-y-24">
-            <section class="relative scroll-animate">
+            <section class="relative">
               <AboutExperiences />
             </section>
 
             <div class="space-y-16 lg:space-y-0 lg:grid lg:gap-16 xl:gap-24">
-              <section class="relative scroll-animate">
+              <section class="relative">
                 <AboutSkills />
               </section>
 
-              <section class="relative scroll-animate">
+              <section class="relative">
                 <AboutEducation />
               </section>
             </div>
           </div>
 
-          <section class="text-center scroll-animate">
+          <section class="text-center">
             <div class="rounded-3xl p-8 lg:p-12 max-w-3xl mx-auto">
               <div class="mb-6 flex justify-center">
                 <div
@@ -76,11 +76,4 @@
 import AboutExperiences from "./AboutExperiences.vue";
 
 const { t } = useI18n();
-const aboutSections = ref<HTMLElement | null>(null);
-
-// Initialize scroll animations
-useScrollAnimationMultiple(aboutSections, '.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-scale', {
-  threshold: 0.1,
-  rootMargin: '0px 0px -100px 0px'
-});
 </script>
