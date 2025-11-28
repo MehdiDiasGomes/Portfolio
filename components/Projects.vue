@@ -7,7 +7,7 @@
 
     <div class="relative mx-auto max-w-7xl">
       <div class="w-full flex flex-col items-center mb-16 lg:mb-20">
-        <h2 class="text-white text-center">
+        <h2 class="text-center">
           {{ t("projects.title") }} <span class="text-primaryPerso">{{ t("projects.title_highlight") }}</span>
         </h2>
         <div class="h-1 w-16 bg-primaryPerso rounded mt-2"></div>
@@ -17,7 +17,7 @@
         <div v-for="(item, index) in projects" :key="index"
           class="group relative h-full flex flex-col">
           <div
-            class="relative glass-effect-dark rounded-3xl glass-effect-dark rounded-3xl p-8 lg:p-12 border border-purple-500/20 shadow-2xl max-w-3xl mx-auto border-white/10 shadow-2xl overflow-hidden h-full flex flex-col smooth-transition hover:border-purple-500/30 hover-glow">
+            class="relative glass-effect-dark rounded-3xl p-8 lg:p-12 border border-purple-500/20 max-w-3xl mx-auto border-white/10 overflow-hidden h-full flex flex-col smooth-transition hover:border-purple-500/30 hover-glow">
             <div class="relative overflow-hidden rounded-t-2xl lg:rounded-t-3xl">
               <img class="w-full h-48 lg:h-56 object-cover smooth-transition group-hover:opacity-90"
                 :src="item.img" :alt="`Image du projet ${t(item.titleKey)}`" />
@@ -36,10 +36,10 @@
             <div class="p-6 lg:p-8 flex-1 flex flex-col">
               <div class="mb-6 flex-1">
                 <h3
-                  class="text-white mb-3 group-hover:text-gradient-primary smooth-transition">
+                  class="mb-3 group-hover:text-gradient-primary smooth-transition">
                   {{ t(item.titleKey) }}
                 </h3>
-                <p class="text-gray-300">
+                <p>
                   {{ t(item.descriptionKey) }}
                 </p>
               </div>
@@ -55,7 +55,7 @@
                       </div>
 
                       <div
-                        class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-3 px-3 py-1.5 glass-effect-dark border border-purple-500/20 text-white text-xs rounded-lg opacity-0 group-hover/icon:opacity-100 smooth-transition whitespace-nowrap z-20 shadow-xl">
+                        class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-3 px-3 py-1.5 glass-effect-dark border border-purple-500/20 dark:text-white text-gray-900 text-xs rounded-lg opacity-0 group-hover/icon:opacity-100 smooth-transition whitespace-nowrap z-20">
                         {{ icon.name }}
                       </div>
                     </div>
@@ -69,7 +69,7 @@
 
                     <div
                       class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-3 opacity-0 group-hover/more:opacity-100 smooth-transition z-30">
-                      <div class="glass-effect-dark rounded-xl p-4 shadow-2xl border border-purple-500/20">
+                      <div class="glass-effect-dark rounded-xl p-4 border border-purple-500/20">
                         <div class="flex gap-2">
                           <div v-for="(icon, i) in item.iconTech.slice(4)" :key="i"
                             class="w-8 h-8 glass-effect rounded-lg p-1.5 border border-purple-500/20">
@@ -84,7 +84,7 @@
                 <div class="flex-shrink-0">
                   <template v-if="!item.inDevelopment">
                     <component :data="item" :is="loadSheetComponent(item.sheet)"
-                      class="inline-flex items-center justify-center w-11 h-11 lg:w-12 lg:h-12 bg-gradient-to-r from-purple-600/30 to-blue-600/30 hover:from-purple-600/40 hover:to-blue-600/40 rounded-full border border-purple-500/30 hover:border-purple-500/50 smooth-transition shadow-lg" />
+                      class="inline-flex items-center justify-center w-11 h-11 lg:w-12 lg:h-12 bg-gradient-to-r from-purple-600/30 to-blue-600/30 hover:from-purple-600/40 hover:to-blue-600/40 rounded-full border border-purple-500/30 hover:border-purple-500/50 smooth-transition" />
                   </template>
                   <template v-else>
                     <InDevelopment />

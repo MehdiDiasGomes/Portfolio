@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Mehdi Dias Gomes - Full-Stack Developer | Devaura",
+    "description": "Full-stack developer specialized in Vue.js, Nuxt.js, Laravel and TypeScript. I create modern, high-performance and custom web applications."
+  },
   "header": {
     "title": "I Build",
     "span_title": "Modern",
@@ -6,12 +10,28 @@
     "description": "Passionate full-stack developer, I create modern and performant web applications"
   },
   "navigation": {
+    "home": "Home",
     "about": "About",
-    "projects": "Projects",
+    "portfolio": "Portfolio",
     "contact": "Contact"
+  },
+  "landing": {
+    "brand": "Devaura",
+    "tagline": "Crafting tailored web experiences",
+    "description": "We transform your ideas into modern and high-performance web solutions. Expertise in full-stack development, UX/UI design, and creating web applications that leave a lasting impression.",
+    "cta": {
+      "portfolio": "View my projects",
+      "contact": "Contact me"
+    }
   },
   "lang": {
     "choose": "Language selection"
+  },
+  "theme": {
+    "choose": "Theme selection",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   },
   "button": {
     "see_work": "See my work"
@@ -203,6 +223,44 @@
         "subTitle": "BTS Digital Systems (SNIR)",
         "time": "09/2021 - 07/2023",
         "parag": "Training focused on embedded systems, networks, and software development. Learned the fundamentals of electronics, programming (C/C++, Python), and network administration. Developed a comprehensive understanding of hardware and software architectures, with a technical and rigorous approach to digital systems."
+      }
+    }
+  },
+  "pages": {
+    "landing": {
+      "seo": {
+        "title": "Devaura - Crafting Tailored Web Experiences | Mehdi Dias Gomes",
+        "description": "Transform your ideas into modern and high-performance web solutions. Expertise in full-stack development, UX/UI design, and creating web applications that leave a lasting impression."
+      }
+    },
+    "about": {
+      "seo": {
+        "title": "About - Mehdi Dias Gomes | Full-Stack Developer",
+        "description": "Graduate in full-stack web development, passionate about creating modern web applications. Discover my journey, skills, and professional experience."
+      }
+    },
+    "portfolio": {
+      "seo": {
+        "title": "Portfolio - Projects & Achievements | Mehdi Dias Gomes",
+        "description": "Explore my web development projects: Vue.js, Nuxt.js, Laravel applications. Modern and performant full-stack solutions created with passion."
+      }
+    },
+    "contact": {
+      "seo": {
+        "title": "Contact - Let's Discuss Your Project | Mehdi Dias Gomes",
+        "description": "Have a web project in mind? Contact me to discuss your full-stack development needs. I respond quickly to all inquiries."
+      }
+    },
+    "projects": {
+      "seo": {
+        "title": "Projects in Development | Mehdi Dias Gomes",
+        "description": "Exciting new projects currently in development. Check back soon to discover my latest web creations."
+      }
+    },
+    "privacy": {
+      "seo": {
+        "title": "Privacy Policy | Mehdi Dias Gomes",
+        "description": "Privacy policy and personal data protection for mdiasgomes.dev. Information about how your data is used."
       }
     }
   }

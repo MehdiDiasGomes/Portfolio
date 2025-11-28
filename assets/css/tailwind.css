@@ -4,7 +4,6 @@
 
 @layer base {
   :root {
-
     --mauve: 261, 100%, 76%, 1;
     --foreground: 260 96% 50%;
     --darkblue: 225 36% 14%;
@@ -18,7 +17,13 @@
     --glow-purple: 270 100% 80% / 0.3;
     --glow-blue: 220 90% 70% / 0.3;
 
+    --app-background: 0 2% 98%;
     --background: 0 0% 100%;
+
+    --heading-primary: 0 0% 9%;
+    --text-primary: 0 0% 15%;
+    --text-secondary: 0 0% 40%;
+    --text-muted: 0 0% 50%;
 
     --muted: 0 0% 96.1%;
     --muted-foreground: 0 0% 45.1%;
@@ -60,8 +65,13 @@
   }
 
   .dark {
+    --app-background: 226 81% 7%;
     --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
+
+    --heading-primary: 0 0% 98%;
+    --text-primary: 0 0% 90%;
+    --text-secondary: 0 0% 70%;
+    --text-muted: 0 0% 60%;
 
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
@@ -107,9 +117,10 @@
   }
 
   html, body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     overflow-x: hidden;
     max-width: 100vw;
+    background: hsl(var(--app-background));
   }
 
   /* Typography - Global heading and text styles */
@@ -118,6 +129,7 @@
     line-height: 2.5rem;
     font-weight: 800;
     letter-spacing: -0.025em;
+    color: hsl(var(--heading-primary));
   }
 
   @media (min-width: 640px) {
@@ -153,6 +165,7 @@
     line-height: 2.25rem;
     font-weight: 700;
     letter-spacing: -0.025em;
+    color: hsl(var(--heading-primary));
   }
 
   @media (min-width: 640px) {
@@ -188,6 +201,7 @@
     line-height: 2rem;
     font-weight: 700;
     letter-spacing: -0.025em;
+    color: hsl(var(--heading-primary));
   }
 
   @media (min-width: 640px) {
@@ -215,6 +229,7 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 600;
+    color: hsl(var(--heading-primary));
   }
 
   @media (min-width: 640px) {
@@ -242,6 +257,7 @@
     font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 600;
+    color: hsl(var(--heading-primary));
   }
 
   @media (min-width: 640px) {
@@ -262,6 +278,7 @@
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 600;
+    color: hsl(var(--heading-primary));
   }
 
   @media (min-width: 640px) {
@@ -274,6 +291,7 @@
   p {
     font-size: 1rem;
     line-height: 1.75rem;
+    color: hsl(var(--text-primary));
   }
 
   @media (min-width: 768px) {
@@ -285,17 +303,16 @@
 }
 
 body {
-  background: #000319;
   font-family: Regular, sans-serif;
 }
 
 @layer utilities {
   .glass-effect {
-    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+    @apply dark:bg-white/5 bg-black/5 backdrop-blur-xl dark:border-white/10 border-black/10;
   }
 
   .glass-effect-dark {
-    @apply bg-black/20 backdrop-blur-xl border border-white/5;
+    @apply dark:bg-black/20 bg-white/60 backdrop-blur-xl dark:border-white/5 border-gray-300;
   }
 
   .text-gradient-primary {
@@ -327,9 +344,5 @@ body {
 
   .hover-glow {
     @apply transition-all duration-300 ease-out;
-  }
-
-  .hover-glow:hover {
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
   }
 }

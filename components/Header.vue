@@ -10,7 +10,7 @@
     <div class="flex min-h-screen items-center justify-center relative z-10 pt-20">
       <div class="max-w-[1100px] p-10 md:p-0 flex flex-col items-center justify-center gap-8 mx-auto text-center">
         <div class="fade-in space-y-6">
-          <h1 class="text-white leading-tight font-trirong">
+          <h1 class="leading-tight font-trirong">
             {{ t("header.title") }}
             <span class="text-gradient-primary block mt-2">
               {{ t("header.span_title") }} <em class="italic">{{ t("header.span_title_italic") }}</em>
@@ -19,7 +19,7 @@
 
           <div class="h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-purple-500 to-transparent rounded-full"></div>
 
-          <p class="text-gray-300 mx-auto max-w-[600px]">
+          <p class="mx-auto max-w-[600px]">
             {{ t("header.description") }}
           </p>
         </div>
