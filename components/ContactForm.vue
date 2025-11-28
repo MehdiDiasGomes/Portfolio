@@ -9,13 +9,13 @@
     <div class="text-center fade-in space-y-4 max-w-2xl">
       <div class="flex items-center justify-center gap-4 mb-4">
         <div class="h-px w-12 lg:w-16 bg-gradient-to-r from-transparent via-purple-500 to-purple-500 hidden sm:block"></div>
-        <h2 class="text-white text-center">
+        <h2 class="text-center">
           {{ t("contact.title") }}
         </h2>
         <div class="h-px w-12 lg:w-16 bg-gradient-to-l from-transparent via-blue-500 to-blue-500 hidden sm:block"></div>
       </div>
 
-      <p class="text-gray-300 text-center">
+      <p class="text-center dark:text-gray-300 text-gray-600">
         {{ t("contact.description") }}
       </p>
     </div>
@@ -26,7 +26,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <FormField v-slot="{ componentField }" name="firstname">
               <FormItem class="flex flex-col gap-3 space-y-0" v-auto-animate>
-                <FormLabel for="firstname" class="text-white text-sm font-semibold">
+                <FormLabel for="firstname" class="text-sm font-semibold dark:text-white text-gray-900">
                   {{ t("contact.firstName") }}
                 </FormLabel>
                 <FormControl>
@@ -37,7 +37,7 @@
                     name="firstname"
                     v-model="form.firstname"
                     :placeholder="t('contact.firstNamePlaceholder')"
-                    class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500"
+                    class="glass-effect p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500 dark:text-white text-gray-900"
                   />
                 </FormControl>
                 <FormMessage />
@@ -45,7 +45,7 @@
             </FormField>
             <FormField v-slot="{ componentField }" name="lastname">
               <FormItem class="flex flex-col gap-3 space-y-0" v-auto-animate>
-                <FormLabel for="lastname" class="text-white text-sm font-semibold">
+                <FormLabel for="lastname" class="text-sm font-semibold dark:text-white text-gray-900">
                   {{ t("contact.lastName") }}
                 </FormLabel>
                 <FormControl>
@@ -56,7 +56,7 @@
                     name="lastname"
                     v-model="form.lastname"
                     :placeholder="t('contact.lastNamePlaceholder')"
-                    class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500"
+                    class="glass-effect p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500 dark:text-white text-gray-900"
                   />
                 </FormControl>
                 <FormMessage />
@@ -66,7 +66,7 @@
 
           <FormField v-slot="{ componentField }" name="email">
             <FormItem class="flex flex-col gap-3 space-y-0 mb-6" v-auto-animate>
-              <FormLabel for="email" class="text-white text-sm font-semibold">
+              <FormLabel for="email" class="text-sm font-semibold dark:text-white text-gray-900">
                 {{ t("contact.email") }}
               </FormLabel>
               <FormControl>
@@ -77,7 +77,7 @@
                   name="email"
                   v-model="form.email"
                   :placeholder="t('contact.emailPlaceholder')"
-                  class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500"
+                  class="glass-effect p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition placeholder:text-gray-500 dark:text-white text-gray-900"
                 />
               </FormControl>
               <FormMessage />
@@ -86,7 +86,7 @@
 
           <FormField v-slot="{ componentField }" name="message">
             <FormItem class="flex flex-col gap-3 space-y-0 mb-8" v-auto-animate>
-              <FormLabel for="message" class="text-white text-sm font-semibold">
+              <FormLabel for="message" class="text-sm font-semibold dark:text-white text-gray-900">
                 {{ t("contact.message") }}
               </FormLabel>
               <FormControl>
@@ -96,7 +96,7 @@
                   name="message"
                   v-model="form.message"
                   :placeholder="t('contact.messagePlaceholder')"
-                  class="glass-effect text-white p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition min-h-[180px] resize-y placeholder:text-gray-500"
+                  class="glass-effect p-4 rounded-xl border border-purple-500/20 focus:border-purple-500/50 outline-none smooth-transition min-h-[180px] resize-y placeholder:text-gray-500 dark:text-white text-gray-900"
                 ></textarea>
               </FormControl>
               <FormMessage />
@@ -135,18 +135,18 @@
             </div>
           </Transition>
 
-          <div class="mt-6 text-xs text-gray-400 text-center leading-relaxed">
+          <div class="mt-6 text-xs text-center leading-relaxed dark:text-gray-400 text-gray-600">
             {{ t("contact.recaptchaNotice.text") }}
             <a
               href="https://policies.google.com/privacy"
-              class="text-purple-400 hover:text-purple-300 smooth-transition hover:underline"
+              class="dark:text-purple-400 dark:hover:text-purple-300 text-purple-500 hover:text-purple-600 smooth-transition hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >{{ t("contact.recaptchaNotice.privacyPolicy") }}</a>
             {{ t("contact.recaptchaNotice.and") }}
             <a
               href="https://policies.google.com/terms"
-              class="text-purple-400 hover:text-purple-300 smooth-transition hover:underline"
+              class="dark:text-purple-400 dark:hover:text-purple-300 text-purple-500 hover:text-purple-600 smooth-transition hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >{{ t("contact.recaptchaNotice.termsOfService") }}</a>

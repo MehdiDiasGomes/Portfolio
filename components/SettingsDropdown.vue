@@ -13,21 +13,21 @@
       <DropdownMenuLabel>{{ t("lang.choose") }}</DropdownMenuLabel>
       <DropdownMenuSeparator class="dark:bg-borderPerso bg-gray-300" />
       <DropdownMenuCheckboxItem
-        class="dark:focus:bg-hoverForegroundPerso focus:bg-gray-100 dark:focus:text-white focus:text-gray-900"
+        class="dark:focus:bg-hoverForegroundPerso focus:bg-gray-100 dark:focus:text-white focus:text-gray-900 cursor-default"
         @click="setLanguage('en')"
         :checked="locale === 'en'"
       >
-        <NuxtLink class="flex w-full items-center gap-2" :to="switchLocalePath('en')">
-          <England class="w-7" />English
+        <NuxtLink class="flex w-full items-center gap-2 cursor-default" :to="switchLocalePath('en')">
+          <England class="w-5 h-5" />English
         </NuxtLink>
       </DropdownMenuCheckboxItem>
       <DropdownMenuCheckboxItem
-        class="dark:focus:bg-hoverForegroundPerso focus:bg-gray-100 dark:focus:text-white focus:text-gray-900"
+        class="dark:focus:bg-hoverForegroundPerso focus:bg-gray-100 dark:focus:text-white focus:text-gray-900 cursor-default"
         @click="setLanguage('fr')"
         :checked="locale === 'fr'"
       >
-        <NuxtLink class="flex w-full items-center gap-2" :to="switchLocalePath('fr')">
-          <France />Français
+        <NuxtLink class="flex w-full items-center gap-2 cursor-default" :to="switchLocalePath('fr')">
+          <France class="w-5 h-5" />Français
         </NuxtLink>
       </DropdownMenuCheckboxItem>
 
