@@ -15,7 +15,6 @@ definePageMeta({
   layout: "default",
 });
 
-// SEO Meta tags for portfolio page
 useSeoMeta({
   title: () => t('pages.portfolio.seo.title'),
   description: () => t('pages.portfolio.seo.description'),

@@ -63,7 +63,6 @@ definePageMeta({
   layout: "default",
 });
 
-// SEO Meta tags for landing page
 useSeoMeta({
   title: () => t('pages.landing.seo.title'),
   description: () => t('pages.landing.seo.description'),

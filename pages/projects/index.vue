@@ -5,7 +5,6 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
-// SEO Meta tags for projects page
 useSeoMeta({
   title: () => t('pages.projects.seo.title'),
   description: () => t('pages.projects.seo.description'),
