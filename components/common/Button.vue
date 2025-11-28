@@ -43,8 +43,8 @@ const iconComponent = computed(() => {
 
 const variantClasses = computed(() => {
   const variants = {
-    primary: 'px-4 py-2 bg-purple-600 text-white border-2 border-purple-600 hover:bg-transparent hover:text-white',
-    secondary: 'px-4 py-2 bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 text-white border border-gray-600 hover:border-gray-500'
+    primary: 'px-4 py-2 bg-purple-600 text-white border border-purple-600 hover:bg-transparent hover:text-purple-600 dark:hover:text-white',
+    secondary: 'px-4 py-2 bg-gradient-to-r dark:from-gray-800 dark:to-gray-900 dark:hover:from-gray-700 dark:hover:to-gray-800 from-gray-200 to-gray-300 hover:from-gray-300 hover:to-gray-400 dark:text-white text-gray-800 border dark:border-gray-600 border-gray-300 dark:hover:border-gray-500 hover:border-gray-400'
   };
 
   return variants[variant];
