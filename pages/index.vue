@@ -62,4 +62,15 @@ const { t } = useI18n();
 definePageMeta({
   layout: "default",
 });
+
+// SEO Meta tags for landing page
+useSeoMeta({
+  title: () => t('pages.landing.seo.title'),
+  description: () => t('pages.landing.seo.description'),
+  ogTitle: () => t('pages.landing.seo.title'),
+  ogDescription: () => t('pages.landing.seo.description'),
+  ogUrl: 'https://www.mdiasgomes.dev',
+  twitterTitle: () => t('pages.landing.seo.title'),
+  twitterDescription: () => t('pages.landing.seo.description'),
+});
 </script>

@@ -228,5 +228,43 @@
         "parag": "Formation axée sur les systèmes embarqués, les réseaux et le développement logiciel. Apprentissage des bases de l'électronique, de la programmation (C/C++, Python) et de l'administration réseau. Développement d'une compréhension globale des architectures matérielles et logicielles, avec une approche technique et rigoureuse des systèmes numériques."
       }
     }
+  },
+  "pages": {
+    "landing": {
+      "seo": {
+        "title": "Devaura - Créateur d'expériences web sur mesure | Mehdi Dias Gomes",
+        "description": "Transformez vos idées en solutions web modernes et performantes. Expertise en développement full-stack, design UX/UI et création d'applications web qui marquent les esprits."
+      }
+    },
+    "about": {
+      "seo": {
+        "title": "À propos - Mehdi Dias Gomes | Développeur Full-Stack",
+        "description": "Diplômé en développement web full-stack, je suis passionné par la création d'applications web modernes. Découvrez mon parcours, mes compétences et mon expérience professionnelle."
+      }
+    },
+    "portfolio": {
+      "seo": {
+        "title": "Portfolio - Projets & Réalisations | Mehdi Dias Gomes",
+        "description": "Découvrez mes projets de développement web : applications Vue.js, Nuxt.js, Laravel. Solutions full-stack modernes et performantes créées avec passion."
+      }
+    },
+    "contact": {
+      "seo": {
+        "title": "Contact - Discutons de votre projet | Mehdi Dias Gomes",
+        "description": "Vous avez un projet web en tête ? Contactez-moi pour discuter de vos besoins en développement full-stack. Je réponds rapidement à toutes les demandes."
+      }
+    },
+    "projects": {
+      "seo": {
+        "title": "Projets en développement | Mehdi Dias Gomes",
+        "description": "Nouveaux projets passionnants en cours de développement. Revenez bientôt pour découvrir mes dernières créations web."
+      }
+    },
+    "privacy": {
+      "seo": {
+        "title": "Politique de confidentialité | Mehdi Dias Gomes",
+        "description": "Politique de confidentialité et protection des données personnelles pour le site mdiasgomes.dev. Informations sur l'utilisation de vos données."
+      }
+    }
   }
 }
