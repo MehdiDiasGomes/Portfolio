@@ -1,10 +1,10 @@
 <template>
   <div class="fixed z-50 top-6 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-auto">
-    <div class="bg-black/40 backdrop-blur-xl rounded-[8px] px-6 py-3 border border-white/10">
+    <div class="dark:bg-black/40 bg-white/80 backdrop-blur-xl rounded-[8px] px-6 py-3 border dark:border-white/10 border-gray-300">
       <div class="flex items-center justify-between md:justify-center gap-6">
         <button
           @click="isMenuOpen = !isMenuOpen"
-          class="md:hidden text-white hover:text-purple-400 transition-colors"
+          class="md:hidden dark:text-white text-gray-900 hover:text-purple-400 transition-colors"
         >
           <div class="w-6 h-6 flex flex-col justify-center gap-1.5">
             <span
@@ -30,8 +30,8 @@
             :class="[
               'px-4 py-2 text-sm transition-all duration-300 relative',
               removePrefix(route.path) === item.url
-                ? 'text-white'
-                : 'text-gray-400 hover:text-white',
+                ? 'dark:text-white text-gray-900'
+                : 'dark:text-gray-400 text-gray-600 dark:hover:text-white hover:text-gray-900',
               item.url === '/about' ? 'hidden sm:block' : '',
             ]"
           >
@@ -43,8 +43,8 @@
           </NuxtLink>
         </nav>
 
-        <div class="hidden md:block w-px h-4 bg-white/10"></div>
-        <LangChoice class="hidden md:block" />
+        <div class="hidden md:block w-px h-4 dark:bg-white/10 bg-gray-300"></div>
+        <SettingsDropdown class="hidden md:block" />
       </div>
 
       <Transition
@@ -57,7 +57,7 @@
       >
         <div
           v-if="isMenuOpen"
-          class="md:hidden absolute top-full left-0 right-0 mt-2 bg-black/95 backdrop-blur-xl rounded-[8px] border border-white/10 overflow-hidden"
+          class="md:hidden absolute top-full left-0 right-0 mt-2 dark:bg-black/95 bg-white/95 backdrop-blur-xl rounded-[8px] border dark:border-white/10 border-gray-300 overflow-hidden"
         >
           <ul ref="mobileMenu" class="py-2">
             <li v-for="(item, index) in navItems" :key="index">
@@ -67,15 +67,15 @@
                 :class="[
                   'block px-4 py-3 text-sm transition-colors',
                   removePrefix(route.path) === item.url
-                    ? 'text-white bg-purple-600/20'
-                    : 'text-gray-400 hover:text-white hover:bg-white/5'
+                    ? 'dark:text-white text-gray-900 bg-purple-600/20'
+                    : 'dark:text-gray-400 text-gray-600 dark:hover:text-white hover:text-gray-900 dark:hover:bg-white/5 hover:bg-gray-100'
                 ]"
               >
                 {{ item.name }}
               </NuxtLink>
             </li>
-            <li class="border-t border-white/10 mt-2 pt-2 px-4">
-              <LangChoice />
+            <li class="border-none shadow-none dark:border-white/10 border-gray-300 mt-2 pt-2 px-4">
+              <SettingsDropdown />
             </li>
           </ul>
         </div>

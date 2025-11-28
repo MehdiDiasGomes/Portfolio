@@ -13,12 +13,12 @@
         <div
           v-for="(item, index) in workXp"
           :key="index"
-          class="bg-gradient-to-r inset-shadow-sm duration-200 transition-all from-[#04071D] to-[#0C0E23] p-7 flex flex-col md:flex-row items-start gap-4 md:items-center text-white rounded-lg"
+          class="bg-gradient-to-r dark:from-[#04071D] dark:to-[#0C0E23] from-gray-50 to-gray-100 duration-200 transition-all p-7 flex flex-col md:flex-row items-start gap-4 md:items-center rounded-lg border border-gray-200 dark:border-white/10"
         >
           <img :src="item.icon" :alt="item.alt" class="w-20 h-auto" />
           <div class="flex flex-col gap-2">
-            <h3 class="text-white">{{ item.title }}</h3>
-            <p class="text-gray-300">{{ item.description }}</p>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@
     "contact": "Contact"
   },
   "landing": {
-    "brand": "DevauraWeb",
+    "brand": "Devaura",
     "tagline": "Crafting tailored web experiences",
     "description": "We transform your ideas into modern and high-performance web solutions. Expertise in full-stack development, UX/UI design, and creating web applications that leave a lasting impression.",
     "cta": {
@@ -22,6 +22,12 @@
   },
   "lang": {
     "choose": "Language selection"
+  },
+  "theme": {
+    "choose": "Theme selection",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   },
   "button": {
     "see_work": "See my work"
