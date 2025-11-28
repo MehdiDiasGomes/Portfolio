@@ -3,7 +3,7 @@
     <Button
       :icon="props.side === 'top' ? 'ArrowBigUpDash' : 'ArrowBigDownDash'"
       variant="secondary"
-      class="border border-borderPerso hover:bg-[#12152D] cursor-pointer"
+      class="border dark:border-borderPerso border-gray-300 dark:hover:bg-[#12152D] hover:bg-gray-400 cursor-pointer"
       @click="props.side === 'top' ? scrollTop() : scrollBot()"
     />
   </div>

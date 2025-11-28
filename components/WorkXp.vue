@@ -1,8 +1,7 @@
 <template>
   <div class="flex relative flex-col mp-home mt-14 z-30">
-    <img class="absolute top-0 h-full -z-10 w-full" src="../assets/img/grid-pattern.png" />
     <div class="w-full flex flex-col items-center mb-4">
-      <h2 class="text-white text-center">
+      <h2 class="text-center">
       {{ t("workXp.title_first") }}
       <span class="text-primaryPerso"> {{ t("workXp.title_second") }}</span>
       </h2>

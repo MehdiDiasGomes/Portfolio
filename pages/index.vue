@@ -12,7 +12,7 @@
 
         <div class="fade-in space-y-8">
           <div class="space-y-4">
-            <h1 class="text-white leading-tight font-trirong">
+            <h1 class="leading-tight font-trirong">
               {{ $t("landing.brand") }}
             </h1>
 
@@ -24,7 +24,7 @@
               {{ $t("landing.tagline") }}
             </h2>
 
-            <p class="text-gray-300 mx-auto max-w-[700px]">
+            <p class="mx-auto max-w-[700px]">
               {{ $t("landing.description") }}
             </p>
           </div>
