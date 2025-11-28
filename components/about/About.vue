@@ -59,7 +59,7 @@
               >
                 <NuxtLink
                   to="/contact"
-                  class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-4 py-2 bg-purple-600 text-white border-2 border-purple-600 hover:bg-transparent hover:text-purple-600 dark:hover:text-white rounded-[8px] transition-all duration-300 ease-in-out hover:scale-[0.98]"
+                  class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-4 py-2 bg-purple-600 text-white border border-purple-600 hover:bg-transparent hover:text-purple-600 dark:hover:text-white rounded-[8px] transition-all duration-300 ease-in-out hover:scale-[0.98]"
                 >
                   {{ t("about.contactMe") }}
                 </NuxtLink>
