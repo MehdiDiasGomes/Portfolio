@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Mehdi Dias Gomes - Développeur Full-Stack | Devaura",
+    "description": "Développeur full-stack spécialisé en Vue.js, Nuxt.js, Laravel et TypeScript. Je crée des applications web modernes, performantes et sur mesure."
+  },
   "header": {
     "title": "Je construis",
     "span_title": "Des Expériences",
